@@ -1,0 +1,56 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+{% block content %}
+
+<div class="container main-container headerOffset">
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="{{path('main_homepage')}}">Home</a></li>
+                <li><a href="#">Mes Coupons</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+
+<div class="row featuredPostContainer ">
+        <div class="featuredImageLook3">
+{% for modele in modeles %}
+  {% if date(modele.datefin)> date() and modele.qte > 0  %}
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xs-min-12">
+                <div class="inner">
+                    <div class="box-content-overly box-content-overly-white">
+                        <div class="box-text-table">
+                            <div class="box-text-cell ">
+                                <div class="box-text-cell-inner dark">
+                                    <h1 class="uppercase">{{modele.titre}}</h1>
+
+                                    <p>{{modele.Description}}</p>
+                                    <hr class="submini">
+                                     {% if app.user %}
+                                    <a href="{{path('coupon_print', {'id':modele.id})}}" class="btn btn-inverse">Acheter Maintenant</a></div>
+                                    {% else %}
+                                    <a href="{{path('fos_user_security_login')}}" class="btn btn-inverse">Acheter Maintenant</a></div>
+
+                                    {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.box-content-overly -->
+                    <div class="img-title"> {{modele.titre}}</div>
+                    <a class="img-block" href="#"> <img class="img-responsive" src="{{ asset('bundles/images/')~ modele.imageName }}" alt="img" style="height: 240px;width: 360px;"></a>
+                </div>
+            </div>
+         {% endif %}
+
+         {% endfor %}
+         
+           
+          
+           
+        </div>
+        <!--/.featuredImageLook3-->
+    </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,84 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+<div class="container main-container headerOffset">
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="{{path('main_homepage')}}">Home</a></li>
+                <li><a href="#">Mes Coupons</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7">
+            <h1 class="section-title-inner"><span><i></i> Liste des Coupons </span></h1>
+<div class="col-lg-12 clearfix">
+                    
+                </div>
+            <div class="row userInfo">
+                
+            <div class="box">
+            <div class="box-header">
+            </div>
+            <ul class="pager">
+                      
+                        <li class="next pull-right"><a href="{{ path('coupon_index') }}"> ← Retour a la liste</a></li>
+                    </ul>
+<div class="row transitionfx">
+
+        <!-- left column -->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <!-- product Image and Zoom -->
+
+
+            <div class="main-image sp-wrap col-lg-12 no-padding style2 style2look2" style="display: inline-block;">
+
+
+
+                <div class="sp-large"><a href="{{ asset('bundles/images/')~ coupon.imageName }}" class=""><img src="{{ asset('bundles/images/')~ coupon.imageName }}" class="img-responsive" alt="img"></a></div></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+    <h1>Modifier Coupon </h1>
+
+    {{ form_start(edit_form) }}
+    <label>Titre : </label> {{form_widget(edit_form.titre,{ 'attr': {'class': "form-control"}} )}}<br>
+   <label>Description : </label>  {{form_widget(edit_form.Description,{ 'attr': {'class': "form-control"}} )}}<br>
+    <label>Quantité : </label> {{form_widget(edit_form.Qte,{ 'attr': {'class': "form-control"}} )}}<br>
+   <label>Taux de Reduction</label>  {{form_widget(edit_form.tauxreduction,{ 'attr': {'class': "form-control"}} )}}<br>
+   <label>Date de Debut</label>  {{form_widget(edit_form.date_deb,{ 'attr': {'class': "firstDate form-control"}} )}}<br>
+   <label>date Expiration</label>  {{form_widget(edit_form.date_fin,{ 'attr': {'class': "lastDate form-control"}} )}}<br>
+        {{ form_widget(edit_form) }}
+        <input type="submit" value="Modifier" class="btn" />
+
+    {{ form_end(edit_form) }}
+ {{ form_start(delete_form) }}
+                <input type="submit" value="Supprimer" class="btn btn-danger" onclick="return confirm('Voulez vous vraiment supprimer ce contenu ?');">
+            {{ form_end(delete_form) }}
+ <script >
+$(".btn").click(function(){
+    var firstDate = $('.firstDate').val();
+    var lastDate = $('.lastDate').val();
+    
+    if (firstDate > lastDate) {
+        alert("First date can not be greater than Last date!!");
+        return false;
+    } 
+});</script>
+    <ul>
+        <li>
+        </li>
+        <li>
+           
+        </li>
+    </ul>
+</div>
+    
+        </div>
+    </div></div>
+    <!--/row--></div></div></div>
+
+    <div style="clear:both"></div>
+{% endblock %}

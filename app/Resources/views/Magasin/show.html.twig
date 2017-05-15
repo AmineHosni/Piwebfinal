@@ -1,0 +1,203 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbOYJWkSIBpYfHPZdL4aNspSxBFTlYmTM" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('bundles/eshop/assets/js/jquery-3.1.1.min.js') }}"></script>
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            var mapOptions = {
+                center: new google.maps.LatLng({{ magasin.altitude }}, {{ magasin.longitude }}),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var infoWindow = new google.maps.InfoWindow();
+            var latlngbounds = new google.maps.LatLngBounds();
+            var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+            google.maps.event.addListener(map,
+                    'click',
+                    function (e) {
+
+                        // alert("Latitude: " + e.latLng.lat() + "\r\nLongitude: " + e.latLng.lng());
+                        document.getElementById("lat").value = e.latLng.lat();
+                        document.getElementById("long").value = e.latLng.lng();
+                        //document.getElementById("p2").innerHTML = e.latLng.lng();
+
+                    });
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: { lat: {{ magasin.altitude }}, lng: {{ magasin.longitude }}}
+            });
+            marker.addListener('click', toggleBounce);
+            //marker.setPosition(tx);
+            google.maps.event.addListener(marker,
+                    'dragend',
+                    function () {
+                        var lat = marker.getPosition().lat();
+                        var lng = marker.getPosition().lng();
+                        /*marke
+                         $('#lat').val(lat);
+                         $('#lng').val(lng);*/
+                        /*$.ajax({
+                         url: "http://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + lng + "&sensor=true",
+                         success: function (res) {
+                         console.log(res.results[0].formatted_address);
+                         }
+                         })*/
+                        var latlng = new google.maps.LatLng(lat, lng);
+                        var geocoder = geocoder = new google.maps.Geocoder();
+                        geocoder.geocode({ 'latLng': latlng },
+                                function (results, status) {
+
+                                    if (status == google.maps.GeocoderStatus.OK) {
+                                        if (results[1]) {
+                                            //alert("Location: " + results[1].formatted_address);
+                                            $(document).find("#cityAdresse").val(results[1].formatted_address);
+                                            $("#cityAdresse").val(results[1].formatted_address);
+                                            $("#laltitude").val(results[1].geometry.location.lat());
+                                            $("#longitude").val(results[1].geometry.location.lng());
+                                        }
+                                    }
+                                });
+
+                    });
+            google.maps.event.addListener(marker,
+                    'tx',
+                    function () {
+                        var tx = marker.setPosition().tx();
+                        $('#tx').val(tx);
+
+                    });
+
+
+            function toggleBounce() {
+                if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+
+        });
+
+
+    </script>
+    <div class="parallax-section parallax-fx parallax-image-aboutus parallaxOffset no-padding">
+        <div class="w100 ">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="parallax-content clearfix animated ">
+                            <h1 class="x2large">
+                                {{ magasin.name }}
+                            </h1>
+                            <h5 class="parallaxSubtitle">
+                                Propirété de <strong>{{ magasin.owner }}</strong>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.parallax -->
+
+    <div class="container main-container ">
+
+        <div class="row innerPage">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row userInfo">
+                    <div class="col-xs-12 col-sm-12">
+                        <h1 class="title-big text-center section-title-style2">
+            <span>
+              About us
+            </span>
+                        </h1>
+
+                        <p class="lead text-center">
+                            {{ magasin.description }}
+                        </p>
+
+
+                        <hr class="hr hr30">
+                        <div class="row animated">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-sm-6">
+
+                                <h3 class="block-title-3">
+                                    Facebook Page
+                                </h3>
+
+                                <p><center>Facebook Page here</center>
+
+                                </p>
+
+
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-sm-6">
+
+                                <h3 class="block-title-3">
+                                    Adresse
+                                </h3>
+
+                                <center>
+                                    <div id="dvMap" style="width: 90%; height: 300px;">
+                                    </div>
+                                    <h5>{{ magasin.address }}</h5>
+                                </center>
+
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-sm-6">
+
+                                <h3 class="block-title-3">
+                                    Produits en ventes
+                                </h3>
+
+                                <a class="img-responsive" href="{{ path("Magasin_Details",{'idMagasin':magasin.id}) }}">
+                                    <img style="width: 90%; height: 300px;" src="{{ asset('bundles/imageproducts/'~ magasin.imageName) }}">   </a>
+
+                            </div>
+
+
+                        </div>
+                        <!--/.row-->
+
+                        <hr>
+                    </div>
+                </div>
+                <!--/row end-->
+            </div>
+        </div>
+        <!--/.innerPage-->
+        <div style="clear:both"></div>
+    </div>
+    <!-- /.main-container -->
+
+
+    <div class="gap"></div>
+    <style>
+        .parallax-section {
+            /* The image used */
+            background-image: url("{{ asset('bundles/images/'~ magasin.imageName) }}");
+
+            /* Set a specific height */
+            height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+{% endblock %}

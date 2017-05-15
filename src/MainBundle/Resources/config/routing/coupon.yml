@@ -1,0 +1,31 @@
+coupon_index:
+    path:     /
+    defaults: { _controller: "MainBundle:Coupon:index" }
+    methods:  GET
+
+coupon_show:
+    path:     /{id}/show
+    defaults: { _controller: "MainBundle:Coupon:show" }
+    methods:  GET
+
+coupon_new:
+    path:     /new
+    defaults: { _controller: "MainBundle:Coupon:new" }
+    methods:  [GET, POST]
+
+coupon_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MainBundle:Coupon:edit" }
+    methods:  [GET, POST]
+
+coupon_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MainBundle:Coupon:delete" }
+    methods:  DELETE
+coupon_print:
+    path:     /print/{id}
+    defaults: { _controller: "MainBundle:Coupon:print" }
+    methods:  [GET, POST]
+coupon_list:
+    path:     /list
+    defaults: { _controller: "MainBundle:Coupon:listescoupon" }

@@ -1,0 +1,12 @@
+user_index:
+    path:     /clientindex
+    defaults: { _controller: "MainBundle:User:clientsindex" }
+user_list:
+    path:     /clientAjax
+    defaults: { _controller: "MainBundle:User:clients" }
+user_wishlist:
+    path:     /wishlist
+    defaults: { _controller: "MainBundle:User:mywish" }
+newwish:
+    path:     /new/{id}
+    defaults: { _controller: "MainBundle:User:newwish" }

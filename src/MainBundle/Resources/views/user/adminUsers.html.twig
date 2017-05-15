@@ -1,0 +1,80 @@
+{% extends "::base1.html.twig" %}
+{% block body %}
+<div class="content-wrapper">
+
+
+    <br><br>
+    <form id="jsform" >
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Split button -->
+
+                <h1 class="page-header">
+                    <p>    liste des inscrits</p>
+                </h1>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-lg btn-danger" id="js-activer" data-action="1" >switch state </button>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div id="container" class="row">
+
+            <div id="xcontainer" class="row">
+
+            </div>            </div>
+
+    </form>            </div>
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        (function ($) {
+            var form = $('#jsform'),
+                    jsFormUrl = '',
+                    container = $('#xcontainer');
+
+
+            $('#js-activer').on('click', function () {
+                var url = '{{ path('admin_activer_users', {'etat': 1111 }) }}',
+                        etat = $(this).data('action');
+                jsFormUrl = url.replace('1111', etat);
+                ajaxPost('activer');
+            });
+
+
+            function init() {
+                jsFormUrl = '{{ path('admin_ajaxList') }}';            }
+            function ajaxPost(action) {
+                container.addClass('working');
+                $.ajax({
+                    type: "POST",
+                    data: form.serialize(),
+                    url: jsFormUrl,
+                    success: function (data) {
+                        container.removeClass('working');
+                        init();
+                        if (!action) {
+                            container.empty().hide().html(data).fadeIn();
+                        } else
+                            ajaxPost();
+                    },
+                    error: function () {
+                        alert('service denied');
+                        container.removeClass('working');
+                    }
+                });
+                return false;
+            }
+            form.on('submit', ajaxPost);
+            init();
+            setTimeout(ajaxPost, 1);
+
+
+        })(jQuery);
+    </script>
+{% endblock %}

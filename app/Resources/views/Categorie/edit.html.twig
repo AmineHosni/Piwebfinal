@@ -1,0 +1,40 @@
+{% extends "::base1.html.twig" %}
+{% block body %}
+<div class="content-wrapper">
+    <div class="content">
+
+    <div class="row">
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            {{ form_start(edit_form) }}
+
+            {{ form_widget(edit_form) }}
+            <br>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-12">
+                    <button type="submit" name="subvalider" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span> Modifier</button>
+                    <a href="{{ path('categorie_delete', { 'id': categorie.id }) }}" id="js-delete" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Supprimer</a>
+                    <a href="{{ path('categorie_index') }}" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Retourner vers la liste</a>
+                </div>
+
+            </div>
+            {{ form_end(edit_form) }}
+        </div>
+        
+        
+    </div></div>  </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        (function ($) {
+            $('#js-delete').on('click', function () {
+                $('#deleteForm').find('form').submit();
+                return false;
+            });
+        })(jQuery);
+    </script>
+{% endblock %}

@@ -1,0 +1,33 @@
+admin_users:
+    path:     /members
+    defaults: { _controller: "MainBundle:User:index" }
+admin_users:
+    path:     /members
+    defaults: { _controller: "MainBundle:User:index" }
+aff_autoriser_coupon:
+    path:     /affautoriser
+    defaults: { _controller: "MainBundle:Coupon:affautoriser" }
+
+coupon_accepter:
+    path:     /traite/{id}
+    defaults: { _controller: "MainBundle:Coupon:Accepter" }
+coupon_refuser:
+    path:     /refuser/{id}
+    defaults: { _controller: "MainBundle:Coupon:refuser" }
+coupon_refuser:
+    path:     /refuser/{id}
+    defaults: { _controller: "MainBundle:User:AdminIndex" }
+admin_activer_users:
+    path:  /activer/{etat}
+    defaults: { _controller: "MainBundle:User:Activer" , etat: '1'}
+    requirements: { _method: post }
+
+admin_ajaxList:
+    path:  /users
+    defaults: { _controller: "MainBundle:User:ajaxList"}
+    requirements: { _method: post }
+
+
+
+
+

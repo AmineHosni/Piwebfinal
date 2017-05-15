@@ -1,0 +1,95 @@
+<style type="text/css">
+    .coupon {
+        position: relative;
+
+    }
+    .qrcode{
+        position: absolute;
+        top: 300px;
+        left: 50;
+        width: 100%;
+    }
+    .img{
+        position: absolute;
+        top: 20px;
+        left: 50;
+        width: 100%;
+    }
+    .prix{
+        position: absolute;
+        top: 50px;
+        left: 410;
+        width: 100%;
+        color: rgb(32, 64, 128);
+        font: 15px Algerian, sans-serif;
+    }
+    .username {
+        position: absolute;
+        top: 50px;
+        left: 650;
+        width: 100%;
+    }
+    .ville {
+        position: absolute;
+        top: 60px;
+        left: 650;
+        width: 100%;
+    }
+    .adresse {
+        position: absolute;
+        top: 100px;
+        left: 650;
+        width: 100%;
+    }
+    .vendeur {
+        position: absolute;
+        top: 300px;
+        left: 640;
+        width: 100%;
+    }
+    .date {
+        position: absolute;
+        top: 220px;
+        left: 700;
+        width: 100%;
+    }
+    .logo {
+        position: absolute;
+        top: 395px;
+        left: 400;
+        width: 100%;
+    }
+</style>
+
+<div class="coupon">
+    <img src="{{ asset('bundles/aasaas.png')}}">
+</div>
+<div class="username">
+    <h3>{{ app.user.username}}</h3></div>
+<div class="ville">  <br /><h3>{{ app.user.pays}}</h3><br /></div>
+<div class="adresse">   <h3>{{ app.user.cp}} {{ app.user.ville}}</h3><br /></div>
+
+
+<div class="date"><h4>{{ modeles.datedeb|date("m/d/Y") }}</h4></div>
+<div class="prix">
+
+
+    <h1>{{ modeles.tauxreduction }} Dinar <br>de Reduction</h1>
+</div>
+<div class="vendeur">
+
+
+    <p>{{ modeles.utilisateur_id.username }} <br>
+        {{ modeles.utilisateur_id.pays}} <br>{{ modeles.utilisateur_id.ville }}<br>
+        {{ modeles.utilisateur_id.cp }} </p>
+</div>
+<div class="qrcode">
+    <img src="{{ qrcode_url('http://localhost:8080/eshop-master/web/app_dev.php/coupon/print/'~modeles.id, { size: 120 }) }}" />
+
+</div>
+<div class="img">
+
+    <img src="{{ asset('bundles/images/')~ modeles.imageName }}" style="width : 150px; height: 250px ;" /></div>
+<div class="logo">
+    <img src="{{ asset('bundles/Capture.PNG')}}" style="width : 200px; height: 40px ;" />
+</div>

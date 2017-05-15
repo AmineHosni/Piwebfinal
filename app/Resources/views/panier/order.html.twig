@@ -1,0 +1,185 @@
+ {% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+  <div class="container main-container headerOffset">
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li class="active"> Checkout</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7 col-xs-6 col-xxs-12 text-center-xs">
+            <h1 class="section-title-inner"><span><i class="glyphicon glyphicon-shopping-cart"></i> Checkout</span></h1>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar col-xs-6 col-xxs-12 text-center-xs">
+
+            <h4 class="caps"><a href="category.html"> </a></h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="row userInfo">
+
+                <div class="col-xs-12 col-sm-12">
+
+                    <div class="w100 clearfix">
+
+
+                        <ul class="orderStep orderStepLook2">
+                            <li><a href="checkout-1.html">
+                                <i class="fa fa-map-marker "></i>
+                                <span> address</span>
+                            </a></li>
+
+                            <li><a href="checkout-2.html"> <i class="fa fa fa-envelope  "></i>
+                                <span> Billing </span></a></li>
+
+                            <li><a href="checkout-3.html"><i class="fa fa-truck "> </i><span>Shipping</span> </a></li>
+
+                            <li><a href="checkout-4.html"><i class="fa fa-money  "> </i><span>Payment</span> </a></li>
+
+                            <li class="active"><a href="checkout-5.html"><i
+                                    class="fa fa-check-square "> </i><span>Order</span></a></li>
+
+                        </ul>
+                        <!--orderStep-->
+                    </div>
+
+
+                    <div class="w100 clearfix">
+
+
+                        <div class="row userInfo">
+
+                            <div class="col-lg-12">
+                                <h2 class="block-title-2"> Review Order </h2>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="cartContent w100 checkoutReview ">
+                                    <table class="cartTable table-responsive" style="width:100%">
+                                        <tbody>
+                                        <tr class="CartProduct cartTableHeader">
+                                            <th style="width:15%"> Product</th>
+                                            <th class="checkoutReviewTdDetails">Details</th>
+                                            <th style="width:10%">Unit Price</th>
+                                            <th class="hidden-xs" style="width:5%">QNT</th>
+                                            <th class="hidden-xs" style="width:10%">Discount</th>
+                                            <th style="width:15%">Total</th>
+                                        </tr>
+                                      
+                                        {% for panier in paniers %}
+                                
+                            
+                            <tr class="CartProduct">
+                                <td class="CartProductThumb">
+                                    <div><a href="product-details.html"><img src="images/product/a1.jpg" alt="img"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="CartDescription">
+                                        <h4><a href="product-details.html">{{panier.idProd.libelle }}</a></h4>
+                                        <span class="size"></span>
+
+                                    </div>
+                                </td>
+                               
+                                <td>{{ panier.prixtot }} TND</td>
+                                <td>{{panier.qtepan }}</td>
+                                <td>{{panier.idProd.pourcentagePromotion}} %</td>
+                                <td class="price">{{ panier.prixtot }} TND</td>
+                            </tr>
+{% endfor %}
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--cartContent-->
+
+                                <div class="w100 costDetails">
+                                    <div class="table-block" id="order-detail-content">
+                                        <table class="std table" id="cart-summary">
+                                            <tr>
+                                            {% for liv in livraison %}
+                                                <td>Total products</td>
+                                                <td class="price">{{liv.prixtotal - 8000}}</td>
+                                                   {% endfor %}
+                                            </tr>
+                                            <tr style="">
+                                                <td>Shipping</td>
+                                                <td class="price"><span class="success">8000</span></td>
+                                            </tr>
+                                           {% for liv in livraison %}
+                                               <tr>
+                                                <td> Total</td>
+                                                <td id="total-price" class="price">{{liv.prixtotal}}</td>
+                                            </tr>
+                                             {% endfor %}
+                                       
+                                        
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--/costDetails-->
+
+
+                                <!--/row-->
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <!--/row end-->
+
+
+                    <div class="cartFooter w100">
+                        <div class="box-footer">
+                            <div class="pull-left">
+                            </div>
+
+
+                            <div class="pull-right">
+                                <a href="{{path('thanks')}}" class="btn btn-primary btn-small ">
+                                    Confirm Order &nbsp; <i class="fa fa-check"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!--/ cartFooter -->
+                </div>
+
+
+            </div>
+        </div>
+        <!--/row end-->
+
+
+        <div class="col-lg-3 col-md-3 col-sm-12 rightSidebar">
+
+           
+
+        </div>
+        <!--/rightSidebar-->
+
+    </div>
+    <!--/row-->
+
+    <div style="clear:both"></div>
+</div>
+{% endblock %}

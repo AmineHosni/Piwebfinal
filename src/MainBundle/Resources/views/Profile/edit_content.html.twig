@@ -1,0 +1,26 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+{{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
+<div class="container" style="padding-top: 30px;">
+    <h1 class="page-header">Edit Profile</h1>
+    <div class="row">
+        {{ form_start(form)}}
+
+        <p>{{app.user.nom}}<p>
+        <div class="text-center">
+            <img src="{{ asset('bundles/images/')~ app.user.imageName}}" alt="image" width="100px" height="100px" class="media-object dp img-circle" alt="avatar">
+            <h6> modifier la photo de profil</h6>
+            {{ form_widget(form.imageFile,{ 'attr': {'class': "span12",
+                'placeholder': " " } }) }}
+        </div>
+        {{ form_errors(form.imageFile) }}
+    </div>
+
+    {{ form_rest(form,{ 'attr': {'class': "span12"} }) }}
+    <div>
+        <input   type="submit"   class="btn-success"  value="{{ 'profile.edit.submit'|trans }}" />
+    </div>
+    {{ form_end(form) }}
+</div>
+
+

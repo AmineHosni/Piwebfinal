@@ -1,0 +1,118 @@
+{% extends 'MainBundle:eshop:main.html.twig' %}
+
+  {% block content %}
+
+    <div class="container main-container headerOffset">
+        <div class="row">
+            <div class="breadcrumbDiv col-lg-12">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">MEN COLLECTION</a></li>
+                    <li><a href="sub-category.html">{{ product.Categorie.nom }}</a></li>
+                    <li class="active">{{ product.libelle }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row transitionfx">
+
+            <!-- left column -->
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <!-- product Image and Zoom -->
+                <div >
+
+
+
+                    <img src="{{asset('bundles/images/')~ product.imageName}}" alt="Smiley face" height="400" width="500">
+
+                </div>
+            </div>
+            <!--/ left column end -->
+
+            <!-- right column -->
+            <div class="col-lg-6 col-md-6 col-sm-5">
+                <h2 class="product-title"> {{ product.libelle }}</h2>
+
+                <h3 class="product-code">Product Id : {{ product.id }}</h3>
+
+                <div class="rating">
+                    <p><span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span> <span><i
+                                    class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span> <span><i
+                                    class="fa fa-star-o "></i></span> <span class="ratingInfo"> <span> / </span> <a
+                                    data-target="#modal-review" data-toggle="modal"> Write a review</a> </span></p>
+                </div>
+
+                <div class="product-price"><span class="price-sales"> Price : {{ product.prixProduit }}dt
+                       </span> <span class="price-standard">{{ product.pourcentagePromotion }}dt</span>
+                </div>
+
+                <h3>Categorie : {{ product.Categorie.nom }}</h3>
+                <div class="active"><p>
+                        Etat : {{ product.etat }}
+                </div>
+
+                <div class="cart-actions">
+                    <div class="addto row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <button onclick="productAddToCartForm.submit(this);"
+                                    class="button btn-block btn-cart cart first" title="Add to Cart" type="button">Add
+                                to Cart
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><a class="link-wishlist wishlist btn-block ">Add
+                                to Wishlist</a></div>
+                    </div>
+                    {% if  product.quantiteStock  != 0 %}
+
+                        <div style="clear:both"></div>
+                        <h3 class="incaps"><i class="fa fa fa-check-circle-o color-in"></i> In stock</h3>
+                    {% else %}
+                        <h3 style="clear:both" class="incaps"><i class="fa fa-minus-circle color-out"></i> Out of stock
+                        </h3>
+
+                    {% endif %}
+
+                </div>
+                <!--/.cart-actions-->
+
+                <div class="clear"></div>
+                <div class="product-tab w100 clearfix">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="details">
+                            {{ product.description }}
+                            <br>
+                        </div>
+
+                    </div>
+                    <!-- /.tab content -->
+
+                </div>
+            </div>
+            <!--if  product.seller == app.user.id
+               <table>
+                   <td>
+                       <a href=" path('product_index') }}" class="btn btn-block btn-success">Back to the list</a>
+                   </td>
+
+                   <td>
+                       <a href="path('product_edit', { 'id': product.id }) }}"
+                          class="btn btn-block btn-info">Edit</a>
+                   </td>
+
+                   <td>
+                        form_start(delete_form) }}
+                       <input type="submit" value="Delete" class="btn btn-block btn-danger">
+                        form_end(delete_form) }}
+                   </td>
+               </table> -->
+        </div>
+    </div>
+{% endblock %}
+
+
+

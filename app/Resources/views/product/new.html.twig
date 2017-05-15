@@ -1,0 +1,69 @@
+{% extends 'MainBundle:eshop:main.html.twig' %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+{% block script%}
+
+    <script>
+        $.validator.addMethod('positiveNumber',
+                function (value) {
+                    return Number(value) > 0;
+                }, 'Enter a positive number.');
+
+
+        $(document).ready(function(){
+            $("ajouter").click(function(){
+               $("prixProduit").positiveNumber();
+            });
+        });
+
+    </script>
+
+{% endblock script %}
+
+  {% block content %}
+    {{ form_start(form) }}
+    <br>
+    <br>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row featuredPostContainer globalPadding style2">
+                <h3 class="section-title style2 text-center"><span>Nouveau produit</span></h3>
+            </div>
+            {{ form_start(form) }}
+            {{ form_widget(form.libelle,{ 'attr': {'class': "form-control input",
+                'placeholder': "libelle",'required':'true','id': 'libelle'} }) }}
+            {{ form_widget(form.description,{ 'attr': {
+                'placeholder': "description",'required':'true' ,'id': 'description'} }) }}
+            <br>
+            <p>Marque</p>
+            {{ form_widget(form.marque,{ 'attr': {
+                'required':'true' ,'id': 'marque'} }) }}
+            <br><br>
+            <p>Categorie </p>
+            {{ form_widget(form.categorie,{ 'attr': {
+                'required':'true','id': 'categorie'} }) }}
+            <p>Etat du Produit</p>
+            {{ form_widget(form.etat,{ 'attr': {
+                'required':'true','id': 'etat'} }) }}
+
+            {{ form_widget(form.prixProduit,{ 'attr': {"type": "number",  "min" :"0",
+                'placeholder': "Prix de Produit",'required':'true','id': 'prixProduit'} }) }}
+
+            {{ form_widget(form.quantiteStock,{ 'attr': {
+                'placeholder': "Votre Stock",'required':'true','id': 'quantiteStock'} }) }}
+            {{ form_widget(form.pourcentagePromotion,{ 'attr': {
+                'placeholder': "Pourcentage Promotion",'required':'true','id': 'quantiteStock'} }) }}
+            {{ form_widget(form.categorie,{ 'attr': {
+                'required':'true','id': 'categorie'} }) }}
+            {{ form_widget(form.imageFile)}}
+
+            {{ form_end(form) }}
+            <input type="submit" value="ajouter" name="ajouter">
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="{{ path('product_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

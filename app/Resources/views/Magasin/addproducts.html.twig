@@ -1,0 +1,83 @@
+{% extends 'MainBundle:eshop:main.html.twig' %}
+
+{% block content %}
+    <div class="content-wrapper">
+
+
+        <br><br>
+        <form id="jsform" >
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Split button -->
+
+                    <h1 class="page-header">
+                        <p>    liste de mes produits</p>
+                    </h1>
+
+
+
+                </div>
+            </div>
+            <div id="container" class="row">
+
+                <div id="xcontainer" class="row">
+
+                </div>            </div>
+            <button type="button" class="btn btn-lg btn-danger" id="js-activer" data-action="1" >valider</button>
+
+
+        </form>            </div>
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        (function ($) {
+            var form = $('#jsform'),
+                    jsFormUrl = '',
+                    container = $('#xcontainer');
+
+
+            $('#js-activer').on('click', function () {
+                var url = '{{ path('Magasin_produitsinceptionadd', {'etat': 1111 }) }}',
+                        etat = $(this).data('action');
+                jsFormUrl = url.replace('1111', etat);
+                ajaxPost('activer');
+            });
+
+            $('#hi').on('click', function () {
+                alert('3asba');
+            });
+
+
+            function init() {
+                jsFormUrl = '{{ path('Magasin_produitsinception') }}';            }
+            function ajaxPost(action) {
+                container.addClass('working');
+                $.ajax({
+                    type: "POST",
+                    data: form.serialize(),
+                    url: jsFormUrl,
+                    success: function (data) {
+                        container.removeClass('working');
+                        init();
+                        if (!action) {
+                            container.empty().hide().html(data).fadeIn();
+                        } else
+                            ajaxPost();
+                    },
+                    error: function () {
+                        alert('service denied');
+                        container.removeClass('working');
+                    }
+                });
+                return false;
+            }
+            form.on('submit', ajaxPost);
+            init();
+            setTimeout(ajaxPost, 0);
+
+
+        })(jQuery);
+    </script>
+{% endblock %}

@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Liste Utilisateurs</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nom</th>
+                            <th>Email</th>
+                            <th>Etat</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for p in products %}
+                            <tr>
+                            <td>
+                                <select name="mag[]"  id="hi"class="js-categorie form-control">
+                                    <option  value=NULL>nothing</option>
+
+                                    {% for m in magasins %}
+
+
+
+
+                                        <option  value="{{m.id}}">{{m.name}}</option>
+                                    {% endfor %}
+                                </select></td>
+                            <input type="hidden" name="products[]" value="{{ p.id }}">
+                            <td >{{ p.libelle }}</td>
+                        {% if  p.magasin is  null %}<td> <span  >produit libre</span>  </td>
+                                {%  else  %}
+                                <td> <span  >{{ p.magasin.nom }}</span>  </td>
+                                {% endif %}
+
+                                </td>
+
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

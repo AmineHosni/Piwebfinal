@@ -1,0 +1,73 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+    <div class="container main-container">
+
+        <div class="morePost row featuredPostContainer style2 globalPaddingTop ">
+            <h3 class="section-title style2 text-center"><span>mes magasins</span></h3>
+
+
+            <div class="action-control">
+                <a href="{{ path("Magasin_produits") }}" class="btn btn-success"> attribute products <i
+                            class="fa fa-database"> </i> </a>
+                <a href="{{ path("Magasin_Add") }}" class="btn btn-success"> new entry<i
+                            class="fa fa-plus"> </i> </a>
+
+            <div class="container">
+
+
+                    <div class="container">
+                <div class="row xsResponse">
+
+
+        {% for magasin  in Magasin %}
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="product">
+
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="{{ path("Magasin_Details",{'idMagasin':magasin.id}) }}"><img style="height: 400px; width: 300px" src="{{ asset('bundles/images/'~ magasin.imageName) }}" alt="img"
+                                                                                              class="img-responsive"></a></div>
+                    <div class="description">
+                        <h4><strong>{{ magasin.name|upper }}</strong></h4>
+
+                        <div class="grid-description">
+                            <p>{{ magasin.description }} </p>
+                        </div>
+                        <div class="list-description">
+                            <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
+                                fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
+                                odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
+                                vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
+                                sit amet placerat elit. </p>
+                        </div>
+
+                        <div class="action-control">
+                            <a href="{{ path("Magasin_Details",{'idMagasin':magasin.id}) }}" class="btn btn-default">  Visit <i
+                                        class="fa fa-share"> </i> </a>
+                            <br>
+
+                                <a href="{{ path('Magasin_Edit',{'idMagasin':magasin.id }) }}" class="btn btn-primary"> <span class="add2cart"> Edit <i
+                                                class="fa fa-share"> </i> </span> </a>
+                                <a href="{{ path('Magasin_Delete',{'idMagasin':magasin.id }) }}">
+                                    <button type="button" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item?');">  Delete   </button></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+    </table>
+
+</div>
+                    </div></div></div></div></div>
+
+                {% endblock %}

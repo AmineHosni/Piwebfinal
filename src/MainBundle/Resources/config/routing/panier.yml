@@ -1,0 +1,23 @@
+new_panier:
+    path:     /new/{id}
+    defaults: { _controller: "MainBundle:Panier:new" }
+    methods:  GET
+my_cart:
+    path:     /
+    defaults: { _controller: "MainBundle:Panier:index" }
+    methods:  GET
+my_cart_del:
+    path:     /delete/{id}
+    defaults: { _controller: "MainBundle:Panier:delete" }
+    methods:  GET
+checkout:
+    path:     /checkout
+    defaults: { _controller: "MainBundle:Panier:checkout" }
+order:
+    path:     /order/{idcommande}
+    defaults: { _controller: "MainBundle:Panier:order" }
+    methods:  GET
+thanks:
+    path:     /thankyou
+    defaults: { _controller: "MainBundle:Panier:thanks" }
+    methods:  GET

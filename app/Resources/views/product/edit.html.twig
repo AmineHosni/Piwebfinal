@@ -1,0 +1,46 @@
+
+        {% extends 'MainBundle:eshop:main.html.twig' %}
+        {% form_theme edit_form 'bootstrap_3_layout.html.twig' %}
+
+        {% block content %}
+        <br>
+            <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="row featuredPostContainer globalPadding style2">
+            </div>
+
+
+                {{ form_start(edit_form) }}
+
+            <div class="modal-content">
+            <div class="row featuredPostContainer globalPadding style2">
+                <h3 class="section-title style2 text-center"><span>Modifier {{ product.libelle }}</span></h3>
+            </div>
+            {{ form_start(edit_form) }}
+            {{ form_widget(edit_form.libelle )}}
+            {{ form_widget(edit_form.description)}}
+            <br>
+            <p>Marque</p>
+            {{ form_widget(edit_form.marque )}}
+            <br><br>
+            <p>Categorie </p>
+            {{ form_widget(edit_form.categorie )}}
+            <p>Etat du Produit</p>
+            {{ form_widget(edit_form.etat) }}
+
+            {{ form_widget(edit_form.prixProduit)}}
+
+            {{ form_widget(edit_form.quantiteStock) }}
+            {{ form_widget(edit_form.pourcentagePromotion) }}
+            {{ form_widget(edit_form.imageFile)}}
+
+
+                <input type="submit" value="Edit" />
+
+                {{ form_end(edit_form) }}
+
+
+            </div>
+
+
+{% endblock %}

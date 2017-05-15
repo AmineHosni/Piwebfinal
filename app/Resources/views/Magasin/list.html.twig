@@ -1,0 +1,64 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+<div class="container main-container">
+
+    <br><br>
+
+
+    <div class="morePost row featuredPostContainer style2 globalPaddingTop ">
+        <h3 class="section-title style2 text-center"><span>produits disponibles</span></h3>
+        <div class="container">
+            <div class="row xsResponse">
+
+                <div class="action-control">
+
+
+                    <div class="action-control">
+                        <a href="{{ path("Magasin_List_Perso") }}" class="btn btn-success"> gerer mes magasins <i
+                                    class="fa fa-database"> </i> </a>
+                        <br>
+
+
+                    </div>
+
+                </div>
+        {% for magasin  in Magasin %}
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="product">
+
+
+                <div class="image">
+                    <div class="quickview">
+                        <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                           data-target="#productSetailsModalAjax">Quick View </a>
+                    </div>
+                    <a href="{{ path("Magasin_Details",{'idMagasin':magasin.id}) }}"><img style="height: 300px; width: 200px" src="{{ asset('bundles/images/'~ magasin.imageName) }}" alt="img"
+                                                        class="img-responsive"></a></div>
+                <div class="description">
+                    <h4><strong>{{ magasin.name|upper }}</strong></h4>
+
+                    <div class="grid-description">
+                        <p>{{ magasin.description }} </p>
+                    </div>
+
+
+                    <div class="action-control">
+                        <a href="{{ path("Magasin_Details",{'idMagasin':magasin.id}) }}" class="btn btn-default">  Visit <i
+                                        class="fa fa-share"> </i> </a>
+                        <br>
+
+
+                </div>
+            </div>
+
+
+        {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

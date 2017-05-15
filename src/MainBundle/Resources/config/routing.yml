@@ -1,0 +1,70 @@
+main_panier:
+    resource: "@MainBundle/Resources/config/routing/panier.yml"
+    prefix:   /panier
+main_venteflash:
+    resource: "@MainBundle/Resources/config/routing/venteflash.yml"
+    prefix:   /venteflash
+main_product:
+    resource: "@MainBundle/Resources/config/routing/product.yml"
+    prefix:   /product
+main_user:
+    resource: "@MainBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+main_coupon:
+    resource: "@MainBundle/Resources/config/routing/coupon.yml"
+    prefix:   /coupon
+EndroidQrCodeBundle:
+    resource: "@EndroidQrCodeBundle/Controller/"
+    type:     annotation
+    prefix:   /qrcode
+main_categorie:
+    resource: "@MainBundle/Resources/config/routing/categorie.yml"
+    prefix:   /admin
+
+main_homepage:
+    path:     /
+    defaults: { _controller: MainBundle:Default:index }
+main_admin:
+    resource: "@MainBundle/Resources/config/routing/admin.yml"
+    prefix:   /admin
+Page_User:
+    path:     /user
+    defaults: { _controller: MainBundle:Default:Admin }
+Page_Clients:
+    path:     /clients
+    defaults: { _controller: MainBundle:Default:Admin }
+main_admin:
+    path:     /maps
+    defaults: { _controller: MainBundle:map:Admin }
+Magasin_List:
+   path:      /magasin/list
+   defaults:  { _controller: MainBundle:Magasin:list }
+Magasin_List_Perso:
+   path:      /magasin/listPerso
+   defaults:  { _controller: MainBundle:Magasin:listPerso }
+Magasin_Add:
+   path:      /magasin/add
+   defaults:  { _controller: MainBundle:Magasin:add }
+Magasin_Details:
+   path:      /magasin/magasinDetail/{idMagasin}
+   defaults:  { _controller: MainBundle:Magasin:magasinDetail }
+Magasin_Edit:
+   path:      /magasin/edit/{idMagasin}
+   defaults:  { _controller: MainBundle:Magasin:edit }
+Magasin_Delete:
+   path:      /magasin/delete/{idMagasin}
+   defaults:  { _controller: MainBundle:Magasin:delete }
+Magasin_produits:
+   path:      /magasin/products
+   defaults:  { _controller: MainBundle:Magasin:products }
+Magasin_produitsinception:
+   path:      /magasin/addproduct
+   defaults:  { _controller: MainBundle:Magasin:productsinception }
+Magasin_produitsinceptionadd:
+   path:      /magasin/addproducts
+   defaults:  { _controller: MainBundle:Magasin:addproducts }
+
+
+
+
+

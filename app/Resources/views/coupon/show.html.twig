@@ -1,0 +1,114 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+<div class="container main-container headerOffset">
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="{{path('main_homepage')}}">Home</a></li>
+                <li><a href="#">Mes Coupons</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7">
+ <ul class="pager">
+            <h1 class="section-title-inner"><span><i></i> Liste des Coupons </span></h1>
+             
+                      
+                        <li class="next pull-right"><a href="{{ path('coupon_index') }}"> ← Retour a la liste</a></li>
+                    </ul>
+<div class="col-lg-12 clearfix">
+                    
+                </div>
+            <div class="row userInfo">
+                
+            <div class="box">
+            <div class="box-header">
+            </div>
+<div class="row transitionfx">
+
+        <!-- left column -->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <!-- product Image and Zoom -->
+
+
+            <div class="main-image sp-wrap col-lg-12 no-padding style2 style2look2" style="display: inline-block;">
+
+
+                    <div class="sp-large"><a href="{{ asset('bundles/images/')~ coupon.imageName }}" class=""><img src="{{ asset('bundles/images/')~ coupon.imageName }}" class="img-responsive" alt="img"></a></div></div>
+        </div>
+        <!--/ left column end -->
+
+
+        <!-- right column -->
+        <div class="col-lg-6 col-md-6 col-sm-5">
+
+            <h1 class="product-title">{{ coupon.titre }}</h1>
+
+                <div class="details-description">
+               <h4>Description : </h4>     <p>{{ coupon.Description }} </p>
+                </div>
+
+                
+                <!--/.color-details-->
+
+                <div class="productFilter productFilterLook2">
+                    <div class="row">
+                       
+                          <h4>Date Début : </h4> 
+{% if coupon.datedeb %}{{ coupon.datedeb|date('Y-m-d') }}{% endif %}           
+           
+                            <h4>Date Expiration : </h4> 
+                             {% if coupon.datedeb %}{{ coupon.datefin|date('Y-m-d') }}{% endif %}
+               <h4>Quantité Restante : </h4>     <p>{{ coupon.Qte }} </p>
+             <h4>Taux de Réduction : </h4> <h2> <span class="price-sales">{{ coupon.tauxreduction }}dt</span></h2>
+                    </div>
+                </div>
+                <!-- productFilter -->
+
+                <div class="cart-actions">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            {{ form_start(delete_form) }}
+                <input type="submit" class="button btn-block btn-cart cart first" onclick="return confirm('Voulez vous vraiment supprimer ce contenu ?');" value="Supprimer">
+            {{ form_end(delete_form) }}
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <a  href="{{ path('coupon_edit', { 'id': coupon.Id }) }}" class="link-wishlist wishlist btn-block ">Modifier</a></div>
+
+                    <div style="clear:both"></div>
+                    {% if coupon.qte > 0 %}<h3 class="incaps"><i class="fa fa fa-check-circle-o color-in"></i> In stock</h3>
+                    {% else %}
+                         <h3  class="incaps"><i class="fa fa-minus-circle color-out"></i> Out of stock
+                    </h3>
+                    {% endif %}
+                    
+
+                   
+
+                </div>
+                <!--/.cart-actions-->
+
+
+               
+        <!--/ right column end -->
+
+    </div>
+   
+                
+              
+
+ 
+
+   
+     
+            </div>
+            <!--/row end-->
+
+        </div>
+       
+    </div></div>
+    <!--/row--></div></div></div>
+
+{% endblock %}

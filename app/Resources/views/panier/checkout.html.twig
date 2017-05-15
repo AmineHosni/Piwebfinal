@@ -1,0 +1,142 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+<div class="container main-container headerOffset">
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li class="active"> Checkout</li>
+            </ul>
+        </div>
+    </div>
+    <!--/.row-->
+
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7 col-xs-6 col-xxs-12 text-center-xs">
+            <h1 class="section-title-inner"><span><i class="glyphicon glyphicon-shopping-cart"></i> Checkout</span></h1>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar col-xs-6 col-xxs-12 text-center-xs">
+            <h4 class="caps"><a href="category.html"><i class="fa fa-chevron-left"></i> Back to shopping </a></h4>
+        </div>
+    </div>
+    <!--/.row-->
+
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="row userInfo">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="w100 clearfix">
+                        <ul class="orderStep orderStepLook2">
+                            <li class="active"><a href="checkout-1.html"> <i class="fa fa-map-marker "></i> <span> address</span>
+                            </a></li>
+                            <li><a href="checkout-2.html"> <i class="fa fa fa-envelope  "></i>
+                                <span> Billing </span></a></li>
+                            <li><a href="checkout-3.html"><i class="fa fa-truck "> </i><span>Shipping</span> </a></li>
+                            <li><a href="checkout-4.html"><i class="fa fa-money  "> </i><span>Payment</span> </a></li>
+                            <li><a href="checkout-5.html"><i class="fa fa-check-square "> </i><span>Order</span></a>
+                            </li>
+                        </ul>
+                        <!--/.orderStep end-->
+                    </div>
+
+
+                    <div class="w100 clearfix">
+                        <div class="row userInfo">
+                            <div class="col-lg-12">
+                                <h2 class="block-title-2"> To add a new address, please fill out the form below. </h2>
+                            </div>
+
+                   
+                                <div class="col-xs-12 col-sm-6">
+                          {{ form_start(form) }}
+                   
+                                    <div class="form-group required">
+                                        <label for="InputCity">Gouvernorat <sup>*</sup> </label>
+                                    
+                                               {{form_widget(form.gouvernoratUser,{ 'attr': {'class': "form-control"}} )}}
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="InputState">Délégation <sup>*</sup> </label>
+
+                                        {{form_widget(form.delegationUser,{ 'attr': {'class': "form-control"}} )}}
+                                    </div>
+                                      <div class="form-group">
+                                        <label for="InputAdditionalInformation">Adresse</label>
+                                 
+                                                  {{form_widget(form.adresseLiv,{ 'attr': {'class': "form-control"}} )}}
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group required">
+                                        <label for="InputZip">Zip / Postal Code <sup>*</sup> </label>
+                                      {{form_widget(form.codepostaleUser,{ 'attr': {'class': "form-control"}} )}}
+                                    </div>
+                                  
+                                  
+                                    <div class="form-group required">
+                                        <label for="InputMobile">Mobile phone <sup>*</sup></label>
+                                      {{form_widget(form.telephoneUser,{ 'attr': {'class': "form-control"}} )}}
+                                   
+                                    </div>
+                                
+                                </div>
+                         
+                        </div>
+                        <!--/row end-->
+
+                    </div>
+                         <div class="form-group col-lg-12 col-sm-12 col-md-12 -col-xs-12">
+                                        <table style="width:100%" class="table-bordered table tablelook2">
+                                            <tbody>
+                                            <tr>
+                                                <td> Transporteur</td>
+                                                <td>Methode</td>
+                                                <td>Information</td>
+                                                <td>Prix!</td>
+                                            </tr>
+                                            <tr>
+                                            <td><label class="radio">
+                                                   {{form_widget(form.methLivraison[0],{ 'attr': {'class': "form-control"}} )}}
+                                                    <i class="fa  fa-plane fa-2x"></i> </label></td>
+                                                <td> Poste</td>
+                                                <td>L'obtenir en poste</td>
+                                                <td>8 TND</td>
+                                            </tr>
+                                            <tr>
+                                             <td><label class="radio">
+                                                   {{form_widget(form.methLivraison[1],{ 'attr': {'class': "form-control"}} )}}<i class="fa  fa-truck fa-2x"></i> </label>
+                                                    </td>
+                                                <td>Aramex</td>
+                                                <td>demain !</td>
+                                                <td>10 TND</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                    <div class="cartFooter w100">
+                        <div class="box-footer">
+                            <div class="pull-left"><a class="btn btn-default" href="index.html"> <i
+                                    class="fa fa-arrow-left"></i> &nbsp; Back to Shop </a></div>
+                            <div class="pull-right"> {{form_widget(form.Ajouter,{ 'attr': {'class': "form-control"}} )}}  </div>
+                        </div>
+                    </div>
+                     {{ form_end(form) }}
+                    <!--/ cartFooter -->
+
+                </div>
+            </div>
+            <!--/row end-->
+
+        </div>
+
+ 
+        <!--/rightSidebar-->
+
+    </div>
+    <!--/row-->
+
+    <div style="clear:both"></div>
+</div>
+{% endblock %}

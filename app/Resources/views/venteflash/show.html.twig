@@ -1,0 +1,131 @@
+{% extends 'MainBundle:eshop:main.html.twig' %}
+
+{% block content %}
+
+<br><br>
+    <h1>{{ venteFlash.nom }}</h1>
+
+<div class="row">
+ <div class="col-md-6 col-md-push-3">
+                <div class="timer-container text-center">
+                    <div class="counter-title">
+                        <h2><i class="glyphicon glyphicon-time clock"></i> flash Countdown
+                        </h2>
+                    </div>
+
+                    <p class="clock-container">
+
+                        <span id="demo" class="timer"><p class="demo"></p></span>
+
+                </div>
+            </div>
+        </div>
+<div>
+
+      ></div>
+
+    <div class="morePost row featuredPostContainer style2 globalPaddingTop ">
+            <h3 class="section-title style2 text-center"><span>produits de la vente flash</span></h3>
+
+        {% for product in venteFlash.produit %}
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="product">
+                <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                   data-placement="left">
+                    <i class="glyphicon glyphicon-heart"></i>
+                </a>
+
+                <div class="image">
+                    <div class="quickview">
+                        <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                           data-target="#productSetailsModalAjax">Quick View </a>
+                    </div>
+                    <a href=""><img style="height: 250px; width: 400px" src="{{ asset('bundles/images/'~ product.imageName) }}" alt="img"
+                                    class="img-responsive"></a>
+
+                    <div class="promotion"><span class="discount">{{ product.pourcentagePromotion }} OFF</span></div>
+                </div>
+                <div class="description">
+                    <h4><a href="product-details.html">{{  product.libelle }} </a></h4>
+
+                    <div class="grid-description">
+                        <p>sdcsdcsddcsdcsdcsdcsdddddddddddddddddddddddddddddddddddddddddddddddc</p>
+                    </div>
+                    <div class="list-description">
+                        <p> {{  product.description|raw }} </p>
+                    </div>
+                    <div class="price"><span>{{  product.prixProduit }} <strong>$</strong></span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                                        class="glyphicon glyphicon-shopping-cart"> </i> Ajout au panier </span> </a></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span><i
+                                        class="glyphicon glyphicon-zoom-in"> </i> view more </span> </a></div>
+                </div>
+            </div></div></div>
+    {% endfor %}
+
+    </div>
+    </div>
+
+    </div>
+
+
+    <script>
+
+
+
+
+        window.setInterval(countDown, 1000);
+
+        function countDown() {
+            var now = new Date();
+            var future = new Date("{{ venteFlash.finish|  date }}").getTime();
+            var timeLeft = future - now;
+            var milli = timeLeft;
+
+            var seconds = milli / 1000;
+            var minutes = seconds / 60;
+            var hours = minutes / 60;
+            var days = hours / 24;
+            var spareSeconds = seconds % 60;
+            var spareMinutes = minutes % 60;
+            var spareHours = hours % 24;
+            var spareDays = days % 365;
+
+            minutes = parseInt(minutes);
+            hours = parseInt(hours);
+            days = parseInt(days);
+            spareSeconds = parseInt(spareSeconds);
+            spareMinutes = parseInt(spareMinutes);
+            spareHours = parseInt(spareHours);
+            spareDays = parseInt(spareDays);
+
+            days = padNumber(days);
+            hours = padNumber(hours);
+            minutes = padNumber(minutes);
+            spareSeconds = padNumber(spareSeconds);
+            spareMinutes = padNumber(spareMinutes);
+            spareHours = padNumber(spareHours);
+            spareDays = padNumber(spareDays);
+
+            timeLeft = spareDays + ":" + spareHours + ":" + spareMinutes + ":" + spareSeconds;
+            var mySpan = document.getElementById("demo");
+            mySpan.innerHTML = timeLeft;
+
+            if (milli <= 0) { //Time's run out! If all values go to zero
+                mySpan.innerHTML = "00:00:00";
+            }
+        }
+
+        function padNumber(number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        }
+    </script>
+
+
+
+
+
+{% endblock %}

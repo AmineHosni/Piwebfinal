@@ -1,0 +1,58 @@
+venteflash_index:
+    path:     /
+    defaults: { _controller: "MainBundle:VenteFlash:index" }
+    methods:  GET
+
+venteflash_show:
+    path:     /{id}/show
+    defaults: { _controller: "MainBundle:VenteFlash:show" }
+
+
+venteflash_new:
+    path:     /new
+    defaults: { _controller: "MainBundle:VenteFlash:new" }
+    methods:  [GET, POST]
+
+venteflash_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MainBundle:VenteFlash:edit" }
+    methods:  [GET, POST]
+
+venteflash_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MainBundle:VenteFlash:delete" }
+    methods:  DELETE
+
+
+venteflash_list:
+    path:     /list
+    defaults: { _controller: "MainBundle:VenteFlash:list" }
+
+
+venteflash_supprimerproduit:
+    path:     ajaxresult1/{id}/{prod}
+    defaults: { _controller: "MainBundle:VenteFlash:deletefromvente1" }
+
+venteflash_position:
+    path:     position
+    defaults: { _controller: "MainBundle:VenteFlash:position" }
+
+venteflash_index1:
+    path:     /{id}/{operation}/ajax
+    defaults: { _controller: "MainBundle:VenteFlash:ajaxindex" }
+
+
+venteflash_ajouterproduit:
+    path:     ajaxresult/{id}/{prod}
+    defaults: { _controller: "MainBundle:VenteFlash:addtovente1" }
+
+
+
+venteflash_Listing:
+    path:     /{id}/{operation}/ajaxoperation
+    defaults: { _controller: "MainBundle:VenteFlash:ajaxlist" }
+    methods:  POST
+
+venteflash_setflash:
+    path:     /{id}/setflash
+    defaults: { _controller: "MainBundle:VenteFlash:setflash" }

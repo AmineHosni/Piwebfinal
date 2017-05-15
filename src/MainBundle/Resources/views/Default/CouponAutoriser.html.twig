@@ -1,0 +1,62 @@
+{% extends '::base1.html.twig' %}
+
+  {% block body %}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Liste Utilisateurs</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Nom Utilisateur</th>
+                  <th>Statut</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                 {% for modele in modeles %}
+                <tr>
+                 <td>{{modele.username}}</td>
+                 {% if modele.statutcoupon == 1 %}
+                  <td>Autoriser</td>
+                  <td><a href="{{path('coupon_refuser', {'id':modele.id})}}" class="btn btn-danger">Refuser</a></td></input></td>
+
+                  {% else %}
+                       <td>Non Autoriser</td>
+                  <td><a href="{{path('coupon_accepter', {'id':modele.id})}}" class="btn btn-info">Autoriser </a></td></input></td>
+                 
+
+                 {% endif %}
+                  
+                </tr>
+                  {% endfor %} 
+                </tbody>
+                
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+
+            {% endblock %}
+  

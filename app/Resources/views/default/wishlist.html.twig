@@ -1,0 +1,95 @@
+{% extends "MainBundle:eshop:main.html.twig" %}
+
+{% block content %}
+<div class="container main-container headerOffset">
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li class="active">wishlist</li>
+            </ul>
+        </div>
+    </div>
+    <!--/.row-->
+
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7 col-xs-6 col-xxs-12 text-center-xs">
+            <h1 class="section-title-inner"><span><i
+                    class="glyphicon glyphicon-shopping-cart"></i>Wishlist </span></h1>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar col-xs-6 col-xxs-12 text-center-xs">
+            <h4 class="caps"><a href="{{ path('main_homepage') }}"><i class="fa fa-chevron-left"></i> Back to shopping </a></h4>
+        </div>
+    </div>
+    <!--/.row-->
+
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7">
+            <div class="row userInfo">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="cartContent w100">
+                        <table class="cartTable table-responsive" style="width:100%">
+                            <tbody>
+
+                            <tr class="CartProduct cartTableHeader">
+                                <td style="width:15%"> Product</td>
+                                <td style="width:40%">Details</td>
+                                <td style="width:10%" class="delete">&nbsp;</td>
+                                <td style="width:10%">Discount</td>
+                                <td style="width:15%">Total</td>
+                            </tr>
+                            {% for panier in paniers %}
+                                
+                            
+                            <tr class="CartProduct">
+                                <td class="CartProductThumb">
+                                    <div><a href="product-details.html"><img src="images/product/a1.jpg" alt="img"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="CartDescription">
+                                        <h4><a href="product-details.html">{{panier.idProd.libelle }}</a></h4>
+                                        <span class="size"></span>
+
+                                        <div class="price"><span>{{ panier.idProd.prixProduit }} TND</span></div>
+                                    </div>
+                                </td>
+                                <td class="delete"><a title="Delete" href="{{path('my_cart_del', {'id':panier.id})}}"> <i
+                                        class="glyphicon glyphicon-trash fa-2x"></i></a></td>
+                                
+                                <td>{{panier.idProd.pourcentagePromotion}} %</td>
+                                <td class="price">{{ panier.idProd.prixProduit }} TND</td>
+                            </tr>
+{% endfor %}
+                      
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--cartContent-->
+
+                    <div class="cartFooter w100">
+                        <div class="box-footer">
+                            <div class="pull-left"><a href="{{ path('main_homepage') }}" class="btn btn-default"> <i
+                                    class="fa fa-arrow-left"></i> &nbsp; Continue shopping </a></div>
+                            <div class="pull-right">
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ cartFooter -->
+
+                </div>
+            </div>
+            <!--/row end-->
+
+        </div>
+
+        <!--/rightSidebar-->
+
+    </div>
+    <!--/row-->
+
+    <div style="clear:both"></div>
+</div>
+{% endblock %}
