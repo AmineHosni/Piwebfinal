@@ -28,18 +28,10 @@ product_edit:
     methods:  [GET, POST]
 
 product_delete:
-    path:     /{id}/delete
+    path:    delete/{id}/
     defaults: { _controller: "MainBundle:Product:delete" }
-    methods:  DELETE
 
 
 product_change:
     path:     /data
     defaults: { _controller: "MainBundle:Product:projetajax" }
-
-
-
-
-
-
-

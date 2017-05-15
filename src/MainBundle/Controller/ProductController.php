@@ -34,7 +34,7 @@ class ProductController extends Controller
     public function ajaxListAction(Request $request) {
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('MainBundle:Product')->findAll();
+        $entities = $em->getRepository('MainBundle:Product')->findBy( array('Approuver' => "0"));
         return $this->render('product/adminContent.html.twig', array(
             'entities' => $entities,
         ));
@@ -46,9 +46,7 @@ class ProductController extends Controller
         $products = $request->get('products');
         foreach ($products as $id) {
             $p= $em->getRepository('MainBundle:Product')->find($id);
-
-
-                $p->setApprouver("1");
+            $p->setApprouver("1");
             $em = $this->getDoctrine()->getManager();
             $em->persist($p);
             $em->flush();
@@ -59,6 +57,23 @@ class ProductController extends Controller
     }
 
 
+    public function supprimerAction(Request $request) {
+        $em= $this->getDoctrine()->getManager();
+
+
+        $products = $request->get('products');
+        foreach ($products as $id) {
+            $p= $em->getRepository('MainBundle:Product')->find($id);
+
+            var_dump(            $em->remove($p));
+            $em->remove($p);
+
+            $em->flush();
+
+
+        }
+        return new Response('1');
+    }
 
 
     public function indexAction()

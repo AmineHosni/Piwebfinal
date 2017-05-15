@@ -42,6 +42,8 @@ admin_ajaxList:
     requirements: { _method: post }
 
 
-
-
+admin_ajaxsupprimer:
+    path:  /ajaxproduit/supprimer
+    defaults: { _controller: "MainBundle:Product:supprimer"}
+    requirements: { _method: post }
 

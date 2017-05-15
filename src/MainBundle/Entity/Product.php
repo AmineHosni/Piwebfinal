@@ -53,7 +53,7 @@ class Product
     /**
      * @var float
      *
-     * @ORM\Column(name="prixProduit", type="string", length=255)
+     * @ORM\Column(name="prixProduit", type="float", length=255)
      */
     private $prixProduit;
     /**
@@ -80,15 +80,15 @@ class Product
      */
     private $magasin ;
     /**
-     * @var integer
+     * @var double
      *
-     * @ORM\Column(name="quantiteStock")
+     * @ORM\Column(name="quantiteStock",type="integer",)
      */
     private $quantiteStock;
     /**
-     * @var string
+     * @var double
      *
-     * @ORM\Column(name="pourcentagePromotion",nullable=true)
+     * @ORM\Column(name="pourcentagePromotion",type="integer",nullable=true)
      */
     private $pourcentagePromotion;
     /**

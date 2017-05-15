@@ -83,7 +83,7 @@ class MagasinController extends Controller
         $em=$this->getDoctrine()->getManager();
 
         $magasins = $em->getRepository('MainBundle:Magasin')->findBy(array('owner' => $user ));
-        $products = $em->getRepository('MainBundle:Product')->findBy(array('Seller' => $user,'magasin' => Null ));
+        $products = $em->getRepository('MainBundle:Product')->findBy(array('Seller' => $user ));
 
 
 

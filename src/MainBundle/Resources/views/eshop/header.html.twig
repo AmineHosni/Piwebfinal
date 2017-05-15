@@ -111,7 +111,12 @@
 
 
         <div class="navbar-header">
-
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span
+                        class="icon-bar"> </span> <span class="icon-bar"> </span></button>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-cart"><i
+                        class="fa fa-shopping-cart colorWhite"> </i> <span
+                        class="cartRespons colorWhite"> Cart ($210.00) </span></button>
             <a class="navbar-brand " href="{{path('main_homepage')}}"> <img src="{{asset('bundles/eshop/images/logo.png')}}" alt="TSHOP"> </a>
 
             <!-- this part for mobile -->
@@ -132,7 +137,7 @@
                 <li class=""><a href="{{ path('user_index') }}"> Les membres
                     </a></li>
                 <li class=""><a href="{{ path('venteflash_list') }}"><i class="fa fa-fw fa-clock-o"></i> les ventes flash </a></li>
-                <li class=""><a href="{{ path('product_index') }}"><i class="fa fa-fw fa-bank"></i> les  produits </a></li>
+                <li class=""><a href="{{ path('product_index') }}"><i class="fa fa-fw fa-caret-square-o-down"></i> les  produits </a></li>
                 <li class=""><a href="{{ path('coupon_list') }}"><i class="fa fa-fw fa-sticky-note"></i> les coupons </a></li>
                 <li class=""><a href="{{ path('Magasin_List') }}"><i class="fa fa-fw fa-home"></i> les magazins </a></li>
 
