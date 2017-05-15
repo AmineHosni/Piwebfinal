@@ -539,14 +539,40 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         if (0 === strpos($pathinfo, '/admin')) {
+            // admin_index
+            if ($pathinfo === '/admin/index') {
+                return array (  '_controller' => 'MainBundle\\Controller\\CouponController::testAction',  '_route' => 'admin_index',);
+            }
+
             // admin_users
             if ($pathinfo === '/admin/members') {
                 return array (  '_controller' => 'MainBundle\\Controller\\UserController::indexAction',  '_route' => 'admin_users',);
             }
 
-            // aff_autoriser_coupon
-            if ($pathinfo === '/admin/affautoriser') {
-                return array (  '_controller' => 'MainBundle\\Controller\\CouponController::affautoriserAction',  '_route' => 'aff_autoriser_coupon',);
+            if (0 === strpos($pathinfo, '/admin/a')) {
+                // aff_autoriser_coupon
+                if ($pathinfo === '/admin/affautoriser') {
+                    return array (  '_controller' => 'MainBundle\\Controller\\CouponController::affautoriserAction',  '_route' => 'aff_autoriser_coupon',);
+                }
+
+                if (0 === strpos($pathinfo, '/admin/autProduit')) {
+                    // admin_autoriser_produit
+                    if ($pathinfo === '/admin/autProduit') {
+                        return array (  '_controller' => 'MainBundle\\Controller\\ProductController::indexAdminAction',  '_route' => 'admin_autoriser_produit',);
+                    }
+
+                    // admin_autoriser_produitAjax
+                    if ($pathinfo === '/admin/autProduitAjax') {
+                        return array (  '_controller' => 'MainBundle\\Controller\\ProductController::ajaxListAction',  '_route' => 'admin_autoriser_produitAjax',);
+                    }
+
+                }
+
+                // admin_ajaxListProd
+                if ($pathinfo === '/admin/ajaxproduit') {
+                    return array (  '_controller' => 'MainBundle\\Controller\\ProductController::ActiverAction',  '_route' => 'admin_ajaxListProd',);
+                }
+
             }
 
             // coupon_accepter

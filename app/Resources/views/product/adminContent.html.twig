@@ -1,0 +1,59 @@
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Liste Utilisateurs</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>libelle</th>
+                            <th>prix</th>
+                            <th>prixPromotion</th>
+
+
+                            <th>description</th>
+
+                            <th>etat</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for entity in entities %}
+                            <tr>
+                                <td {% if entity.Approuver=='0' %}class="active-row"{% endif %}>
+
+
+                                    {% if entity.Approuver=='0' %}
+                                    <input type="checkbox" name="products[]" value="{{ entity.id }}">{% endif %}</td>
+                                <td>{{ entity.libelle }}</td>
+                                <td>{{ entity.prixProduit }}</td>
+                                <td>{{ entity.pourcentagePromotion }}</td>
+                                <td>{{ entity.description }}</td>
+
+                                <td>{{ entity.Approuver }}</td>
+
+
+                                <td>{% if(entity.Approuver=='1')%} <span class="label label-success">APPROUVED</span> {% else %} <span class="label label-danger">ON HOLD</span> {% endif %}
+
+
+                                </td>
+                                <td class="hidden-print">
+                                    <div class="text-center">
+                                        <a class="btn btn-primary btn-xs" data-toggle="tooltip" data-placement="top" title="afficher" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                                        <a class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="modifier" href="#"><span class="glyphicon glyphicon-edit"></span></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div></section>

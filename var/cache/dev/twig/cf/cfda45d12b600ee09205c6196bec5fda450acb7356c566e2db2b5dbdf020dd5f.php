@@ -15,11 +15,11 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5a1155f7f12ce96e8a7e55c15924ac246dddac67ead6c6a6057aa8320b933cbc = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5a1155f7f12ce96e8a7e55c15924ac246dddac67ead6c6a6057aa8320b933cbc->enter($__internal_5a1155f7f12ce96e8a7e55c15924ac246dddac67ead6c6a6057aa8320b933cbc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
+        $__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4->enter($__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
 
-        $__internal_cb0a4303d41babdf3f9e5e50af1d11af9e446f65565d68a749ba9ac309dc9c04 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cb0a4303d41babdf3f9e5e50af1d11af9e446f65565d68a749ba9ac309dc9c04->enter($__internal_cb0a4303d41babdf3f9e5e50af1d11af9e446f65565d68a749ba9ac309dc9c04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
+        $__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630->enter($__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
 
         // line 1
         echo "<div class=\"navbar navbar-tshop navbar-fixed-top megamenu\" role=\"navigation\">
@@ -60,7 +60,10 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
             echo "\"><i class=\"fa fa fa-cog\"></i> Profile</a></li>
                                         <li><a href=\"my-address.html\"><i class=\"fa fa-map-marker\"></i> Addresses</a></li>
 
-                                        <li><a href=\"wishlist.html\" title=\"My wishlists\">
+                                        <li><a href=\"";
+            // line 27
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_wishlist");
+            echo "\" title=\"My wishlists\">
                                                 <i class=\"fa fa-heart\"></i>
                                                 My wishlists
                                             </a></li>
@@ -120,16 +123,52 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
         echo "    </div>
     <!--/.navbar-top-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class=\"container\">
+    
+   <div class=\"nav navbar-nav navbar-right hidden-xs\">
+                <div class=\"dropdown  cartMenu \"><a href=\"";
+        // line 96
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("my_cart");
+        echo "\" class=\"dropdown-toggle\" > <i
+                        class=\"fa fa-shopping-cart\"> </i> <span class=\"cartRespons\"> Mon Panier </span> </a>
+
+          
+                    <!--/.dropdown-menu-->
+                </div>
+                <!--/.cartMenu-->
+
+           
+                <!--/.search-box -->
+            </div>
+
+
+
+
+
+
         <div class=\"navbar-header\">
-            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span
-                        class=\"sr-only\"> Toggle navigation </span> <span class=\"icon-bar\"> </span> <span
-                        class=\"icon-bar\"> </span> <span class=\"icon-bar\"> </span></button>
-            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-cart\"><i
-                        class=\"fa fa-shopping-cart colorWhite\"> </i> <span
-                        class=\"cartRespons colorWhite\"> Cart (\$210.00) </span></button>
+
             <a class=\"navbar-brand \" href=\"";
-        // line 82
+        // line 115
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("main_homepage");
         echo "\"> <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/logo.png"), "html", null, true);
@@ -151,24 +190,24 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
         <div class=\"navbar-collapse collapse\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"\"><a href=\"";
-        // line 99
+        // line 132
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_index");
         echo "\"> Les membres
                     </a></li>
                 <li class=\"\"><a href=\"";
-        // line 101
+        // line 134
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("venteflash_list");
         echo "\"><i class=\"fa fa-fw fa-clock-o\"></i> les ventes flash </a></li>
                 <li class=\"\"><a href=\"";
-        // line 102
+        // line 135
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("product_index");
         echo "\"><i class=\"fa fa-fw fa-bank\"></i> les  produits </a></li>
                 <li class=\"\"><a href=\"";
-        // line 103
+        // line 136
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("coupon_list");
         echo "\"><i class=\"fa fa-fw fa-sticky-note\"></i> les coupons </a></li>
                 <li class=\"\"><a href=\"";
-        // line 104
+        // line 137
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Magasin_List");
         echo "\"><i class=\"fa fa-fw fa-home\"></i> les magazins </a></li>
 
@@ -191,7 +230,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3  col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 124
+        // line 157
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo1.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i class=\"fa fa-caret-right\"> </i> JEANS </span>
@@ -200,7 +239,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 130
+        // line 163
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo2.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i
@@ -209,7 +248,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 136
+        // line 169
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo3.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i class=\"fa fa-caret-right\"> </i> SHOES </span>
@@ -220,72 +259,11 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                 </li>
 
                 <!-- change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width -->
-                <li class=\"dropdown megamenu-80width \"><a data-toggle=\"dropdown\" class=\"dropdown-toggle\" href=\"#\"> SHOP
-                        <b class=\"caret\"> </b> </a>
-                    <ul class=\"dropdown-menu\">
-                        <li class=\"megamenu-content\">
 
-                            <!-- megamenu-content -->
 
-                            <ul class=\"col-lg-2  col-sm-2 col-md-2  unstyled noMarginLeft\">
-                                <li>
-                                    <p><strong> Women Collection </strong></p>
-                                </li>
-                                <li><a href=\"#\"> Kameez </a></li>
-                                <li><a href=\"#\"> Tops </a></li>
-                                <li><a href=\"#\"> Shoes </a></li>
-                                <li><a href=\"#\"> T shirt </a></li>
-                                <li><a href=\"#\"> TSHOP </a></li>
-                                <li><a href=\"#\"> Party Dress </a></li>
-                                <li><a href=\"#\"> Women Fragrances </a></li>
-                            </ul>
-                            <ul class=\"col-lg-2  col-sm-2 col-md-2  unstyled\">
-                                <li>
-                                    <p><strong> Men Collection </strong></p>
-                                </li>
-                                <li><a href=\"#\"> Panjabi </a></li>
-                                <li><a href=\"#\"> Male Fragrances </a></li>
-                                <li><a href=\"#\"> Scarf </a></li>
-                                <li><a href=\"#\"> Sandal </a></li>
-                                <li><a href=\"#\"> Underwear </a></li>
-                                <li><a href=\"#\"> Winter Collection </a></li>
-                                <li><a href=\"#\"> Men Accessories </a></li>
-                            </ul>
-                            <ul class=\"col-lg-2  col-sm-2 col-md-2  unstyled\">
-                                <li>
-                                    <p><strong> Top Brands </strong></p>
-                                </li>
-                                <li><a href=\"#\"> Diesel </a></li>
-                                <li><a href=\"#\"> Farah </a></li>
-                                <li><a href=\"#\"> G-Star RAW </a></li>
-                                <li><a href=\"#\"> Lyle & Scott </a></li>
-                                <li><a href=\"#\"> Pretty Green </a></li>
-                                <li><a href=\"#\"> TSHOP </a></li>
-                                <li><a href=\"#\"> TANJIM </a></li>
-                            </ul>
-                            <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-6\">
-                                <li class=\"no-margin productPopItem \"><a href=\"product-details.html\"> <img
-                                                class=\"img-responsive\" src=\"";
-        // line 190
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/g4.jpg"), "html", null, true);
-        echo "\" alt=\"img\"> </a> <a
-                                            class=\"text-center productInfo alpha90\" href=\"product-details.html\"> Eodem modo
-                                        typi <br>
-                                        <span> \$60 </span> </a></li>
-                            </ul>
-                            <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-6\">
-                                <li class=\"no-margin productPopItem relative\"><a href=\"product-details.html\"> <img
-                                                class=\"img-responsive\" src=\"";
-        // line 197
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/g5.jpg"), "html", null, true);
-        echo "\" alt=\"img\"> </a> <a
-                                            class=\"text-center productInfo alpha90\" href=\"product-details.html\"> Eodem modo
-                                        typi <br>
-                                        <span> \$60 </span> </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                <!-- change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width -->
+
+            
 
 
             </ul>
@@ -305,10 +283,10 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
 </div> <br><br>";
         
-        $__internal_5a1155f7f12ce96e8a7e55c15924ac246dddac67ead6c6a6057aa8320b933cbc->leave($__internal_5a1155f7f12ce96e8a7e55c15924ac246dddac67ead6c6a6057aa8320b933cbc_prof);
+        $__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4->leave($__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4_prof);
 
         
-        $__internal_cb0a4303d41babdf3f9e5e50af1d11af9e446f65565d68a749ba9ac309dc9c04->leave($__internal_cb0a4303d41babdf3f9e5e50af1d11af9e446f65565d68a749ba9ac309dc9c04_prof);
+        $__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630->leave($__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630_prof);
 
     }
 
@@ -324,7 +302,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     public function getDebugInfo()
     {
-        return array (  280 => 197,  270 => 190,  213 => 136,  204 => 130,  195 => 124,  172 => 104,  168 => 103,  164 => 102,  160 => 101,  155 => 99,  133 => 82,  120 => 71,  109 => 63,  105 => 62,  85 => 44,  70 => 32,  59 => 24,  55 => 23,  50 => 21,  31 => 4,  29 => 3,  25 => 1,);
+        return array (  252 => 169,  243 => 163,  234 => 157,  211 => 137,  207 => 136,  203 => 135,  199 => 134,  194 => 132,  172 => 115,  150 => 96,  123 => 71,  112 => 63,  108 => 62,  88 => 44,  73 => 32,  65 => 27,  59 => 24,  55 => 23,  50 => 21,  31 => 4,  29 => 3,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -363,7 +341,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                                         <li><a href=\"{{ path('fos_user_profile_show') }}\"><i class=\"fa fa fa-cog\"></i> Profile</a></li>
                                         <li><a href=\"my-address.html\"><i class=\"fa fa-map-marker\"></i> Addresses</a></li>
 
-                                        <li><a href=\"wishlist.html\" title=\"My wishlists\">
+                                        <li><a href=\"{{ path('user_wishlist') }}\" title=\"My wishlists\">
                                                 <i class=\"fa fa-heart\"></i>
                                                 My wishlists
                                             </a></li>
@@ -410,14 +388,47 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
     </div>
     <!--/.navbar-top-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class=\"container\">
+    
+   <div class=\"nav navbar-nav navbar-right hidden-xs\">
+                <div class=\"dropdown  cartMenu \"><a href=\"{{path('my_cart')}}\" class=\"dropdown-toggle\" > <i
+                        class=\"fa fa-shopping-cart\"> </i> <span class=\"cartRespons\"> Mon Panier </span> </a>
+
+          
+                    <!--/.dropdown-menu-->
+                </div>
+                <!--/.cartMenu-->
+
+           
+                <!--/.search-box -->
+            </div>
+
+
+
+
+
+
         <div class=\"navbar-header\">
-            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span
-                        class=\"sr-only\"> Toggle navigation </span> <span class=\"icon-bar\"> </span> <span
-                        class=\"icon-bar\"> </span> <span class=\"icon-bar\"> </span></button>
-            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-cart\"><i
-                        class=\"fa fa-shopping-cart colorWhite\"> </i> <span
-                        class=\"cartRespons colorWhite\"> Cart (\$210.00) </span></button>
+
             <a class=\"navbar-brand \" href=\"{{path('main_homepage')}}\"> <img src=\"{{asset('bundles/eshop/images/logo.png')}}\" alt=\"TSHOP\"> </a>
 
             <!-- this part for mobile -->
@@ -481,66 +492,11 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                 </li>
 
                 <!-- change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width -->
-                <li class=\"dropdown megamenu-80width \"><a data-toggle=\"dropdown\" class=\"dropdown-toggle\" href=\"#\"> SHOP
-                        <b class=\"caret\"> </b> </a>
-                    <ul class=\"dropdown-menu\">
-                        <li class=\"megamenu-content\">
 
-                            <!-- megamenu-content -->
 
-                            <ul class=\"col-lg-2  col-sm-2 col-md-2  unstyled noMarginLeft\">
-                                <li>
-                                    <p><strong> Women Collection </strong></p>
-                                </li>
-                                <li><a href=\"#\"> Kameez </a></li>
-                                <li><a href=\"#\"> Tops </a></li>
-                                <li><a href=\"#\"> Shoes </a></li>
-                                <li><a href=\"#\"> T shirt </a></li>
-                                <li><a href=\"#\"> TSHOP </a></li>
-                                <li><a href=\"#\"> Party Dress </a></li>
-                                <li><a href=\"#\"> Women Fragrances </a></li>
-                            </ul>
-                            <ul class=\"col-lg-2  col-sm-2 col-md-2  unstyled\">
-                                <li>
-                                    <p><strong> Men Collection </strong></p>
-                                </li>
-                                <li><a href=\"#\"> Panjabi </a></li>
-                                <li><a href=\"#\"> Male Fragrances </a></li>
-                                <li><a href=\"#\"> Scarf </a></li>
-                                <li><a href=\"#\"> Sandal </a></li>
-                                <li><a href=\"#\"> Underwear </a></li>
-                                <li><a href=\"#\"> Winter Collection </a></li>
-                                <li><a href=\"#\"> Men Accessories </a></li>
-                            </ul>
-                            <ul class=\"col-lg-2  col-sm-2 col-md-2  unstyled\">
-                                <li>
-                                    <p><strong> Top Brands </strong></p>
-                                </li>
-                                <li><a href=\"#\"> Diesel </a></li>
-                                <li><a href=\"#\"> Farah </a></li>
-                                <li><a href=\"#\"> G-Star RAW </a></li>
-                                <li><a href=\"#\"> Lyle & Scott </a></li>
-                                <li><a href=\"#\"> Pretty Green </a></li>
-                                <li><a href=\"#\"> TSHOP </a></li>
-                                <li><a href=\"#\"> TANJIM </a></li>
-                            </ul>
-                            <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-6\">
-                                <li class=\"no-margin productPopItem \"><a href=\"product-details.html\"> <img
-                                                class=\"img-responsive\" src=\"{{asset('bundles/eshop/images/site/g4.jpg')}}\" alt=\"img\"> </a> <a
-                                            class=\"text-center productInfo alpha90\" href=\"product-details.html\"> Eodem modo
-                                        typi <br>
-                                        <span> \$60 </span> </a></li>
-                            </ul>
-                            <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-6\">
-                                <li class=\"no-margin productPopItem relative\"><a href=\"product-details.html\"> <img
-                                                class=\"img-responsive\" src=\"{{asset('bundles/eshop/images/site/g5.jpg')}}\" alt=\"img\"> </a> <a
-                                            class=\"text-center productInfo alpha90\" href=\"product-details.html\"> Eodem modo
-                                        typi <br>
-                                        <span> \$60 </span> </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                <!-- change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width -->
+
+            
 
 
             </ul>

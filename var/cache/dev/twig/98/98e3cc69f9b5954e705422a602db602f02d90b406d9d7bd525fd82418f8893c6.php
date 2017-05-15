@@ -21,29 +21,29 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_df9a7fee8deb1abc191595e0a675b38e6d5eb9a44e65945ddb6bc1dac5e28c97 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_df9a7fee8deb1abc191595e0a675b38e6d5eb9a44e65945ddb6bc1dac5e28c97->enter($__internal_df9a7fee8deb1abc191595e0a675b38e6d5eb9a44e65945ddb6bc1dac5e28c97_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:Default:index.html.twig"));
+        $__internal_6a1880342751662e43857bc252ebd7c4497306516ad2741ec2e44efa69d34df0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6a1880342751662e43857bc252ebd7c4497306516ad2741ec2e44efa69d34df0->enter($__internal_6a1880342751662e43857bc252ebd7c4497306516ad2741ec2e44efa69d34df0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:Default:index.html.twig"));
 
-        $__internal_d74d903d5d7b7ed9bac38b10eab23f37b840d23e6c16df08a5988d18bbf70791 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d74d903d5d7b7ed9bac38b10eab23f37b840d23e6c16df08a5988d18bbf70791->enter($__internal_d74d903d5d7b7ed9bac38b10eab23f37b840d23e6c16df08a5988d18bbf70791_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:Default:index.html.twig"));
+        $__internal_d3dfd6a0785ccd490bcb3efb266e152d144f8bb1786aa0d2d68056dc453d7595 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d3dfd6a0785ccd490bcb3efb266e152d144f8bb1786aa0d2d68056dc453d7595->enter($__internal_d3dfd6a0785ccd490bcb3efb266e152d144f8bb1786aa0d2d68056dc453d7595_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:Default:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_df9a7fee8deb1abc191595e0a675b38e6d5eb9a44e65945ddb6bc1dac5e28c97->leave($__internal_df9a7fee8deb1abc191595e0a675b38e6d5eb9a44e65945ddb6bc1dac5e28c97_prof);
+        $__internal_6a1880342751662e43857bc252ebd7c4497306516ad2741ec2e44efa69d34df0->leave($__internal_6a1880342751662e43857bc252ebd7c4497306516ad2741ec2e44efa69d34df0_prof);
 
         
-        $__internal_d74d903d5d7b7ed9bac38b10eab23f37b840d23e6c16df08a5988d18bbf70791->leave($__internal_d74d903d5d7b7ed9bac38b10eab23f37b840d23e6c16df08a5988d18bbf70791_prof);
+        $__internal_d3dfd6a0785ccd490bcb3efb266e152d144f8bb1786aa0d2d68056dc453d7595->leave($__internal_d3dfd6a0785ccd490bcb3efb266e152d144f8bb1786aa0d2d68056dc453d7595_prof);
 
     }
 
     // line 2
     public function block_content($context, array $blocks = array())
     {
-        $__internal_2bfb4e5196b8e7e0a505a7bf61730ff7672d307143940785e14a83650d09681d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2bfb4e5196b8e7e0a505a7bf61730ff7672d307143940785e14a83650d09681d->enter($__internal_2bfb4e5196b8e7e0a505a7bf61730ff7672d307143940785e14a83650d09681d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_3a0fd1d68226e8a2a464f7246c2a7aff04f50bf5e3935d07af6b63e5cd52ec0e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3a0fd1d68226e8a2a464f7246c2a7aff04f50bf5e3935d07af6b63e5cd52ec0e->enter($__internal_3a0fd1d68226e8a2a464f7246c2a7aff04f50bf5e3935d07af6b63e5cd52ec0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_de11a3c3a9035a863a8568aea26a78717942adbcba53f197ce12ee8cc39e1271 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_de11a3c3a9035a863a8568aea26a78717942adbcba53f197ce12ee8cc39e1271->enter($__internal_de11a3c3a9035a863a8568aea26a78717942adbcba53f197ce12ee8cc39e1271_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_90e4d43d8f0ab7029ff898960d99f11f80df59fb97a2fe4e4b1adbaf4f145dd2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_90e4d43d8f0ab7029ff898960d99f11f80df59fb97a2fe4e4b1adbaf4f145dd2->enter($__internal_90e4d43d8f0ab7029ff898960d99f11f80df59fb97a2fe4e4b1adbaf4f145dd2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 3
         echo "
@@ -163,272 +163,10 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
     </div>
     <!--/.banner style1-->
 
-    <div class=\"container main-container\">
 
-        <!-- Main component call to action -->
-
-        <div class=\"row featuredPostContainer globalPadding style2\">
-            <h3 class=\"section-title style2 text-center\"><span>NEW ARRIVALS</span></h3>
-
-            <div id=\"productslider\" class=\"owl-carousel owl-theme\">
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 122
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/34.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive\"></a>
-
-                            <div class=\"promotion\"><span class=\"new-product\"> NEW</span> <span
-                                        class=\"discount\">15% OFF</span></div>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">consectetuer adipiscing </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 149
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/30.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive\"></a>
-
-                            <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">luptatum zzril delenit</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 175
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/36.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive\"></a>
-
-                            <div class=\"promotion\"><span class=\"new-product\"> NEW</span></div>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">eleifend option </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 201
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/9.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive\"></a>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">mutationem consuetudium </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 225
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/12.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">sequitur mutationem </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 248
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/13.jpg"), "html", null, true);
-        echo "\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">consuetudium lectorum.</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 272
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/21.jpg"), "html", null, true);
-        echo "\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">parum claram</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 296
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/24.jpg"), "html", null, true);
-        echo "\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">duis dolore </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"";
-        // line 320
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/15.jpg"), "html", null, true);
-        echo "\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">feugait nulla facilisi</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-            </div>
-            <!--/.productslider-->
-
-        </div>
-        <!--/.featuredPostContainer-->
-    </div>
     <!-- /main container -->
 
-    
+
     <!--/.parallax-image-1-->
 
     <div class=\"container main-container\">
@@ -443,254 +181,102 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
 
             <div class=\"container\">
                 <div class=\"row xsResponse categoryProduct\">
+                    ";
+        // line 120
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) ? $context["products"] : $this->getContext($context, "products")));
+        foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
+            // line 121
+            echo "
+                        <div class=\"item itemauto col-lg-3 col-md-3 col-sm-6 col-xs-6\">
+                            <div class=\"product\">
+                                <a class=\"tooltipHere\" href=\"";
+            // line 124
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("newwish", array("id" => $this->getAttribute($context["product"], "id", array()))), "html", null, true);
+            echo "\"
+                                   data-placement=\"left\">
+                                    <i class=\"glyphicon glyphicon-heart\"></i>
+                                </a>
 
 
-                    <div class=\"item itemauto col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
+                                <div class=\"imageHover\">
 
+                                    <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
 
-                            <div class=\"imageHover\">
+                                    <div id=\"carousel-id-1\" class=\"carousel slide\" data-ride=\"carousel\" data-interval=\"0\">
+                                        <!-- Indicators -->
+                                        <ol class=\"carousel-indicators\">
+                                            <li data-target=\"#carousel-id-1\" data-slide-to=\"0\" class=\"active\"></li>
+                                            <li data-target=\"#carousel-id-1\" data-slide-to=\"1\"></li>
+                                            <li data-target=\"#carousel-id-1\" data-slide-to=\"2\"></li>
+                                        </ol>
 
-                                <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-
-                                <div id=\"carousel-id-1\" class=\"carousel slide\" data-ride=\"carousel\" data-interval=\"0\">
-                                    <!-- Indicators -->
-                                    <ol class=\"carousel-indicators\">
-                                        <li data-target=\"#carousel-id-1\" data-slide-to=\"0\" class=\"active\"></li>
-                                        <li data-target=\"#carousel-id-1\" data-slide-to=\"1\"></li>
-                                        <li data-target=\"#carousel-id-1\" data-slide-to=\"2\"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class=\"carousel-inner\" role=\"listbox\">
-                                        <div class=\"item active\"><a href=\"product-details.html\"> <img
-                                                        src=\"";
-        // line 380
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/5.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive \"></a></div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"";
-        // line 381
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/21.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive \"></a>
+                                        <!-- Wrapper for slides -->
+                                        <div class=\"carousel-inner\" role=\"listbox\">
+                                            <div class=\"item active\"><a href=\"product-details.html\"> <img
+                                                            src=\"";
+            // line 145
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/5.jpg"), "html", null, true);
+            echo "\" alt=\"img\" class=\"img-responsive \"></a></div>
+                                            <div class=\"item\"><a href=\"product-details.html\"> <img src=\"";
+            // line 146
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/21.jpg"), "html", null, true);
+            echo "\" alt=\"img\" class=\"img-responsive \"></a>
+                                            </div>
+                                            <div class=\"item\"><a href=\"product-details.html\"> <img src=\"";
+            // line 148
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/30.jpg"), "html", null, true);
+            echo "\" alt=\"img\" class=\"img-responsive \"></a>
+                                            </div>
                                         </div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"";
-        // line 383
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/30.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive \"></a>
-                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class=\"left carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"prev\">
+                                            <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>
+                                            <span class=\"sr-only\">Previous</span>
+                                        </a>
+                                        <a class=\"right carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"next\">
+                                            <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>
+                                            <span class=\"sr-only\">Next</span>
+                                        </a>
                                     </div>
 
-                                    <!-- Controls -->
-                                    <a class=\"left carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"prev\">
-                                        <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Previous</span>
-                                    </a>
-                                    <a class=\"right carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"next\">
-                                        <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Next</span>
-                                    </a>
+
                                 </div>
 
 
-                            </div>
+                                <div class=\"description\">
+                                    <h4><a href=\"product-details.html\"> Product Slider </a></h4>
 
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Product Slider </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                        </div>
-                    </div>
-                    <!--/.item-->
-
-
-                    <div class=\"item itemauto col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
-
-
-                            <div class=\"imageHover\">
-
-                                <div id=\"carousel-id-2\" class=\"carousel slide carousel-fade\" data-ride=\"carousel\">
-                                    <!-- Indicators -->
-                                    <ol class=\"carousel-indicators\">
-                                        <li data-target=\"#carousel-id-2\" data-slide-to=\"0\" class=\"active\"></li>
-                                        <li data-target=\"#carousel-id-2\" data-slide-to=\"1\"></li>
-                                        <li data-target=\"#carousel-id-2\" data-slide-to=\"2\"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class=\"carousel-inner\" role=\"listbox\">
-                                        <div class=\"item active\"><a href=\"product-details.html\"> <img
-                                                        src=\"";
-        // line 446
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/22.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive \"></a></div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"";
-        // line 447
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/5.jpg"), "html", null, true);
-        echo "\"
-                                                                                               alt=\"img\"
-                                                                                               class=\"img-responsive \"></a>
-                                        </div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"";
-        // line 451
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/18.jpg"), "html", null, true);
-        echo "\"
-                                                                                               alt=\"img\"
-                                                                                               class=\"img-responsive \"></a>
-                                        </div>
+                                    <div class=\"grid-description\">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                     </div>
-
-                                    <!-- Controls -->
-                                    <a class=\"left carousel-control\" href=\"#carousel-id-2\" role=\"button\" data-slide=\"prev\">
-                                        <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Previous</span>
-                                    </a>
-                                    <a class=\"right carousel-control\" href=\"#carousel-id-2\" role=\"button\" data-slide=\"next\">
-                                        <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Next</span>
-                                    </a>
-                                </div>
-
-
+                                    <div class=\"list-description\">
+                                        <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
+                                            fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
+                                            odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
+                                            vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
+                                            sit amet placerat elit. </p>
+                                    </div>
+                                    <span class=\"size\">XL / XXL / S </span></div>
+                                <div class=\"price\"><span>\$25</span></div>
+                                <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"";
+            // line 183
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("new_panier", array("id" => $this->getAttribute($context["product"], "id", array()))), "html", null, true);
+            echo "\"> <span class=\"add2cart\"><i
+                                                    class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
                             </div>
-
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Slider FadeIn </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
                         </div>
-                    </div>
-
-                    <!--/.item-->
-                    <div class=\"item itemauto  col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
-
-
-                            <div class=\"imageHover\">
-                                <a href=\"product-details.html\">
-                                    <img src=\"";
-        // line 504
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/12.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive primaryImage\">
-                                    <img src=\"";
-        // line 505
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/21.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive secondaryImage\"></a>
-
-                                <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-                            </div>
-
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Hover FadeIn </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                        </div>
-                    </div>
-                    <!--/.item-->
-
-                    <div class=\"item itemauto  col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
-
-
-                            <div class=\"imageHover imageHoverFlip\">
-                                <a href=\"product-details.html\"><img src=\"";
-        // line 542
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/7.jpg"), "html", null, true);
-        echo "\" alt=\"img\"
-                                                                    class=\"img-responsive primaryImage\">
-                                    <img src=\"";
-        // line 544
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/product/13.jpg"), "html", null, true);
-        echo "\" alt=\"img\" class=\"img-responsive secondaryImage\"></a>
-
-                                <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-                            </div>
-
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Hover Flip </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                        </div>
-                    </div>
-                    <!--/.item-->
-
-
+                        <!--/.item-->
+                        <!--/.item-->
+                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 190
+        echo "
                 </div>
             </div>
 
@@ -705,121 +291,121 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
             <div class=\"container\">
                 <div class=\"row xsResponse\">
                     ";
-        // line 586
+        // line 204
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["modeles"]) ? $context["modeles"] : $this->getContext($context, "modeles")));
         foreach ($context['_seq'] as $context["_key"] => $context["modele"]) {
-            // line 587
-            echo "                    ";
+            // line 205
+            echo "                        ";
             if ((($this->getAttribute($context["modele"], "Qte", array()) > 0) && (twig_date_converter($this->env, $this->getAttribute($context["modele"], "datefin", array())) > twig_date_converter($this->env)))) {
-                // line 588
-                echo "                        <div class=\"item col-lg-3 col-md-3 col-sm-4 col-xs-6\">
-                            <div class=\"product\">
-                                <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\" data-placement=\"left\">
-                                    <i class=\"glyphicon glyphicon-heart\"></i>
-                                </a>
+                // line 206
+                echo "                            <div class=\"item col-lg-3 col-md-3 col-sm-4 col-xs-6\">
+                                <div class=\"product\">
+                                    <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\" data-placement=\"left\">
+                                        <i class=\"glyphicon glyphicon-heart\"></i>
+                                    </a>
 
-                                <div class=\"image\">
+                                    <div class=\"image\">
 
-                                    <a href=\"";
-                // line 596
+                                        <a href=\"";
+                // line 214
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("coupon_print", array("id" => $this->getAttribute($context["modele"], "id", array()))), "html", null, true);
                 echo "\"><img src=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(("images/products/" . $this->getAttribute($context["modele"], "imageName", array()))), "html", null, true);
                 echo "\" alt=\"img\" class=\"img-responsive\"></a>
 
-                                    <div class=\"promotion\"><span class=\"new-product\"> NEW</span> <span class=\"discount\">";
-                // line 598
+                                        <div class=\"promotion\"><span class=\"new-product\"> NEW</span> <span class=\"discount\">";
+                // line 216
                 echo twig_escape_filter($this->env, $this->getAttribute($context["modele"], "tauxreduction", array()), "html", null, true);
                 echo " DT Reduction</span></div>
-                                </div>
-                                <div class=\"description\">
-                                    <h4><a href=\"#\"><td>";
-                // line 601
+                                    </div>
+                                    <div class=\"description\">
+                                        <h4><a href=\"#\"><td>";
+                // line 219
                 echo twig_escape_filter($this->env, $this->getAttribute($context["modele"], "titre", array()), "html", null, true);
                 echo "</td></a></h4>
 
-                                    <p>";
-                // line 603
+                                        <p>";
+                // line 221
                 echo twig_escape_filter($this->env, $this->getAttribute($context["modele"], "description", array()), "html", null, true);
                 echo " </p></div>
-                                ";
-                // line 604
+                                    ";
+                // line 222
                 if ($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array())) {
-                    // line 605
-                    echo "                                    <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"";
+                    // line 223
+                    echo "                                        <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"";
                     echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("coupon_print", array("id" => $this->getAttribute($context["modele"], "id", array()))), "html", null, true);
                     echo "\"> <span class=\"add2cart\"><i class=\"glyphicon glyphicon-shopping-cart\"> </i> Imprimer Coupon </span> </a></div>
-                                ";
+                                    ";
                 } else {
-                    // line 607
-                    echo "                                    <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"";
+                    // line 225
+                    echo "                                        <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"";
                     echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_login");
                     echo "\"> <span class=\"add2cart\"><i class=\"glyphicon glyphicon-shopping-cart\"> </i> Imprimer Coupon </span> </a></div>
-                                ";
+                                    ";
                 }
-                // line 609
+                // line 227
                 echo "
+                                </div>
                             </div>
-                        </div>
                         ";
             }
-            // line 613
+            // line 231
             echo "                    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['modele'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 614
+        // line 232
         echo "                </div>
 
             </div>
             <div class=\"parallax-section parallax-image-1\">
-        <div class=\"container\">
-            <div class=\"row \">
-                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">
-                    <div class=\"parallax-content clearfix\">
-                        <h1 class=\"parallaxPrce\"> FREE </h1>
+                <div class=\"container\">
+                    <div class=\"row \">
+                        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">
+                            <div class=\"parallax-content clearfix\">
+                                <h1 class=\"parallaxPrce\"> FREE </h1>
 
-                        <h2 class=\"uppercase\">Impression GRATUITE! OBTENEZ DES COUPONS DE RéDUCTION GRATUITS </h2>
+                                <h2 class=\"uppercase\">Impression GRATUITE! OBTENEZ DES COUPONS DE RéDUCTION GRATUITS </h2>
 
 
-                        <div style=\"clear:both\"></div>
-                        <a class=\"btn btn-discover \" href=\"";
-        // line 628
+                                <div style=\"clear:both\"></div>
+                                <a class=\"btn btn-discover \" href=\"";
+        // line 246
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("coupon_list");
         echo "\"> <i class=\"fa fa-shopping-cart\"></i> Imprimer Maintenant </a></div>
+                        </div>
+                    </div>
+                    <!--/.row-->
                 </div>
+                <!--/.container-->
             </div>
-            <!--/.row-->
-        </div>
-        <!--/.container-->
-    </div>
         </div>
 
         <hr class=\"no-margin-top\">
         <div class=\"width100 section-block \">
             <div class=\"row featureImg\">
                 <div class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"category.html\"><img src=\"";
-        // line 640
+        // line 258
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/new-collection-1.jpg"), "html", null, true);
         echo "\"
                                                                                      class=\"img-responsive\" alt=\"img\"></a>
                 </div>
                 <div class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"category.html\"><img src=\"";
-        // line 643
+        // line 261
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/new-collection-2.jpg"), "html", null, true);
         echo "\"
                                                                                      class=\"img-responsive\" alt=\"img\"></a>
                 </div>
                 <div class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"category.html\"><img src=\"";
-        // line 646
+        // line 264
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/new-collection-3.jpg"), "html", null, true);
         echo "\"
                                                                                      class=\"img-responsive\" alt=\"img\"></a>
                 </div>
                 <div class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"category.html\"><img src=\"";
-        // line 649
+        // line 267
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/new-collection-4.jpg"), "html", null, true);
         echo "\"
                                                                                      class=\"img-responsive\" alt=\"img\"></a>
@@ -838,67 +424,67 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
                 <div class=\"col-lg-12\">
                     <ul class=\"no-margin brand-carousel owl-carousel owl-theme\">
                         <li><a><img src=\"";
-        // line 665
+        // line 283
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/1.gif"), "html", null, true);
         echo "\" alt=\"img\"></a></li>
                         <li><img src=\"";
-        // line 666
+        // line 284
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/2.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 667
+        // line 285
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/3.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 668
+        // line 286
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/4.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 669
+        // line 287
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/5.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 670
+        // line 288
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/6.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 671
+        // line 289
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/7.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 672
+        // line 290
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/8.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 673
+        // line 291
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/1.gif"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 674
+        // line 292
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/2.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 675
+        // line 293
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/3.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 676
+        // line 294
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/4.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 677
+        // line 295
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/5.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 678
+        // line 296
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/6.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 679
+        // line 297
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/7.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                         <li><img src=\"";
-        // line 680
+        // line 298
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/brand/8.png"), "html", null, true);
         echo "\" alt=\"img\"></li>
                     </ul>
@@ -942,10 +528,10 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
     <!-- End Modal -->
 ";
         
-        $__internal_de11a3c3a9035a863a8568aea26a78717942adbcba53f197ce12ee8cc39e1271->leave($__internal_de11a3c3a9035a863a8568aea26a78717942adbcba53f197ce12ee8cc39e1271_prof);
+        $__internal_90e4d43d8f0ab7029ff898960d99f11f80df59fb97a2fe4e4b1adbaf4f145dd2->leave($__internal_90e4d43d8f0ab7029ff898960d99f11f80df59fb97a2fe4e4b1adbaf4f145dd2_prof);
 
         
-        $__internal_2bfb4e5196b8e7e0a505a7bf61730ff7672d307143940785e14a83650d09681d->leave($__internal_2bfb4e5196b8e7e0a505a7bf61730ff7672d307143940785e14a83650d09681d_prof);
+        $__internal_3a0fd1d68226e8a2a464f7246c2a7aff04f50bf5e3935d07af6b63e5cd52ec0e->leave($__internal_3a0fd1d68226e8a2a464f7246c2a7aff04f50bf5e3935d07af6b63e5cd52ec0e_prof);
 
     }
 
@@ -961,7 +547,7 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
 
     public function getDebugInfo()
     {
-        return array (  902 => 680,  898 => 679,  894 => 678,  890 => 677,  886 => 676,  882 => 675,  878 => 674,  874 => 673,  870 => 672,  866 => 671,  862 => 670,  858 => 669,  854 => 668,  850 => 667,  846 => 666,  842 => 665,  823 => 649,  817 => 646,  811 => 643,  805 => 640,  790 => 628,  774 => 614,  768 => 613,  762 => 609,  756 => 607,  750 => 605,  748 => 604,  744 => 603,  739 => 601,  733 => 598,  726 => 596,  716 => 588,  713 => 587,  709 => 586,  664 => 544,  659 => 542,  619 => 505,  615 => 504,  559 => 451,  552 => 447,  548 => 446,  482 => 383,  477 => 381,  473 => 380,  410 => 320,  383 => 296,  356 => 272,  329 => 248,  303 => 225,  276 => 201,  247 => 175,  218 => 149,  188 => 122,  155 => 92,  140 => 80,  130 => 73,  107 => 53,  86 => 35,  66 => 18,  49 => 3,  40 => 2,  11 => 1,);
+        return array (  488 => 298,  484 => 297,  480 => 296,  476 => 295,  472 => 294,  468 => 293,  464 => 292,  460 => 291,  456 => 290,  452 => 289,  448 => 288,  444 => 287,  440 => 286,  436 => 285,  432 => 284,  428 => 283,  409 => 267,  403 => 264,  397 => 261,  391 => 258,  376 => 246,  360 => 232,  354 => 231,  348 => 227,  342 => 225,  336 => 223,  334 => 222,  330 => 221,  325 => 219,  319 => 216,  312 => 214,  302 => 206,  299 => 205,  295 => 204,  279 => 190,  266 => 183,  228 => 148,  223 => 146,  219 => 145,  195 => 124,  190 => 121,  186 => 120,  155 => 92,  140 => 80,  130 => 73,  107 => 53,  86 => 35,  66 => 18,  49 => 3,  40 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -1075,245 +661,10 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
     </div>
     <!--/.banner style1-->
 
-    <div class=\"container main-container\">
 
-        <!-- Main component call to action -->
-
-        <div class=\"row featuredPostContainer globalPadding style2\">
-            <h3 class=\"section-title style2 text-center\"><span>NEW ARRIVALS</span></h3>
-
-            <div id=\"productslider\" class=\"owl-carousel owl-theme\">
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/34.jpg')}}\" alt=\"img\" class=\"img-responsive\"></a>
-
-                            <div class=\"promotion\"><span class=\"new-product\"> NEW</span> <span
-                                        class=\"discount\">15% OFF</span></div>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">consectetuer adipiscing </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/30.jpg')}}\" alt=\"img\" class=\"img-responsive\"></a>
-
-                            <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">luptatum zzril delenit</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/36.jpg')}}\" alt=\"img\" class=\"img-responsive\"></a>
-
-                            <div class=\"promotion\"><span class=\"new-product\"> NEW</span></div>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">eleifend option </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/9.jpg')}}\" alt=\"img\" class=\"img-responsive\"></a>
-                        </div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">mutationem consuetudium </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/12.jpg')}}\" alt=\"img\" class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">sequitur mutationem </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/13.jpg')}}\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">consuetudium lectorum.</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/21.jpg')}}\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">parum claram</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/24.jpg')}}\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">duis dolore </a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-                <div class=\"item\">
-                    <div class=\"product\">
-                        <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                           data-placement=\"left\">
-                            <i class=\"glyphicon glyphicon-heart\"></i>
-                        </a>
-
-                        <div class=\"image\">
-                            <div class=\"quickview\">
-                                <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
-                                   data-target=\"#productSetailsModalAjax\">Quick View </a>
-                            </div>
-                            <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/15.jpg')}}\" alt=\"img\"
-                                                                class=\"img-responsive\"></a></div>
-                        <div class=\"description\">
-                            <h4><a href=\"product-details.html\">feugait nulla facilisi</a></h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <span class=\"size\">XL / XXL / S </span></div>
-                        <div class=\"price\"><span>\$25</span></div>
-                        <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                            class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                    </div>
-                </div>
-            </div>
-            <!--/.productslider-->
-
-        </div>
-        <!--/.featuredPostContainer-->
-    </div>
     <!-- /main container -->
 
-    
+
     <!--/.parallax-image-1-->
 
     <div class=\"container main-container\">
@@ -1328,223 +679,76 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
 
             <div class=\"container\">
                 <div class=\"row xsResponse categoryProduct\">
+                    {% for product in products %}
+
+                        <div class=\"item itemauto col-lg-3 col-md-3 col-sm-6 col-xs-6\">
+                            <div class=\"product\">
+                                <a class=\"tooltipHere\" href=\"{{path('newwish', {'id':product.id})}}\"
+                                   data-placement=\"left\">
+                                    <i class=\"glyphicon glyphicon-heart\"></i>
+                                </a>
 
 
-                    <div class=\"item itemauto col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
+                                <div class=\"imageHover\">
 
+                                    <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
 
-                            <div class=\"imageHover\">
+                                    <div id=\"carousel-id-1\" class=\"carousel slide\" data-ride=\"carousel\" data-interval=\"0\">
+                                        <!-- Indicators -->
+                                        <ol class=\"carousel-indicators\">
+                                            <li data-target=\"#carousel-id-1\" data-slide-to=\"0\" class=\"active\"></li>
+                                            <li data-target=\"#carousel-id-1\" data-slide-to=\"1\"></li>
+                                            <li data-target=\"#carousel-id-1\" data-slide-to=\"2\"></li>
+                                        </ol>
 
-                                <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-
-                                <div id=\"carousel-id-1\" class=\"carousel slide\" data-ride=\"carousel\" data-interval=\"0\">
-                                    <!-- Indicators -->
-                                    <ol class=\"carousel-indicators\">
-                                        <li data-target=\"#carousel-id-1\" data-slide-to=\"0\" class=\"active\"></li>
-                                        <li data-target=\"#carousel-id-1\" data-slide-to=\"1\"></li>
-                                        <li data-target=\"#carousel-id-1\" data-slide-to=\"2\"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class=\"carousel-inner\" role=\"listbox\">
-                                        <div class=\"item active\"><a href=\"product-details.html\"> <img
-                                                        src=\"{{asset('bundles/eshop/images/product/5.jpg')}}\" alt=\"img\" class=\"img-responsive \"></a></div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"{{asset('bundles/eshop/images/product/21.jpg')}}\" alt=\"img\" class=\"img-responsive \"></a>
+                                        <!-- Wrapper for slides -->
+                                        <div class=\"carousel-inner\" role=\"listbox\">
+                                            <div class=\"item active\"><a href=\"product-details.html\"> <img
+                                                            src=\"{{asset('bundles/eshop/images/product/5.jpg')}}\" alt=\"img\" class=\"img-responsive \"></a></div>
+                                            <div class=\"item\"><a href=\"product-details.html\"> <img src=\"{{asset('bundles/eshop/images/product/21.jpg')}}\" alt=\"img\" class=\"img-responsive \"></a>
+                                            </div>
+                                            <div class=\"item\"><a href=\"product-details.html\"> <img src=\"{{asset('bundles/eshop/images/product/30.jpg')}}\" alt=\"img\" class=\"img-responsive \"></a>
+                                            </div>
                                         </div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"{{asset('bundles/eshop/images/product/30.jpg')}}\" alt=\"img\" class=\"img-responsive \"></a>
-                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class=\"left carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"prev\">
+                                            <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>
+                                            <span class=\"sr-only\">Previous</span>
+                                        </a>
+                                        <a class=\"right carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"next\">
+                                            <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>
+                                            <span class=\"sr-only\">Next</span>
+                                        </a>
                                     </div>
 
-                                    <!-- Controls -->
-                                    <a class=\"left carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"prev\">
-                                        <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Previous</span>
-                                    </a>
-                                    <a class=\"right carousel-control\" href=\"#carousel-id-1\" role=\"button\" data-slide=\"next\">
-                                        <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Next</span>
-                                    </a>
+
                                 </div>
 
 
-                            </div>
+                                <div class=\"description\">
+                                    <h4><a href=\"product-details.html\"> Product Slider </a></h4>
 
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Product Slider </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                        </div>
-                    </div>
-                    <!--/.item-->
-
-
-                    <div class=\"item itemauto col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
-
-
-                            <div class=\"imageHover\">
-
-                                <div id=\"carousel-id-2\" class=\"carousel slide carousel-fade\" data-ride=\"carousel\">
-                                    <!-- Indicators -->
-                                    <ol class=\"carousel-indicators\">
-                                        <li data-target=\"#carousel-id-2\" data-slide-to=\"0\" class=\"active\"></li>
-                                        <li data-target=\"#carousel-id-2\" data-slide-to=\"1\"></li>
-                                        <li data-target=\"#carousel-id-2\" data-slide-to=\"2\"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class=\"carousel-inner\" role=\"listbox\">
-                                        <div class=\"item active\"><a href=\"product-details.html\"> <img
-                                                        src=\"{{asset('bundles/eshop/images/product/22.jpg')}}\" alt=\"img\" class=\"img-responsive \"></a></div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"{{asset('bundles/eshop/images/product/5.jpg')}}\"
-                                                                                               alt=\"img\"
-                                                                                               class=\"img-responsive \"></a>
-                                        </div>
-                                        <div class=\"item\"><a href=\"product-details.html\"> <img src=\"{{asset('bundles/eshop/images/product/18.jpg')}}\"
-                                                                                               alt=\"img\"
-                                                                                               class=\"img-responsive \"></a>
-                                        </div>
+                                    <div class=\"grid-description\">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                     </div>
-
-                                    <!-- Controls -->
-                                    <a class=\"left carousel-control\" href=\"#carousel-id-2\" role=\"button\" data-slide=\"prev\">
-                                        <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Previous</span>
-                                    </a>
-                                    <a class=\"right carousel-control\" href=\"#carousel-id-2\" role=\"button\" data-slide=\"next\">
-                                        <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>
-                                        <span class=\"sr-only\">Next</span>
-                                    </a>
-                                </div>
-
-
+                                    <div class=\"list-description\">
+                                        <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
+                                            fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
+                                            odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
+                                            vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
+                                            sit amet placerat elit. </p>
+                                    </div>
+                                    <span class=\"size\">XL / XXL / S </span></div>
+                                <div class=\"price\"><span>\$25</span></div>
+                                <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"{{path('new_panier', {'id':product.id})}}\"> <span class=\"add2cart\"><i
+                                                    class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
                             </div>
-
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Slider FadeIn </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
                         </div>
-                    </div>
-
-                    <!--/.item-->
-                    <div class=\"item itemauto  col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
-
-
-                            <div class=\"imageHover\">
-                                <a href=\"product-details.html\">
-                                    <img src=\"{{asset('bundles/eshop/images/product/12.jpg')}}\" alt=\"img\" class=\"img-responsive primaryImage\">
-                                    <img src=\"{{asset('bundles/eshop/images/product/21.jpg')}}\" alt=\"img\" class=\"img-responsive secondaryImage\"></a>
-
-                                <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-                            </div>
-
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Hover FadeIn </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                        </div>
-                    </div>
-                    <!--/.item-->
-
-                    <div class=\"item itemauto  col-lg-3 col-md-3 col-sm-6 col-xs-6\">
-                        <div class=\"product\">
-                            <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\"
-                               data-placement=\"left\">
-                                <i class=\"glyphicon glyphicon-heart\"></i>
-                            </a>
-
-
-                            <div class=\"imageHover imageHoverFlip\">
-                                <a href=\"product-details.html\"><img src=\"{{asset('bundles/eshop/images/product/7.jpg')}}\" alt=\"img\"
-                                                                    class=\"img-responsive primaryImage\">
-                                    <img src=\"{{asset('bundles/eshop/images/product/13.jpg')}}\" alt=\"img\" class=\"img-responsive secondaryImage\"></a>
-
-                                <div class=\"promotion\"><span class=\"discount\">15% OFF</span></div>
-                            </div>
-
-
-                            <div class=\"description\">
-                                <h4><a href=\"product-details.html\"> Hover Flip </a></h4>
-
-                                <div class=\"grid-description\">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class=\"list-description\">
-                                    <p> Sed sed rutrum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Pellentesque risus lacus, iaculis in ante vitae, viverra hendrerit ante. Aliquam vel
-                                        fermentum elit. Morbi rhoncus, neque in vulputate facilisis, leo tortor sollicitudin
-                                        odio, quis pellentesque lorem nisi quis enim. In dolor mi, hendrerit at blandit
-                                        vulputate, congue a purus. Sed eget turpis sit amet orci euismod accumsan. Praesent
-                                        sit amet placerat elit. </p>
-                                </div>
-                                <span class=\"size\">XL / XXL / S </span></div>
-                            <div class=\"price\"><span>\$25</span></div>
-                            <div class=\"action-control\"><a class=\"btn btn-primary\"> <span class=\"add2cart\"><i
-                                                class=\"glyphicon glyphicon-shopping-cart\"> </i> Add to cart </span> </a></div>
-                        </div>
-                    </div>
-                    <!--/.item-->
-
+                        <!--/.item-->
+                        <!--/.item-->
+                    {% endfor %}
 
                 </div>
             </div>
@@ -1560,54 +764,54 @@ class __TwigTemplate_3e804c2f6a8867ac51e32d5c25af2c1dc777c71efaf0177ad87606e4716
             <div class=\"container\">
                 <div class=\"row xsResponse\">
                     {% for modele in modeles %}
-                    {% if  modele.Qte> 0 and date(modele.datefin) > date() %}
-                        <div class=\"item col-lg-3 col-md-3 col-sm-4 col-xs-6\">
-                            <div class=\"product\">
-                                <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\" data-placement=\"left\">
-                                    <i class=\"glyphicon glyphicon-heart\"></i>
-                                </a>
+                        {% if  modele.Qte> 0 and date(modele.datefin) > date() %}
+                            <div class=\"item col-lg-3 col-md-3 col-sm-4 col-xs-6\">
+                                <div class=\"product\">
+                                    <a class=\"add-fav tooltipHere\" data-toggle=\"tooltip\" data-original-title=\"Add to Wishlist\" data-placement=\"left\">
+                                        <i class=\"glyphicon glyphicon-heart\"></i>
+                                    </a>
 
-                                <div class=\"image\">
+                                    <div class=\"image\">
 
-                                    <a href=\"{{path('coupon_print', {'id':modele.id})}}\"><img src=\"{{ asset('images/products/' ~ modele.imageName)}}\" alt=\"img\" class=\"img-responsive\"></a>
+                                        <a href=\"{{path('coupon_print', {'id':modele.id})}}\"><img src=\"{{ asset('images/products/' ~ modele.imageName)}}\" alt=\"img\" class=\"img-responsive\"></a>
 
-                                    <div class=\"promotion\"><span class=\"new-product\"> NEW</span> <span class=\"discount\">{{modele.tauxreduction}} DT Reduction</span></div>
+                                        <div class=\"promotion\"><span class=\"new-product\"> NEW</span> <span class=\"discount\">{{modele.tauxreduction}} DT Reduction</span></div>
+                                    </div>
+                                    <div class=\"description\">
+                                        <h4><a href=\"#\"><td>{{modele.titre}}</td></a></h4>
+
+                                        <p>{{modele.description}} </p></div>
+                                    {% if app.user %}
+                                        <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"{{path('coupon_print', {'id':modele.id})}}\"> <span class=\"add2cart\"><i class=\"glyphicon glyphicon-shopping-cart\"> </i> Imprimer Coupon </span> </a></div>
+                                    {% else %}
+                                        <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"{{path('fos_user_security_login')}}\"> <span class=\"add2cart\"><i class=\"glyphicon glyphicon-shopping-cart\"> </i> Imprimer Coupon </span> </a></div>
+                                    {% endif %}
+
                                 </div>
-                                <div class=\"description\">
-                                    <h4><a href=\"#\"><td>{{modele.titre}}</td></a></h4>
-
-                                    <p>{{modele.description}} </p></div>
-                                {% if app.user %}
-                                    <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"{{path('coupon_print', {'id':modele.id})}}\"> <span class=\"add2cart\"><i class=\"glyphicon glyphicon-shopping-cart\"> </i> Imprimer Coupon </span> </a></div>
-                                {% else %}
-                                    <div class=\"action-control\"><a class=\"btn btn-primary\" href=\"{{path('fos_user_security_login')}}\"> <span class=\"add2cart\"><i class=\"glyphicon glyphicon-shopping-cart\"> </i> Imprimer Coupon </span> </a></div>
-                                {% endif %}
-
                             </div>
-                        </div>
                         {% endif %}
                     {% endfor %}
                 </div>
 
             </div>
             <div class=\"parallax-section parallax-image-1\">
-        <div class=\"container\">
-            <div class=\"row \">
-                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">
-                    <div class=\"parallax-content clearfix\">
-                        <h1 class=\"parallaxPrce\"> FREE </h1>
+                <div class=\"container\">
+                    <div class=\"row \">
+                        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">
+                            <div class=\"parallax-content clearfix\">
+                                <h1 class=\"parallaxPrce\"> FREE </h1>
 
-                        <h2 class=\"uppercase\">Impression GRATUITE! OBTENEZ DES COUPONS DE RéDUCTION GRATUITS </h2>
+                                <h2 class=\"uppercase\">Impression GRATUITE! OBTENEZ DES COUPONS DE RéDUCTION GRATUITS </h2>
 
 
-                        <div style=\"clear:both\"></div>
-                        <a class=\"btn btn-discover \" href=\"{{path('coupon_list')}}\"> <i class=\"fa fa-shopping-cart\"></i> Imprimer Maintenant </a></div>
+                                <div style=\"clear:both\"></div>
+                                <a class=\"btn btn-discover \" href=\"{{path('coupon_list')}}\"> <i class=\"fa fa-shopping-cart\"></i> Imprimer Maintenant </a></div>
+                        </div>
+                    </div>
+                    <!--/.row-->
                 </div>
+                <!--/.container-->
             </div>
-            <!--/.row-->
-        </div>
-        <!--/.container-->
-    </div>
         </div>
 
         <hr class=\"no-margin-top\">

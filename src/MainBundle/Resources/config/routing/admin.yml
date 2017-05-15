@@ -1,3 +1,7 @@
+admin_index:
+    path:     /index
+    defaults: { _controller: "MainBundle:Coupon:test" }
+
 admin_users:
     path:     /members
     defaults: { _controller: "MainBundle:User:index" }
@@ -7,6 +11,16 @@ admin_users:
 aff_autoriser_coupon:
     path:     /affautoriser
     defaults: { _controller: "MainBundle:Coupon:affautoriser" }
+admin_autoriser_produit:
+    path:     /autProduit
+    defaults: { _controller: "MainBundle:Product:indexAdmin" }
+admin_autoriser_produitAjax:
+    path:     /autProduitAjax
+    defaults: { _controller: "MainBundle:Product:ajaxList" }
+admin_ajaxListProd:
+    path:  /ajaxproduit
+    defaults: { _controller: "MainBundle:Product:Activer"}
+    requirements: { _method: post }
 
 coupon_accepter:
     path:     /traite/{id}

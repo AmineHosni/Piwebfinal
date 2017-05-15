@@ -5,6 +5,8 @@ namespace MainBundle\Controller;
 use  MainBundle\Entity\Product;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
 use DateTimeImmutable;
 use MainBundle\Repository\ProductRepository;
 use Symfony\Component\Validator\Constraints\DateTime;
@@ -23,6 +25,42 @@ class ProductController extends Controller
      * Lists all product entities.
      *
      */
+
+
+    public function indexAdminAction()
+    {
+        return $this->render(':product:adminList.html.twig');
+    }
+    public function ajaxListAction(Request $request) {
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('MainBundle:Product')->findAll();
+        return $this->render('product/adminContent.html.twig', array(
+            'entities' => $entities,
+        ));
+    }
+    public function ActiverAction(Request $request) {
+        $em= $this->getDoctrine()->getManager();
+
+
+        $products = $request->get('products');
+        foreach ($products as $id) {
+            $p= $em->getRepository('MainBundle:Product')->find($id);
+
+
+                $p->setApprouver("1");
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($p);
+            $em->flush();
+
+
+        }
+        return new Response('1');
+    }
+
+
+
+
     public function indexAction()
     {
         $datenow=new \DateTimeImmutable();
@@ -92,7 +130,7 @@ class ProductController extends Controller
 
 
             $product->setSeller($id_user);
-            $product->setApprouver('En Attente');
+            $product->setApprouver('0');
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($product);

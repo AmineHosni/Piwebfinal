@@ -11,7 +11,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * Produit
- * @ORM\Entity
+ *@ORM\Entity(repositoryClass="MainBundle\Entity\PanierRepository")
  * @Vich\Uploadable
  * @ORM\Table(name="produit")
  */
