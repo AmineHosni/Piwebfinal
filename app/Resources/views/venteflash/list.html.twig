@@ -1,6 +1,10 @@
 
 {% extends 'MainBundle:eshop:main.html.twig' %}
 {% block content %}
+
+
+<div class="container main-container">
+
     <h2 xmlns="http://www.w3.org/1999/html"> <i class=" glyphicon glyphicon-flash"></i> les ventes flashes ouvertes</h2>
     <div class="container">
         <div class="row">
@@ -19,7 +23,9 @@
     </div>
  <br>
     <br>
-
+    <div class="container main-container">
+        <a class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="modifier" href= "{{ path('venteflash_index')}}"><span class="glyphicon glyphicon-calendar"> </span>gerer mes ventes flash </a>
+ <br><br>
     <div class="row featuredPostContainer ">
         <div class="featuredImageLook3">
             {% for venteFlash in venteFlashes %}
@@ -40,7 +46,7 @@
 
                     <!--/.box-content-overly -->
                     <div class="img-title"><h1>{{ venteFlash.nom  |trans }}</h1> </div>
-                    <a class="img-block" href="{{ path("venteflash_show",{"id":venteFlash.id}) }}" > <img class="img-responsive" src="{{ asset('bundles/images/')~ venteFlash.imageName }}" }}  alt="img"  height="400" width="600"></a>
+                    <a class="img-block" href="{{ path("venteflash_show",{"id":venteFlash.id}) }}" > <img class="img-responsive" src="{{ asset('bundles/images/')~ venteFlash.imageName }}" }}  alt="img"  height="300" width="600"  ></a>
                         <div class=container"><h1> <div id={{ venteFlash.id  |trans }} >  </div></h1></div>
                     </div>
                     </div>
@@ -103,7 +109,12 @@
 
             {% endfor %}
         </div></div></div>
-    </div>
+    </div>    </div>
+
+
+
+
+
 
 {% endblock %}
 

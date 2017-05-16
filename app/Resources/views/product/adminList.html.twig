@@ -1,10 +1,8 @@
 {% extends "::base1.html.twig" %}
 {% block body %}
     <div class="content-wrapper">
-
-
-        <br><br>
-        <form id="jsform" >
+    <br><br>
+        <form id="jsform" align="center">
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Split button -->
@@ -13,19 +11,19 @@
                         <p> liste des produits</p>
                     </h1>
 
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-lg btn-danger" id="js-activer" data-action="1" > approuver  </button>
-
-
-                    </div>
-
                 </div>
             </div>
             <div id="container" class="row">
 
                 <div id="xcontainer" class="row">
 
-                </div>            </div>
+                </div>
+                <div class="btn-group" align="right">
+                    <button type="button" class="btn btn-lg btn-success" id="js-activer" data-action="1" > approuver  </button>
+                    <button type="button" class="btn btn-lg btn-danger" id="js-supprimer" data-action="1" > Supprimer  </button>
+
+                </div>
+            </div>
 
         </form>            </div>
 
@@ -41,6 +39,12 @@
 
             $('#js-activer').on('click', function () {
                 var url = '{{ path('admin_ajaxListProd', {'etat': 1111 }) }}',
+                        etat = $(this).data('action');
+                jsFormUrl = url.replace('1111', etat);
+                ajaxPost('activer');
+            });
+            $('#js-supprimer').on('click', function () {
+                var url = '{{ path('admin_ajaxsupprimer', {'etat': 1111 }) }}',
                         etat = $(this).data('action');
                 jsFormUrl = url.replace('1111', etat);
                 ajaxPost('activer');

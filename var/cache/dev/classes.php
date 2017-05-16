@@ -9716,7 +9716,6 @@ if (isset($this->etags[$request])) {
 $response->setETag($this->etags[$request]);
 unset($this->etags[$request]);
 }
-$event->setResponse($response);
 }
 public static function getSubscribedEvents()
 {

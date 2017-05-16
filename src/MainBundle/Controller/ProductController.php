@@ -225,19 +225,19 @@ class ProductController extends Controller
      * Deletes a product entity.
      *
      */
-    public function deleteAction(Request $request, Product $product)
+    public function deleteAction($id)
     {
-        $form = $this->createDeleteForm($product);
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($product);
-            $em->flush($product);
-        }
+        $em = $this->getDoctrine()->getEntityManager();
+        $mag = $em->getRepository('MainBundle:Product')->find($id);
 
+        $em->remove($mag);
+        $em->flush();
         return $this->redirectToRoute('product_index');
+
     }
+
+
 
 
     /**

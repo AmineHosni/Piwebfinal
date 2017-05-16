@@ -216,15 +216,9 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             not_venteflash_edit:
 
             // venteflash_delete
-            if (preg_match('#^/venteflash/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if ($this->context->getMethod() != 'DELETE') {
-                    $allow[] = 'DELETE';
-                    goto not_venteflash_delete;
-                }
-
+            if (0 === strpos($pathinfo, '/venteflash/delete') && preg_match('#^/venteflash/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'venteflash_delete')), array (  '_controller' => 'MainBundle\\Controller\\VenteFlashController::deleteAction',));
             }
-            not_venteflash_delete:
 
             // venteflash_list
             if ($pathinfo === '/venteflash/list') {
@@ -340,20 +334,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_product_edit:
 
-            // product_delete
-            if (preg_match('#^/product/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if ($this->context->getMethod() != 'DELETE') {
-                    $allow[] = 'DELETE';
-                    goto not_product_delete;
+            if (0 === strpos($pathinfo, '/product/d')) {
+                // product_delete
+                if (0 === strpos($pathinfo, '/product/delete') && preg_match('#^/product/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'product_delete')), array (  '_controller' => 'MainBundle\\Controller\\ProductController::deleteAction',));
                 }
 
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'product_delete')), array (  '_controller' => 'MainBundle\\Controller\\ProductController::deleteAction',));
-            }
-            not_product_delete:
+                // product_change
+                if ($pathinfo === '/product/data') {
+                    return array (  '_controller' => 'MainBundle\\Controller\\ProductController::projetajaxAction',  '_route' => 'product_change',);
+                }
 
-            // product_change
-            if ($pathinfo === '/product/data') {
-                return array (  '_controller' => 'MainBundle\\Controller\\ProductController::projetajaxAction',  '_route' => 'product_change',);
             }
 
         }
@@ -593,6 +584,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             // admin_ajaxList
             if ($pathinfo === '/admin/users') {
                 return array (  '_controller' => 'MainBundle\\Controller\\UserController::ajaxListAction',  '_route' => 'admin_ajaxList',);
+            }
+
+            // admin_ajaxsupprimer
+            if ($pathinfo === '/admin/ajaxproduit/supprimer') {
+                return array (  '_controller' => 'MainBundle\\Controller\\ProductController::supprimerAction',  '_route' => 'admin_ajaxsupprimer',);
             }
 
         }

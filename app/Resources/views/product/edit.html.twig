@@ -3,7 +3,9 @@
         {% form_theme edit_form 'bootstrap_3_layout.html.twig' %}
 
         {% block content %}
-        <br>
+            <div class="container main-container">
+
+            <br>
             <div class="modal-dialog">
             <div class="modal-content">
             <div class="row featuredPostContainer globalPadding style2">
@@ -37,10 +39,10 @@
 
                 <input type="submit" value="Edit" />
 
-                {{ form_end(edit_form) }}
 
 
-            </div>
+            </div>            </div>
 
 
-{% endblock %}
+
+        {% endblock %}

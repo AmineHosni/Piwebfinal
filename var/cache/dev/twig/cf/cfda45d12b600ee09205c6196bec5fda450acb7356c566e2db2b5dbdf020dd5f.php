@@ -15,11 +15,11 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4->enter($__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
+        $__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d->enter($__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
 
-        $__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630->enter($__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
+        $__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773->enter($__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
 
         // line 1
         echo "<div class=\"navbar navbar-tshop navbar-fixed-top megamenu\" role=\"navigation\">
@@ -166,9 +166,14 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
 
         <div class=\"navbar-header\">
-
+            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span
+                        class=\"sr-only\"> Toggle navigation </span> <span class=\"icon-bar\"> </span> <span
+                        class=\"icon-bar\"> </span> <span class=\"icon-bar\"> </span></button>
+            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-cart\"><i
+                        class=\"fa fa-shopping-cart colorWhite\"> </i> <span
+                        class=\"cartRespons colorWhite\"> Cart (\$210.00) </span></button>
             <a class=\"navbar-brand \" href=\"";
-        // line 115
+        // line 120
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("main_homepage");
         echo "\"> <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/logo.png"), "html", null, true);
@@ -190,24 +195,24 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
         <div class=\"navbar-collapse collapse\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"\"><a href=\"";
-        // line 132
+        // line 137
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_index");
         echo "\"> Les membres
                     </a></li>
                 <li class=\"\"><a href=\"";
-        // line 134
+        // line 139
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("venteflash_list");
         echo "\"><i class=\"fa fa-fw fa-clock-o\"></i> les ventes flash </a></li>
                 <li class=\"\"><a href=\"";
-        // line 135
+        // line 140
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("product_index");
-        echo "\"><i class=\"fa fa-fw fa-bank\"></i> les  produits </a></li>
+        echo "\"><i class=\"fa fa-fw fa-caret-square-o-down\"></i> les  produits </a></li>
                 <li class=\"\"><a href=\"";
-        // line 136
+        // line 141
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("coupon_list");
         echo "\"><i class=\"fa fa-fw fa-sticky-note\"></i> les coupons </a></li>
                 <li class=\"\"><a href=\"";
-        // line 137
+        // line 142
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Magasin_List");
         echo "\"><i class=\"fa fa-fw fa-home\"></i> les magazins </a></li>
 
@@ -230,7 +235,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3  col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 157
+        // line 162
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo1.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i class=\"fa fa-caret-right\"> </i> JEANS </span>
@@ -239,7 +244,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 163
+        // line 168
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo2.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i
@@ -248,7 +253,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 169
+        // line 174
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo3.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i class=\"fa fa-caret-right\"> </i> SHOES </span>
@@ -283,10 +288,10 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
 </div> <br><br>";
         
-        $__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4->leave($__internal_8016027b3bb192ec1f4148888fbe6dee36350c76cc9ab9bca6ad27274398e7f4_prof);
+        $__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d->leave($__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d_prof);
 
         
-        $__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630->leave($__internal_264ac8e625d922a7898b42d51a666e488a17da03dd13a7236c8a0d0437395630_prof);
+        $__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773->leave($__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773_prof);
 
     }
 
@@ -302,7 +307,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     public function getDebugInfo()
     {
-        return array (  252 => 169,  243 => 163,  234 => 157,  211 => 137,  207 => 136,  203 => 135,  199 => 134,  194 => 132,  172 => 115,  150 => 96,  123 => 71,  112 => 63,  108 => 62,  88 => 44,  73 => 32,  65 => 27,  59 => 24,  55 => 23,  50 => 21,  31 => 4,  29 => 3,  25 => 1,);
+        return array (  257 => 174,  248 => 168,  239 => 162,  216 => 142,  212 => 141,  208 => 140,  204 => 139,  199 => 137,  177 => 120,  150 => 96,  123 => 71,  112 => 63,  108 => 62,  88 => 44,  73 => 32,  65 => 27,  59 => 24,  55 => 23,  50 => 21,  31 => 4,  29 => 3,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -428,7 +433,12 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
 
         <div class=\"navbar-header\">
-
+            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span
+                        class=\"sr-only\"> Toggle navigation </span> <span class=\"icon-bar\"> </span> <span
+                        class=\"icon-bar\"> </span> <span class=\"icon-bar\"> </span></button>
+            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-cart\"><i
+                        class=\"fa fa-shopping-cart colorWhite\"> </i> <span
+                        class=\"cartRespons colorWhite\"> Cart (\$210.00) </span></button>
             <a class=\"navbar-brand \" href=\"{{path('main_homepage')}}\"> <img src=\"{{asset('bundles/eshop/images/logo.png')}}\" alt=\"TSHOP\"> </a>
 
             <!-- this part for mobile -->
@@ -449,7 +459,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                 <li class=\"\"><a href=\"{{ path('user_index') }}\"> Les membres
                     </a></li>
                 <li class=\"\"><a href=\"{{ path('venteflash_list') }}\"><i class=\"fa fa-fw fa-clock-o\"></i> les ventes flash </a></li>
-                <li class=\"\"><a href=\"{{ path('product_index') }}\"><i class=\"fa fa-fw fa-bank\"></i> les  produits </a></li>
+                <li class=\"\"><a href=\"{{ path('product_index') }}\"><i class=\"fa fa-fw fa-caret-square-o-down\"></i> les  produits </a></li>
                 <li class=\"\"><a href=\"{{ path('coupon_list') }}\"><i class=\"fa fa-fw fa-sticky-note\"></i> les coupons </a></li>
                 <li class=\"\"><a href=\"{{ path('Magasin_List') }}\"><i class=\"fa fa-fw fa-home\"></i> les magazins </a></li>
 
@@ -514,6 +524,6 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     <!--/.search-full-->
 
-</div> <br><br>", "MainBundle:eshop:header.html.twig", "C:\\wamp64\\www\\test\\src\\MainBundle/Resources/views/eshop/header.html.twig");
+</div> <br><br>", "MainBundle:eshop:header.html.twig", "C:\\wamp64\\www\\weeeb\\src\\MainBundle/Resources/views/eshop/header.html.twig");
     }
 }

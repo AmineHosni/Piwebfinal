@@ -28,7 +28,7 @@ product_edit:
     methods:  [GET, POST]
 
 product_delete:
-    path:    delete/{id}/
+    path:      /delete/{id}
     defaults: { _controller: "MainBundle:Product:delete" }
 
 

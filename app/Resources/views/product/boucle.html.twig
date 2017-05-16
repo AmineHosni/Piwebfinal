@@ -12,28 +12,26 @@
             </a>
 
             <div class="image">
-                <div class="quickview">
-                    <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
-                       data-target="#productSetailsModalAjax">Quick View </a>
-                </div>
-                <a href=""><img style="height: 250px; width: 400px" src="{{ asset('bundles/images/'~ product.imageName) }}" alt="img"
+
+                <a href=""><img style="height: 250px; " src="{{ asset('bundles/images/'~ product.imageName) }}" alt="img"
                                 class="img-responsive"></a>
 
-                <div class="promotion"><span class="discount">{{ product.pourcentagePromotion }} OFF</span></div>
+                <div class="promotion"><span class="discount">{{ product.pourcentagePromotion }}% OFF</span></div>
             </div>
             <div class="description">
-                <h4><a href="product-details.html">{{  product.libelle }} </a></h4>
+                <h4><a href="{{ path('product_show', { 'id': product.id}) }}">{{  product.libelle }} </a></h4>
 
                 <div class="grid-description">
-                    <p>sdcsdcsddcsdcsdcsdcsdddddddddddddddddddddddddddddddddddddddddddddddc</p>
+                    <p>{{ product.Categorie.nom }}</p>
                 </div>
                 <div class="list-description">
                     <p> {{  product.description|raw }} </p>
                 </div>
-                <div class="price"><span>{{  product.prixProduit }} <strong>$</strong></span></div>
+                <div class="price"><span>{{  product.prixProduit }} <strong>DT</strong></span></div>
+
                 <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
-                                    class="glyphicon glyphicon-shopping-cart"> </i> Ajout au panier </span> </a></div>
-                <div class="action-control"><a class="btn btn-primary"> <span><i
+                                    class="glyphicon glyphicon-shopping-cart"> </i> Ajout au panier </span> </a>
+                <a  href="{{ path('product_show', { 'id': product.id}) }}" class="btn btn-success"> <span><i
                                     class="glyphicon glyphicon-zoom-in"> </i> view more </span> </a></div>
             </div>
         </div></div></div>

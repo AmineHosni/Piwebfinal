@@ -19,9 +19,9 @@ venteflash_edit:
     methods:  [GET, POST]
 
 venteflash_delete:
-    path:     /{id}/delete
+    path:     /delete/{id}
     defaults: { _controller: "MainBundle:VenteFlash:delete" }
-    methods:  DELETE
+
 
 
 venteflash_list:

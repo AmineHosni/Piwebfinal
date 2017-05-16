@@ -3,11 +3,17 @@
 {% block content %}
 <div class="container main-container">
 
-    <br><br>
-
+    <br><br><br><br>
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="{{path('main_homepage')}}">Home</a></li>
+                <li><a href="account.html">les magasins</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class="morePost row featuredPostContainer style2 globalPaddingTop ">
-        <h3 class="section-title style2 text-center"><span>produits disponibles</span></h3>
         <div class="container">
             <div class="row xsResponse">
 
@@ -23,7 +29,9 @@
                     </div>
 
                 </div>
-        {% for magasin  in Magasin %}
+                <div class="container main-container">
+
+                {% for magasin  in Magasin %}
 
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="product">
@@ -34,7 +42,7 @@
                         <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
                            data-target="#productSetailsModalAjax">Quick View </a>
                     </div>
-                    <a href="{{ path("Magasin_Details",{'idMagasin':magasin.id}) }}"><img style="height: 300px; width: 200px" src="{{ asset('bundles/images/'~ magasin.imageName) }}" alt="img"
+                    <a href="{{ path("Magasin_Details",{'idMagasin':magasin.id}) }}"><img height="400" width="400" src="{{ asset('bundles/images/'~ magasin.imageName) }}" alt="img"
                                                         class="img-responsive"></a></div>
                 <div class="description">
                     <h4><strong>{{ magasin.name|upper }}</strong></h4>
@@ -52,13 +60,14 @@
 
                 </div>
             </div>
-                </div>            </div>
+                </div>
+            </div>
 
 
-        {% endfor %}
-        </div>
+            {% endfor %}
+                </div>  </div>   </div>
     </div>
-</div></div></div>
+</div></div>
 
 {% endblock %}
 

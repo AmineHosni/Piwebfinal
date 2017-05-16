@@ -206,18 +206,16 @@ var_dump($prod);
      * Deletes a venteFlash entity.
      *
      */
-    public function deleteAction(Request $request, VenteFlash $venteFlash)
-    {
-        $form = $this->createDeleteForm($venteFlash);
-        $form->handleRequest($request);
+    public function deleteAction($id)
+    {         var_dump($id);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($venteFlash);
-            $em->flush($venteFlash);
-        }
+        $em = $this->getDoctrine()->getEntityManager();
+        $mag = $em->getRepository('MainBundle:VenteFlash')->find($id);
 
+        $em->remove($mag);
+        $em->flush();
         return $this->redirectToRoute('venteflash_index');
+
     }
 
     /**
