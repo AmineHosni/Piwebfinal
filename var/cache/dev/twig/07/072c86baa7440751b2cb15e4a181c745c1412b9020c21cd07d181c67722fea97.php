@@ -15,11 +15,11 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e59c92cc85afef5c3c760dfbd629cbad5e6c36651195cae453b67e674aa4f82b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e59c92cc85afef5c3c760dfbd629cbad5e6c36651195cae453b67e674aa4f82b->enter($__internal_e59c92cc85afef5c3c760dfbd629cbad5e6c36651195cae453b67e674aa4f82b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/adminContent.html.twig"));
+        $__internal_4756dc2dd996b3a30147ac42a44767381291f9fc87f6c9830a0ad6eb9c62f648 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4756dc2dd996b3a30147ac42a44767381291f9fc87f6c9830a0ad6eb9c62f648->enter($__internal_4756dc2dd996b3a30147ac42a44767381291f9fc87f6c9830a0ad6eb9c62f648_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/adminContent.html.twig"));
 
-        $__internal_781b534dc1b3629f6e4adb7aa4d39970f74a3bed1cd45af77e16d34a18a658ad = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_781b534dc1b3629f6e4adb7aa4d39970f74a3bed1cd45af77e16d34a18a658ad->enter($__internal_781b534dc1b3629f6e4adb7aa4d39970f74a3bed1cd45af77e16d34a18a658ad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/adminContent.html.twig"));
+        $__internal_db01d3de040460b6f5f68dcae53f96109ca2e1155abb1dec315185c0b2a6ca0a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_db01d3de040460b6f5f68dcae53f96109ca2e1155abb1dec315185c0b2a6ca0a->enter($__internal_db01d3de040460b6f5f68dcae53f96109ca2e1155abb1dec315185c0b2a6ca0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/adminContent.html.twig"));
 
         // line 1
         echo "<!-- Main content -->
@@ -27,9 +27,7 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
     <div class=\"row\">
         <div class=\"col-xs-12\">
             <div class=\"box\">
-                <div class=\"box-header\">
-                    <h3 class=\"box-title\">Liste Utilisateurs</h3>
-                </div>
+
                 <!-- /.box-header -->
                 <div class=\"box-body\">
                     <table id=\"example1\" class=\"table table-bordered table-striped\">
@@ -39,70 +37,62 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
                             <th>libelle</th>
                             <th>prix</th>
                             <th>prixPromotion</th>
-
-
                             <th>description</th>
+                                <th>etat</th>
 
-                            <th>etat</th>
-                            <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
                         ";
-        // line 27
+        // line 22
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["entities"]) ? $context["entities"] : $this->getContext($context, "entities")));
         foreach ($context['_seq'] as $context["_key"] => $context["entity"]) {
-            // line 28
+            // line 23
             echo "                            <tr>
                                 <td ";
-            // line 29
+            // line 24
             if (($this->getAttribute($context["entity"], "Approuver", array()) == "0")) {
                 echo "class=\"active-row\"";
             }
             echo ">
 
 
-                                    ";
-            // line 32
-            if (($this->getAttribute($context["entity"], "Approuver", array()) == "0")) {
-                // line 33
-                echo "                                    <input type=\"checkbox\" name=\"products[]\" value=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "id", array()), "html", null, true);
-                echo "\">";
-            }
-            echo "</td>
+                                <input type=\"checkbox\" name=\"products[]\" value=\"";
+            // line 27
+            echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "id", array()), "html", null, true);
+            echo "\"></td>
                                 <td>";
-            // line 34
+            // line 28
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "libelle", array()), "html", null, true);
             echo "</td>
                                 <td>";
-            // line 35
+            // line 29
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "prixProduit", array()), "html", null, true);
             echo "</td>
                                 <td>";
-            // line 36
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "pourcentagePromotion", array()), "html", null, true);
             echo "</td>
                                 <td>";
-            // line 37
+            // line 31
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "description", array()), "html", null, true);
             echo "</td>
 
                                 <td>";
-            // line 39
+            // line 33
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "Approuver", array()), "html", null, true);
             echo "</td>
 
 
                                 <td>";
-            // line 42
+            // line 36
             if (($this->getAttribute($context["entity"], "Approuver", array()) == "1")) {
                 echo " <span class=\"label label-success\">APPROUVED</span> ";
             } else {
                 echo " <span class=\"label label-danger\">ON HOLD</span> ";
             }
-            // line 43
+            // line 37
             echo "
 
                                 </td>
@@ -118,18 +108,26 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entity'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 54
+        // line 48
         echo "                        </tbody>
                     </table>
+
+
+
                 </div>
             </div>
         </div>
-    </div></section>";
+
+    </div>
+</section>
+
+
+";
         
-        $__internal_e59c92cc85afef5c3c760dfbd629cbad5e6c36651195cae453b67e674aa4f82b->leave($__internal_e59c92cc85afef5c3c760dfbd629cbad5e6c36651195cae453b67e674aa4f82b_prof);
+        $__internal_4756dc2dd996b3a30147ac42a44767381291f9fc87f6c9830a0ad6eb9c62f648->leave($__internal_4756dc2dd996b3a30147ac42a44767381291f9fc87f6c9830a0ad6eb9c62f648_prof);
 
         
-        $__internal_781b534dc1b3629f6e4adb7aa4d39970f74a3bed1cd45af77e16d34a18a658ad->leave($__internal_781b534dc1b3629f6e4adb7aa4d39970f74a3bed1cd45af77e16d34a18a658ad_prof);
+        $__internal_db01d3de040460b6f5f68dcae53f96109ca2e1155abb1dec315185c0b2a6ca0a->leave($__internal_db01d3de040460b6f5f68dcae53f96109ca2e1155abb1dec315185c0b2a6ca0a_prof);
 
     }
 
@@ -145,7 +143,7 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
 
     public function getDebugInfo()
     {
-        return array (  122 => 54,  106 => 43,  100 => 42,  94 => 39,  89 => 37,  85 => 36,  81 => 35,  77 => 34,  70 => 33,  68 => 32,  60 => 29,  57 => 28,  53 => 27,  25 => 1,);
+        return array (  112 => 48,  96 => 37,  90 => 36,  84 => 33,  79 => 31,  75 => 30,  71 => 29,  67 => 28,  63 => 27,  55 => 24,  52 => 23,  48 => 22,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -163,9 +161,7 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
     <div class=\"row\">
         <div class=\"col-xs-12\">
             <div class=\"box\">
-                <div class=\"box-header\">
-                    <h3 class=\"box-title\">Liste Utilisateurs</h3>
-                </div>
+
                 <!-- /.box-header -->
                 <div class=\"box-body\">
                     <table id=\"example1\" class=\"table table-bordered table-striped\">
@@ -175,12 +171,9 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
                             <th>libelle</th>
                             <th>prix</th>
                             <th>prixPromotion</th>
-
-
                             <th>description</th>
+                                <th>etat</th>
 
-                            <th>etat</th>
-                            <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -189,8 +182,7 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
                                 <td {% if entity.Approuver=='0' %}class=\"active-row\"{% endif %}>
 
 
-                                    {% if entity.Approuver=='0' %}
-                                    <input type=\"checkbox\" name=\"products[]\" value=\"{{ entity.id }}\">{% endif %}</td>
+                                <input type=\"checkbox\" name=\"products[]\" value=\"{{ entity.id }}\"></td>
                                 <td>{{ entity.libelle }}</td>
                                 <td>{{ entity.prixProduit }}</td>
                                 <td>{{ entity.pourcentagePromotion }}</td>
@@ -213,9 +205,17 @@ class __TwigTemplate_44fd2cbe9acb9dbd028b0db0954e7bfc6acb0df4c2a9b54552ff6d8a06c
                         {% endfor %}
                         </tbody>
                     </table>
+
+
+
                 </div>
             </div>
         </div>
-    </div></section>", "product/adminContent.html.twig", "C:\\wamp64\\www\\test\\app\\Resources\\views\\product\\adminContent.html.twig");
+
+    </div>
+</section>
+
+
+", "product/adminContent.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\app\\Resources\\views\\product\\adminContent.html.twig");
     }
 }

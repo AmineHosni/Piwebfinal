@@ -10,3 +10,11 @@ user_wishlist:
 newwish:
     path:     /new/{id}
     defaults: { _controller: "MainBundle:User:newwish" }
+deletewish:
+    path:     /delete/{id}
+    defaults: { _controller: "MainBundle:User:delete" }
+    methods:  GET
+panwish:
+    path:     /addpan/{id}/{idpd}
+    defaults: { _controller: "MainBundle:User:panierwishlist" }
+    methods:  GET

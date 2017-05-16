@@ -22,36 +22,34 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7c77b9b6fbbdb52b521e5c5d686a0af3aaf094a1725fff557ff2e5c5f5c21c57 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7c77b9b6fbbdb52b521e5c5d686a0af3aaf094a1725fff557ff2e5c5f5c21c57->enter($__internal_7c77b9b6fbbdb52b521e5c5d686a0af3aaf094a1725fff557ff2e5c5f5c21c57_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":product:adminList.html.twig"));
+        $__internal_adfe5f6cc0692ac0869c230bf4cb016eb2bc16515c431035bef0449c9968bb38 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_adfe5f6cc0692ac0869c230bf4cb016eb2bc16515c431035bef0449c9968bb38->enter($__internal_adfe5f6cc0692ac0869c230bf4cb016eb2bc16515c431035bef0449c9968bb38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":product:adminList.html.twig"));
 
-        $__internal_520836d2dd2d22ed5a6054aad2151a8ffc4fd5bd28e35cef4d828ca2ab13428c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_520836d2dd2d22ed5a6054aad2151a8ffc4fd5bd28e35cef4d828ca2ab13428c->enter($__internal_520836d2dd2d22ed5a6054aad2151a8ffc4fd5bd28e35cef4d828ca2ab13428c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":product:adminList.html.twig"));
+        $__internal_0e04f1371efa8f8a1b1af142fc9dce596c73c4205a96e32645a669eb5061870d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0e04f1371efa8f8a1b1af142fc9dce596c73c4205a96e32645a669eb5061870d->enter($__internal_0e04f1371efa8f8a1b1af142fc9dce596c73c4205a96e32645a669eb5061870d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":product:adminList.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7c77b9b6fbbdb52b521e5c5d686a0af3aaf094a1725fff557ff2e5c5f5c21c57->leave($__internal_7c77b9b6fbbdb52b521e5c5d686a0af3aaf094a1725fff557ff2e5c5f5c21c57_prof);
+        $__internal_adfe5f6cc0692ac0869c230bf4cb016eb2bc16515c431035bef0449c9968bb38->leave($__internal_adfe5f6cc0692ac0869c230bf4cb016eb2bc16515c431035bef0449c9968bb38_prof);
 
         
-        $__internal_520836d2dd2d22ed5a6054aad2151a8ffc4fd5bd28e35cef4d828ca2ab13428c->leave($__internal_520836d2dd2d22ed5a6054aad2151a8ffc4fd5bd28e35cef4d828ca2ab13428c_prof);
+        $__internal_0e04f1371efa8f8a1b1af142fc9dce596c73c4205a96e32645a669eb5061870d->leave($__internal_0e04f1371efa8f8a1b1af142fc9dce596c73c4205a96e32645a669eb5061870d_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_f00850ad73c2bde6897a367ea9dc5a8a57864a676dcb557b6832932d9b25a449 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f00850ad73c2bde6897a367ea9dc5a8a57864a676dcb557b6832932d9b25a449->enter($__internal_f00850ad73c2bde6897a367ea9dc5a8a57864a676dcb557b6832932d9b25a449_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4aa416e5863b961e1cc16c42c8133d205b44228de90759cb6015175a2d2256b2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4aa416e5863b961e1cc16c42c8133d205b44228de90759cb6015175a2d2256b2->enter($__internal_4aa416e5863b961e1cc16c42c8133d205b44228de90759cb6015175a2d2256b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_8a053ad7c4ffb8029d8daaf7754b2c721290ec7b4dd11ae3da2306194162f939 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8a053ad7c4ffb8029d8daaf7754b2c721290ec7b4dd11ae3da2306194162f939->enter($__internal_8a053ad7c4ffb8029d8daaf7754b2c721290ec7b4dd11ae3da2306194162f939_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_92308fc622fc1132d33eaee312b583617fcbb14d7965606415e395d29a1d916e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_92308fc622fc1132d33eaee312b583617fcbb14d7965606415e395d29a1d916e->enter($__internal_92308fc622fc1132d33eaee312b583617fcbb14d7965606415e395d29a1d916e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "    <div class=\"content-wrapper\">
-
-
-        <br><br>
-        <form id=\"jsform\" >
+    <br><br>
+        <form id=\"jsform\" align=\"center\">
             <div class=\"row\">
                 <div class=\"col-lg-12\">
                     <!-- Split button -->
@@ -60,41 +58,41 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
                         <p> liste des produits</p>
                     </h1>
 
-                    <div class=\"btn-group\">
-                        <button type=\"button\" class=\"btn btn-lg btn-danger\" id=\"js-activer\" data-action=\"1\" > approuver  </button>
-
-
-                    </div>
-
                 </div>
             </div>
             <div id=\"container\" class=\"row\">
 
                 <div id=\"xcontainer\" class=\"row\">
 
-                </div>            </div>
+                </div>
+                <div class=\"btn-group\" align=\"right\">
+                    <button type=\"button\" class=\"btn btn-lg btn-success\" id=\"js-activer\" data-action=\"1\" > approuver  </button>
+                    <button type=\"button\" class=\"btn btn-lg btn-danger\" id=\"js-supprimer\" data-action=\"1\" > Supprimer  </button>
+
+                </div>
+            </div>
 
         </form>            </div>
 
 ";
         
-        $__internal_8a053ad7c4ffb8029d8daaf7754b2c721290ec7b4dd11ae3da2306194162f939->leave($__internal_8a053ad7c4ffb8029d8daaf7754b2c721290ec7b4dd11ae3da2306194162f939_prof);
+        $__internal_92308fc622fc1132d33eaee312b583617fcbb14d7965606415e395d29a1d916e->leave($__internal_92308fc622fc1132d33eaee312b583617fcbb14d7965606415e395d29a1d916e_prof);
 
         
-        $__internal_f00850ad73c2bde6897a367ea9dc5a8a57864a676dcb557b6832932d9b25a449->leave($__internal_f00850ad73c2bde6897a367ea9dc5a8a57864a676dcb557b6832932d9b25a449_prof);
+        $__internal_4aa416e5863b961e1cc16c42c8133d205b44228de90759cb6015175a2d2256b2->leave($__internal_4aa416e5863b961e1cc16c42c8133d205b44228de90759cb6015175a2d2256b2_prof);
 
     }
 
-    // line 33
+    // line 31
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_bd0e373f4ee2d4ea96f2f2804d8782d8caf674a2543a8fa99386e9cdb54f3f39 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bd0e373f4ee2d4ea96f2f2804d8782d8caf674a2543a8fa99386e9cdb54f3f39->enter($__internal_bd0e373f4ee2d4ea96f2f2804d8782d8caf674a2543a8fa99386e9cdb54f3f39_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_f3f13fd2223cae0739de72c445a4e2f425bb4660661c6edccf4bf560e09a4612 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f3f13fd2223cae0739de72c445a4e2f425bb4660661c6edccf4bf560e09a4612->enter($__internal_f3f13fd2223cae0739de72c445a4e2f425bb4660661c6edccf4bf560e09a4612_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_45733294e373503875728e384ef2df82acca586a98a228491d3d80b3cb0d2ad4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_45733294e373503875728e384ef2df82acca586a98a228491d3d80b3cb0d2ad4->enter($__internal_45733294e373503875728e384ef2df82acca586a98a228491d3d80b3cb0d2ad4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_036c4a4be1ca1017e7afc865acb841d8b10e0350a00204945eb14e2c2124a2bb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_036c4a4be1ca1017e7afc865acb841d8b10e0350a00204945eb14e2c2124a2bb->enter($__internal_036c4a4be1ca1017e7afc865acb841d8b10e0350a00204945eb14e2c2124a2bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 34
+        // line 32
         echo "    ";
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
@@ -107,8 +105,17 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
 
             \$('#js-activer').on('click', function () {
                 var url = '";
-        // line 43
+        // line 41
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_ajaxListProd", array("etat" => 1111));
+        echo "',
+                        etat = \$(this).data('action');
+                jsFormUrl = url.replace('1111', etat);
+                ajaxPost('activer');
+            });
+            \$('#js-supprimer').on('click', function () {
+                var url = '";
+        // line 47
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_ajaxsupprimer", array("etat" => 1111));
         echo "',
                         etat = \$(this).data('action');
                 jsFormUrl = url.replace('1111', etat);
@@ -118,7 +125,7 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
 
             function init() {
                 jsFormUrl = '";
-        // line 51
+        // line 55
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_autoriser_produitAjax");
         echo "';            }
             function ajaxPost(action) {
@@ -151,10 +158,10 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
     </script>
 ";
         
-        $__internal_45733294e373503875728e384ef2df82acca586a98a228491d3d80b3cb0d2ad4->leave($__internal_45733294e373503875728e384ef2df82acca586a98a228491d3d80b3cb0d2ad4_prof);
+        $__internal_036c4a4be1ca1017e7afc865acb841d8b10e0350a00204945eb14e2c2124a2bb->leave($__internal_036c4a4be1ca1017e7afc865acb841d8b10e0350a00204945eb14e2c2124a2bb_prof);
 
         
-        $__internal_bd0e373f4ee2d4ea96f2f2804d8782d8caf674a2543a8fa99386e9cdb54f3f39->leave($__internal_bd0e373f4ee2d4ea96f2f2804d8782d8caf674a2543a8fa99386e9cdb54f3f39_prof);
+        $__internal_f3f13fd2223cae0739de72c445a4e2f425bb4660661c6edccf4bf560e09a4612->leave($__internal_f3f13fd2223cae0739de72c445a4e2f425bb4660661c6edccf4bf560e09a4612_prof);
 
     }
 
@@ -170,7 +177,7 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
 
     public function getDebugInfo()
     {
-        return array (  122 => 51,  111 => 43,  98 => 34,  89 => 33,  50 => 3,  41 => 2,  11 => 1,);
+        return array (  129 => 55,  118 => 47,  109 => 41,  96 => 32,  87 => 31,  50 => 3,  41 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -186,10 +193,8 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
         return new Twig_Source("{% extends \"::base1.html.twig\" %}
 {% block body %}
     <div class=\"content-wrapper\">
-
-
-        <br><br>
-        <form id=\"jsform\" >
+    <br><br>
+        <form id=\"jsform\" align=\"center\">
             <div class=\"row\">
                 <div class=\"col-lg-12\">
                     <!-- Split button -->
@@ -198,19 +203,19 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
                         <p> liste des produits</p>
                     </h1>
 
-                    <div class=\"btn-group\">
-                        <button type=\"button\" class=\"btn btn-lg btn-danger\" id=\"js-activer\" data-action=\"1\" > approuver  </button>
-
-
-                    </div>
-
                 </div>
             </div>
             <div id=\"container\" class=\"row\">
 
                 <div id=\"xcontainer\" class=\"row\">
 
-                </div>            </div>
+                </div>
+                <div class=\"btn-group\" align=\"right\">
+                    <button type=\"button\" class=\"btn btn-lg btn-success\" id=\"js-activer\" data-action=\"1\" > approuver  </button>
+                    <button type=\"button\" class=\"btn btn-lg btn-danger\" id=\"js-supprimer\" data-action=\"1\" > Supprimer  </button>
+
+                </div>
+            </div>
 
         </form>            </div>
 
@@ -226,6 +231,12 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
 
             \$('#js-activer').on('click', function () {
                 var url = '{{ path('admin_ajaxListProd', {'etat': 1111 }) }}',
+                        etat = \$(this).data('action');
+                jsFormUrl = url.replace('1111', etat);
+                ajaxPost('activer');
+            });
+            \$('#js-supprimer').on('click', function () {
+                var url = '{{ path('admin_ajaxsupprimer', {'etat': 1111 }) }}',
                         etat = \$(this).data('action');
                 jsFormUrl = url.replace('1111', etat);
                 ajaxPost('activer');
@@ -262,7 +273,6 @@ class __TwigTemplate_d73a2a8d5f1f1bdacb3338a48610b563c3b5c961305f74a22529a9a5f56
 
         })(jQuery);
     </script>
-{% endblock %}
-", ":product:adminList.html.twig", "C:\\wamp64\\www\\test\\app/Resources\\views/product/adminList.html.twig");
+{% endblock %}", ":product:adminList.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\app/Resources\\views/product/adminList.html.twig");
     }
 }

@@ -373,6 +373,28 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'newwish')), array (  '_controller' => 'MainBundle\\Controller\\UserController::newwishAction',));
             }
 
+            // deletewish
+            if (0 === strpos($pathinfo, '/user/delete') && preg_match('#^/user/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_deletewish;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'deletewish')), array (  '_controller' => 'MainBundle\\Controller\\UserController::deleteAction',));
+            }
+            not_deletewish:
+
+            // panwish
+            if (0 === strpos($pathinfo, '/user/addpan') && preg_match('#^/user/addpan/(?P<id>[^/]++)/(?P<idpd>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_panwish;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'panwish')), array (  '_controller' => 'MainBundle\\Controller\\UserController::panierwishlistAction',));
+            }
+            not_panwish:
+
         }
 
         if (0 === strpos($pathinfo, '/coupon')) {
@@ -533,6 +555,15 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             // admin_index
             if ($pathinfo === '/admin/index') {
                 return array (  '_controller' => 'MainBundle\\Controller\\CouponController::testAction',  '_route' => 'admin_index',);
+            }
+
+            // mainaddminn
+            if (rtrim($pathinfo, '/') === '/admin') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'mainaddminn');
+                }
+
+                return array (  '_controller' => 'MainBundle\\Controller\\DefaultController::adminindexAction',  '_route' => 'mainaddminn',);
             }
 
             // admin_users

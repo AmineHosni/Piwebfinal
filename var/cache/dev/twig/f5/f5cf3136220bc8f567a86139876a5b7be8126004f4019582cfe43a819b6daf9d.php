@@ -15,11 +15,11 @@ class __TwigTemplate_d19fbcf3eeddcefa07eb47855fa24f3995daef8ba931e052cd41155bbd1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_769e1d43f5c0bfdafd055e77ee77ecbdaac9cfddd0475f5ad2b5a0dfd3ca2324 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_769e1d43f5c0bfdafd055e77ee77ecbdaac9cfddd0475f5ad2b5a0dfd3ca2324->enter($__internal_769e1d43f5c0bfdafd055e77ee77ecbdaac9cfddd0475f5ad2b5a0dfd3ca2324_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:footer.html.twig"));
+        $__internal_bdf832fc8b9cda607ab85229fdcc66a5ea9f2498c2484705f2f415ccb8e34488 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_bdf832fc8b9cda607ab85229fdcc66a5ea9f2498c2484705f2f415ccb8e34488->enter($__internal_bdf832fc8b9cda607ab85229fdcc66a5ea9f2498c2484705f2f415ccb8e34488_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:footer.html.twig"));
 
-        $__internal_41a539ed18e43064431d3a09a8210f613e4d7c48dd8191707a44554ed5799004 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_41a539ed18e43064431d3a09a8210f613e4d7c48dd8191707a44554ed5799004->enter($__internal_41a539ed18e43064431d3a09a8210f613e4d7c48dd8191707a44554ed5799004_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:footer.html.twig"));
+        $__internal_f9cf69940a8452386232eb24b5fe5558499f58420fe9775e54fd2142da4c0e09 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f9cf69940a8452386232eb24b5fe5558499f58420fe9775e54fd2142da4c0e09->enter($__internal_f9cf69940a8452386232eb24b5fe5558499f58420fe9775e54fd2142da4c0e09_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:footer.html.twig"));
 
         // line 1
         echo "
@@ -33,7 +33,7 @@ class __TwigTemplate_d19fbcf3eeddcefa07eb47855fa24f3995daef8ba931e052cd41155bbd1
                         <li class=\"supportLi\">
                             <p> Lorem ipsum dolor sit amet, consectetur </p>
                             <h4><a class=\"inline\" href=\"callto:+12025550151\"> <strong> <i class=\"fa fa-phone\"> </i> +1-202-555-0151 </strong> </a></h4>
-                            <h4><a class=\"inline\" href=\"mailto:help@yourweb.com\"> <i class=\"fa fa-envelope-o\"> </i>
+                            <h4><a class=\"inline\" href=\"mailto:help@tshop.com\"> <i class=\"fa fa-envelope-o\"> </i>
                                     help@yourweb.com </a></h4>
                         </li>
                     </ul>
@@ -151,10 +151,10 @@ class __TwigTemplate_d19fbcf3eeddcefa07eb47855fa24f3995daef8ba931e052cd41155bbd1
     <!--/.footer-bottom-->
 </footer>";
         
-        $__internal_769e1d43f5c0bfdafd055e77ee77ecbdaac9cfddd0475f5ad2b5a0dfd3ca2324->leave($__internal_769e1d43f5c0bfdafd055e77ee77ecbdaac9cfddd0475f5ad2b5a0dfd3ca2324_prof);
+        $__internal_bdf832fc8b9cda607ab85229fdcc66a5ea9f2498c2484705f2f415ccb8e34488->leave($__internal_bdf832fc8b9cda607ab85229fdcc66a5ea9f2498c2484705f2f415ccb8e34488_prof);
 
         
-        $__internal_41a539ed18e43064431d3a09a8210f613e4d7c48dd8191707a44554ed5799004->leave($__internal_41a539ed18e43064431d3a09a8210f613e4d7c48dd8191707a44554ed5799004_prof);
+        $__internal_f9cf69940a8452386232eb24b5fe5558499f58420fe9775e54fd2142da4c0e09->leave($__internal_f9cf69940a8452386232eb24b5fe5558499f58420fe9775e54fd2142da4c0e09_prof);
 
     }
 
@@ -194,7 +194,7 @@ class __TwigTemplate_d19fbcf3eeddcefa07eb47855fa24f3995daef8ba931e052cd41155bbd1
                         <li class=\"supportLi\">
                             <p> Lorem ipsum dolor sit amet, consectetur </p>
                             <h4><a class=\"inline\" href=\"callto:+12025550151\"> <strong> <i class=\"fa fa-phone\"> </i> +1-202-555-0151 </strong> </a></h4>
-                            <h4><a class=\"inline\" href=\"mailto:help@yourweb.com\"> <i class=\"fa fa-envelope-o\"> </i>
+                            <h4><a class=\"inline\" href=\"mailto:help@tshop.com\"> <i class=\"fa fa-envelope-o\"> </i>
                                     help@yourweb.com </a></h4>
                         </li>
                     </ul>
@@ -293,6 +293,6 @@ class __TwigTemplate_d19fbcf3eeddcefa07eb47855fa24f3995daef8ba931e052cd41155bbd1
         </div>
     </div>
     <!--/.footer-bottom-->
-</footer>", "MainBundle:eshop:footer.html.twig", "C:\\wamp64\\www\\weeeb\\src\\MainBundle/Resources/views/eshop/footer.html.twig");
+</footer>", "MainBundle:eshop:footer.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\src\\MainBundle/Resources/views/eshop/footer.html.twig");
     }
 }

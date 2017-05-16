@@ -3,12 +3,15 @@
 namespace MainBundle\Controller;
 
 
+
 use MainBundle\Entity\Product;
 use MainBundle\Entity\Wishlist;
+use MainBundle\Entity\Panier;
 use MainBundle\Entity\User;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
 
 
 use MainBundle\Pagination\Paginator;
@@ -84,9 +87,17 @@ class UserController extends Controller {
       public function newwishAction($id)
     {
             $em = $this->getDoctrine()->getManager();
+
+        $id_user = $this->get('security.token_storage')->getToken()->getUser();
+        $wishlist = new Wishlist();
+          $x=  count( $wishlist=$em->getRepository("MainBundle:Wishlist")->findWP($id_user,$id));
+
+      if ($x == 0) {
+          # code...
+      
         $product = new Product();
         $user = new User();
-        $wishlist = new Wishlist();
+      
         $wishlist = new Wishlist();
         
         $id_user = $this->get('security.token_storage')->getToken()->getUser();
@@ -100,6 +111,8 @@ class UserController extends Controller {
             $em->persist($wishlist);
             $em->flush($wishlist);
 
+}
+
 
               $modele=$em->getRepository("MainBundle:Coupon")->findAll();
         $product=$em->getRepository("MainBundle:Product")->findAll();
@@ -107,6 +120,56 @@ class UserController extends Controller {
          array('modeles' => $modele,'products' => $product));
     }
 
+         public function deleteAction($id)
+    {
+  
+            $em = $this->getDoctrine()->getManager();
+          $wishlist = new Wishlist();
+           $wishlist=$em->getRepository("MainBundle:Wishlist")->find($id);
+            $em->remove($wishlist);
+            $em->flush($wishlist);
+        
+        $id_user = $this->get('security.token_storage')->getToken()->getUser();
+        $paniers = $em->getRepository('MainBundle:Wishlist')->findW($id_user);
+        return $this->render('default/wishlist.html.twig', array(
+            'paniers' => $paniers
+        ));
+    }
 
 
+
+    public function panierwishlistAction($id,$idpd)
+    {
+
+
+         $em = $this->getDoctrine()->getManager();
+        $panier = new Panier();
+        $product = new Product();
+        $user = new User();
+        
+        $id_user = $this->get('security.token_storage')->getToken()->getUser();
+        $product=$em->getRepository("MainBundle:Product")->find($idpd);
+      
+        $user=$em->getRepository("MainBundle:User")->find($id_user);
+
+
+            $panier->setIdProd($product);
+            $panier->setQtepan(1);
+            $panier->setPrixTot($product->getPrixProduit());
+            $panier->setIdUser($user);
+            $em->persist($panier);
+            $em->flush($panier);
+
+          $wishlist = new Wishlist();
+           $wishlist=$em->getRepository("MainBundle:Wishlist")->find($id);
+            $em->remove($wishlist);
+            $em->flush($wishlist);
+        $id_user = $this->get('security.token_storage')->getToken()->getUser();
+        $paniers = $em->getRepository('MainBundle:Wishlist')->findW($id_user);
+        return $this->render('default/wishlist.html.twig', array(
+            'paniers' => $paniers
+        ));
+
+      
+}
 }

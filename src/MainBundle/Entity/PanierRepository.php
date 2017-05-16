@@ -11,13 +11,13 @@ class PanierRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
  public function findprixtot($id_user){
-        $qb=$this->getEntityManager()->createQuery("SELECT SUM(m.prixtot) FROM MainBundle:Panier m  where m.idUser = :userid")->setParameter('userid',$id_user);
+        $qb=$this->getEntityManager()->createQuery("SELECT SUM(m.prixTot) FROM MainBundle:Panier m  where m.idUser = :userid")->setParameter('userid',$id_user);
         $result= $qb->getSingleScalarResult();
         return $result;
     }
  public function findprodpan($id_user){
      $query = $this->getEntityManager()->createQuery("SELECT p FROM MainBundle:Panier p JOIN MainBundle:Product a WITH p.idProd = a.id and  p.idUser = :userid")->setParameter('userid',$id_user);
-	return $query->getResult();
+    return $query->getResult();
     }
 
  public function findliv($id_user){

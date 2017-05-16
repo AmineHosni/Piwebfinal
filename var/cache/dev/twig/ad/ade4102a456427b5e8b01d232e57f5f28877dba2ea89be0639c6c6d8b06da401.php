@@ -15,11 +15,11 @@ class __TwigTemplate_482c3633d327b0f2cfa52b0dfeab2362a2c7ce9dccf8336e34a0602436a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_844561e8966da8883a5ee5fe6a5c995415d672d3275e8f5de4aad09479b108e1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_844561e8966da8883a5ee5fe6a5c995415d672d3275e8f5de4aad09479b108e1->enter($__internal_844561e8966da8883a5ee5fe6a5c995415d672d3275e8f5de4aad09479b108e1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/Profile/show_content.html.twig"));
+        $__internal_4a81e3909491d6325bbc061bd6cfdf11befceb596ad20da8e7bed62f0545a136 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4a81e3909491d6325bbc061bd6cfdf11befceb596ad20da8e7bed62f0545a136->enter($__internal_4a81e3909491d6325bbc061bd6cfdf11befceb596ad20da8e7bed62f0545a136_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/Profile/show_content.html.twig"));
 
-        $__internal_f9a6d81a6d96f685fff3747ce8669ef81c1600cdaea17b8bd8cf981b45089b27 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f9a6d81a6d96f685fff3747ce8669ef81c1600cdaea17b8bd8cf981b45089b27->enter($__internal_f9a6d81a6d96f685fff3747ce8669ef81c1600cdaea17b8bd8cf981b45089b27_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/Profile/show_content.html.twig"));
+        $__internal_ea9f9c1150139829ce349e6f79db8ae439b9dde11b0292a560d729effae3d399 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ea9f9c1150139829ce349e6f79db8ae439b9dde11b0292a560d729effae3d399->enter($__internal_ea9f9c1150139829ce349e6f79db8ae439b9dde11b0292a560d729effae3d399_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/Profile/show_content.html.twig"));
 
         // line 1
         echo "<br><br>
@@ -33,9 +33,9 @@ class __TwigTemplate_482c3633d327b0f2cfa52b0dfeab2362a2c7ce9dccf8336e34a0602436a
             <!-- NAV TABS -->
             <ul class=\"nav nav-tabs nav-tabs-custom-colored tabs-iconized\">
                 <li class=\"active\"><a href=\"#profile-tab\" data-toggle=\"tab\" aria-expanded=\"true\"><i class=\"fa fa-user\"></i> Profile</a></li>
-                <li class=\"\"><a href=\"#activity-tab\" data-toggle=\"tab\" aria-expanded=\"false\"><i class=\"fa fa-rss\"></i> Recent Activity</a></li>
                 <li class=\"\"><a href=\"#settings-tab\" data-toggle=\"tab\" aria-expanded=\"false\"><i class=\"fa fa-gear\"></i> Settings</a></li>
             </ul>
+
             <!-- END NAV TABS -->
             <div class=\"tab-content profile-page\">
                 <!-- PROFILE TAB CONTENT -->
@@ -259,10 +259,10 @@ class __TwigTemplate_482c3633d327b0f2cfa52b0dfeab2362a2c7ce9dccf8336e34a0602436a
 
 ";
         
-        $__internal_844561e8966da8883a5ee5fe6a5c995415d672d3275e8f5de4aad09479b108e1->leave($__internal_844561e8966da8883a5ee5fe6a5c995415d672d3275e8f5de4aad09479b108e1_prof);
+        $__internal_4a81e3909491d6325bbc061bd6cfdf11befceb596ad20da8e7bed62f0545a136->leave($__internal_4a81e3909491d6325bbc061bd6cfdf11befceb596ad20da8e7bed62f0545a136_prof);
 
         
-        $__internal_f9a6d81a6d96f685fff3747ce8669ef81c1600cdaea17b8bd8cf981b45089b27->leave($__internal_f9a6d81a6d96f685fff3747ce8669ef81c1600cdaea17b8bd8cf981b45089b27_prof);
+        $__internal_ea9f9c1150139829ce349e6f79db8ae439b9dde11b0292a560d729effae3d399->leave($__internal_ea9f9c1150139829ce349e6f79db8ae439b9dde11b0292a560d729effae3d399_prof);
 
     }
 
@@ -302,9 +302,9 @@ class __TwigTemplate_482c3633d327b0f2cfa52b0dfeab2362a2c7ce9dccf8336e34a0602436a
             <!-- NAV TABS -->
             <ul class=\"nav nav-tabs nav-tabs-custom-colored tabs-iconized\">
                 <li class=\"active\"><a href=\"#profile-tab\" data-toggle=\"tab\" aria-expanded=\"true\"><i class=\"fa fa-user\"></i> Profile</a></li>
-                <li class=\"\"><a href=\"#activity-tab\" data-toggle=\"tab\" aria-expanded=\"false\"><i class=\"fa fa-rss\"></i> Recent Activity</a></li>
                 <li class=\"\"><a href=\"#settings-tab\" data-toggle=\"tab\" aria-expanded=\"false\"><i class=\"fa fa-gear\"></i> Settings</a></li>
             </ul>
+
             <!-- END NAV TABS -->
             <div class=\"tab-content profile-page\">
                 <!-- PROFILE TAB CONTENT -->
@@ -502,6 +502,6 @@ class __TwigTemplate_482c3633d327b0f2cfa52b0dfeab2362a2c7ce9dccf8336e34a0602436a
     </div>
 </div></div>
 
-", "@FOSUser/Profile/show_content.html.twig", "C:\\wamp64\\www\\test\\src\\MainBundle\\Resources\\views\\Profile\\show_content.html.twig");
+", "@FOSUser/Profile/show_content.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\src\\MainBundle\\Resources\\views\\Profile\\show_content.html.twig");
     }
 }

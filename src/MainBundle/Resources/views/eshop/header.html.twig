@@ -15,19 +15,26 @@
                     <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
                         <div class="pull-right">
                             <ul class="userMenu">
-                                <li><a href="account-1.html"><span class="hidden-xs"> My Account</span> <i class="glyphicon glyphicon-user hide visible-xs "></i></a></li>
 
 
-                                <li class="dropdown hasUserMenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <i class="glyphicon glyphicon-log-in hide visible-xs "></i> {{ app.user.username}} <b class="caret"></b></a>
+                              {% if is_granted('ROLE_ADMIN') %}
+                                   <li><a href="{{ path('mainaddminn') }}"><span class="hidden-xs">espace Administrateur</span> <i class="glyphicon glyphicon-user hide visible-xs "></i></a></li>
+                                   {% endif %}
+                               
+                        <li class="dropdown hasUserMenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <i class="glyphicon glyphicon-log-in hide visible-xs "></i> {{ app.user.username}} <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="{{ path('fos_user_profile_edit') }}"></i> Account</a></li>
+                                        <li><a href="{{ path('fos_user_profile_edit') }}"></i> Modifier Profil</a></li>
                                         <li><a href="{{ path('fos_user_profile_show') }}"><i class="fa fa fa-cog"></i> Profile</a></li>
-                                        <li><a href="my-address.html"><i class="fa fa-map-marker"></i> Addresses</a></li>
-
                                         <li><a href="{{ path('user_wishlist') }}" title="My wishlists">
                                                 <i class="fa fa-heart"></i>
-                                                My wishlists
+                                                Ma wishlist
                                             </a></li>
+                                              {% if app.user.statutcoupon == 1  %}
+                                        <li><a href="{{ path('coupon_index') }}" title="Mes Coupons">
+                                                <i class="fa fa-fw fa-clock-o"></i>
+                                                Mes Coupons
+                                            </a></li>
+                                            {% endif %}
                                         <li class="divider"></li>
                                         <li><a href="{{ path('fos_user_security_logout') }}"><i class="fa  fa-sign-out"></i> Déconnexion</a></li>
                                     </ul>

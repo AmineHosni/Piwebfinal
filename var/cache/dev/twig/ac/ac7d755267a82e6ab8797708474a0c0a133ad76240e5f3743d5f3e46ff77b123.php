@@ -21,38 +21,47 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1375d3a96ff981dab96f347f2fbeb4b7dfd32157ba043a64e239f692810f5626 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1375d3a96ff981dab96f347f2fbeb4b7dfd32157ba043a64e239f692810f5626->enter($__internal_1375d3a96ff981dab96f347f2fbeb4b7dfd32157ba043a64e239f692810f5626_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Magasin:list.html.twig"));
+        $__internal_a7105b86798bd2f1a8b89360cc2a51bb02a076f6f498c468f74f8f6b7d7b4579 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a7105b86798bd2f1a8b89360cc2a51bb02a076f6f498c468f74f8f6b7d7b4579->enter($__internal_a7105b86798bd2f1a8b89360cc2a51bb02a076f6f498c468f74f8f6b7d7b4579_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Magasin:list.html.twig"));
 
-        $__internal_0552372f5a3f858ce93cb19c5bf9bd2b767e958dfe86ca7ce6745e9e6f60bf86 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0552372f5a3f858ce93cb19c5bf9bd2b767e958dfe86ca7ce6745e9e6f60bf86->enter($__internal_0552372f5a3f858ce93cb19c5bf9bd2b767e958dfe86ca7ce6745e9e6f60bf86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Magasin:list.html.twig"));
+        $__internal_df1e401009d230146b77d216182f63cdd31c02f930223b333d53d0ed74bbb56c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_df1e401009d230146b77d216182f63cdd31c02f930223b333d53d0ed74bbb56c->enter($__internal_df1e401009d230146b77d216182f63cdd31c02f930223b333d53d0ed74bbb56c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Magasin:list.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_1375d3a96ff981dab96f347f2fbeb4b7dfd32157ba043a64e239f692810f5626->leave($__internal_1375d3a96ff981dab96f347f2fbeb4b7dfd32157ba043a64e239f692810f5626_prof);
+        $__internal_a7105b86798bd2f1a8b89360cc2a51bb02a076f6f498c468f74f8f6b7d7b4579->leave($__internal_a7105b86798bd2f1a8b89360cc2a51bb02a076f6f498c468f74f8f6b7d7b4579_prof);
 
         
-        $__internal_0552372f5a3f858ce93cb19c5bf9bd2b767e958dfe86ca7ce6745e9e6f60bf86->leave($__internal_0552372f5a3f858ce93cb19c5bf9bd2b767e958dfe86ca7ce6745e9e6f60bf86_prof);
+        $__internal_df1e401009d230146b77d216182f63cdd31c02f930223b333d53d0ed74bbb56c->leave($__internal_df1e401009d230146b77d216182f63cdd31c02f930223b333d53d0ed74bbb56c_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_8e72792d3c4e530622a2b8d0428a74f5a0c19ade3c6df7bbf8e3301045bfcf67 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8e72792d3c4e530622a2b8d0428a74f5a0c19ade3c6df7bbf8e3301045bfcf67->enter($__internal_8e72792d3c4e530622a2b8d0428a74f5a0c19ade3c6df7bbf8e3301045bfcf67_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_263c5c59c3c9b86288ad47cfff2f6eee0a45e24271a90438599d9968567a14d8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_263c5c59c3c9b86288ad47cfff2f6eee0a45e24271a90438599d9968567a14d8->enter($__internal_263c5c59c3c9b86288ad47cfff2f6eee0a45e24271a90438599d9968567a14d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_a5a1169f62bcaa8e8805d8bf9878b184013f16f9c5be29962958bcddc6093ce4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a5a1169f62bcaa8e8805d8bf9878b184013f16f9c5be29962958bcddc6093ce4->enter($__internal_a5a1169f62bcaa8e8805d8bf9878b184013f16f9c5be29962958bcddc6093ce4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_8fc054d8221e5b18bec1ce6b6c02e9d6fe6e0a4b75c86bd621dbf2ca3f91c543 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8fc054d8221e5b18bec1ce6b6c02e9d6fe6e0a4b75c86bd621dbf2ca3f91c543->enter($__internal_8fc054d8221e5b18bec1ce6b6c02e9d6fe6e0a4b75c86bd621dbf2ca3f91c543_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "<div class=\"container main-container\">
 
-    <br><br>
-
+    <br><br><br><br>
+    <div class=\"row\">
+        <div class=\"breadcrumbDiv col-lg-12\">
+            <ul class=\"breadcrumb\">
+                <li><a href=\"";
+        // line 10
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("main_homepage");
+        echo "\">Home</a></li>
+                <li><a href=\"account.html\">les magasins</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class=\"morePost row featuredPostContainer style2 globalPaddingTop \">
-        <h3 class=\"section-title style2 text-center\"><span>produits disponibles</span></h3>
         <div class=\"container\">
             <div class=\"row xsResponse\">
 
@@ -61,7 +70,7 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
 
                     <div class=\"action-control\">
                         <a href=\"";
-        // line 18
+        // line 24
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Magasin_List_Perso");
         echo "\" class=\"btn btn-success\"> gerer mes magasins <i
                                     class=\"fa fa-database\"> </i> </a>
@@ -71,12 +80,14 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
                     </div>
 
                 </div>
-        ";
-        // line 26
+                <div class=\"container main-container\">
+
+                ";
+        // line 34
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["Magasin"]) ? $context["Magasin"] : $this->getContext($context, "Magasin")));
         foreach ($context['_seq'] as $context["_key"] => $context["magasin"]) {
-            // line 27
+            // line 35
             echo "
             <div class=\"col-lg-3 col-md-3 col-sm-6\">
                 <div class=\"product\">
@@ -88,21 +99,21 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
                            data-target=\"#productSetailsModalAjax\">Quick View </a>
                     </div>
                     <a href=\"";
-            // line 37
+            // line 45
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Magasin_Details", array("idMagasin" => $this->getAttribute($context["magasin"], "id", array()))), "html", null, true);
-            echo "\"><img style=\"height: 300px; width: 200px\" src=\"";
+            echo "\"><img height=\"400\" width=\"400\" src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(("bundles/images/" . $this->getAttribute($context["magasin"], "imageName", array()))), "html", null, true);
             echo "\" alt=\"img\"
                                                         class=\"img-responsive\"></a></div>
                 <div class=\"description\">
                     <h4><strong>";
-            // line 40
+            // line 48
             echo twig_escape_filter($this->env, twig_upper_filter($this->env, $this->getAttribute($context["magasin"], "name", array())), "html", null, true);
             echo "</strong></h4>
 
                     <div class=\"grid-description\">
                         <p>";
-            // line 43
+            // line 51
             echo twig_escape_filter($this->env, $this->getAttribute($context["magasin"], "description", array()), "html", null, true);
             echo " </p>
                     </div>
@@ -110,7 +121,7 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
 
                     <div class=\"action-control\">
                         <a href=\"";
-            // line 48
+            // line 56
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Magasin_Details", array("idMagasin" => $this->getAttribute($context["magasin"], "id", array()))), "html", null, true);
             echo "\" class=\"btn btn-default\">  Visit <i
                                         class=\"fa fa-share\"> </i> </a>
@@ -119,25 +130,26 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
 
                 </div>
             </div>
-                </div>            </div>
+                </div>
+            </div>
 
 
-        ";
+            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['magasin'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 59
-        echo "        </div>
+        // line 68
+        echo "                </div>  </div>   </div>
     </div>
-</div></div></div>
+</div></div>
 
 ";
         
-        $__internal_a5a1169f62bcaa8e8805d8bf9878b184013f16f9c5be29962958bcddc6093ce4->leave($__internal_a5a1169f62bcaa8e8805d8bf9878b184013f16f9c5be29962958bcddc6093ce4_prof);
+        $__internal_8fc054d8221e5b18bec1ce6b6c02e9d6fe6e0a4b75c86bd621dbf2ca3f91c543->leave($__internal_8fc054d8221e5b18bec1ce6b6c02e9d6fe6e0a4b75c86bd621dbf2ca3f91c543_prof);
 
         
-        $__internal_8e72792d3c4e530622a2b8d0428a74f5a0c19ade3c6df7bbf8e3301045bfcf67->leave($__internal_8e72792d3c4e530622a2b8d0428a74f5a0c19ade3c6df7bbf8e3301045bfcf67_prof);
+        $__internal_263c5c59c3c9b86288ad47cfff2f6eee0a45e24271a90438599d9968567a14d8->leave($__internal_263c5c59c3c9b86288ad47cfff2f6eee0a45e24271a90438599d9968567a14d8_prof);
 
     }
 
@@ -153,7 +165,7 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
 
     public function getDebugInfo()
     {
-        return array (  131 => 59,  114 => 48,  106 => 43,  100 => 40,  92 => 37,  80 => 27,  76 => 26,  65 => 18,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  143 => 68,  125 => 56,  117 => 51,  111 => 48,  103 => 45,  91 => 35,  87 => 34,  74 => 24,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -171,11 +183,17 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
 {% block content %}
 <div class=\"container main-container\">
 
-    <br><br>
-
+    <br><br><br><br>
+    <div class=\"row\">
+        <div class=\"breadcrumbDiv col-lg-12\">
+            <ul class=\"breadcrumb\">
+                <li><a href=\"{{path('main_homepage')}}\">Home</a></li>
+                <li><a href=\"account.html\">les magasins</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class=\"morePost row featuredPostContainer style2 globalPaddingTop \">
-        <h3 class=\"section-title style2 text-center\"><span>produits disponibles</span></h3>
         <div class=\"container\">
             <div class=\"row xsResponse\">
 
@@ -191,7 +209,9 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
                     </div>
 
                 </div>
-        {% for magasin  in Magasin %}
+                <div class=\"container main-container\">
+
+                {% for magasin  in Magasin %}
 
             <div class=\"col-lg-3 col-md-3 col-sm-6\">
                 <div class=\"product\">
@@ -202,7 +222,7 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
                         <a data-toggle=\"modal\" class=\"btn btn-xs btn-quickview\" href=\"ajax/product.html\"
                            data-target=\"#productSetailsModalAjax\">Quick View </a>
                     </div>
-                    <a href=\"{{ path(\"Magasin_Details\",{'idMagasin':magasin.id}) }}\"><img style=\"height: 300px; width: 200px\" src=\"{{ asset('bundles/images/'~ magasin.imageName) }}\" alt=\"img\"
+                    <a href=\"{{ path(\"Magasin_Details\",{'idMagasin':magasin.id}) }}\"><img height=\"400\" width=\"400\" src=\"{{ asset('bundles/images/'~ magasin.imageName) }}\" alt=\"img\"
                                                         class=\"img-responsive\"></a></div>
                 <div class=\"description\">
                     <h4><strong>{{ magasin.name|upper }}</strong></h4>
@@ -220,16 +240,17 @@ class __TwigTemplate_5be56c2184a436a5abf8b035c7378d0360afa606057adbe85272d9de820
 
                 </div>
             </div>
-                </div>            </div>
+                </div>
+            </div>
 
 
-        {% endfor %}
-        </div>
+            {% endfor %}
+                </div>  </div>   </div>
     </div>
-</div></div></div>
+</div></div>
 
 {% endblock %}
 
-", ":Magasin:list.html.twig", "C:\\wamp64\\www\\test\\app/Resources\\views/Magasin/list.html.twig");
+", ":Magasin:list.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\app/Resources\\views/Magasin/list.html.twig");
     }
 }

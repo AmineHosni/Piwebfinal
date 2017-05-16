@@ -44,7 +44,7 @@ class PanierController extends Controller
 
             $panier->setIdProd($product);
             $panier->setQtepan(1);
-            $panier->setPrixtot($product->getPrixProduit());
+            $panier->setPrixTot($product->getPrixProduit());
             $panier->setIdUser($user);
             $em->persist($panier);
             $em->flush($panier);
@@ -99,10 +99,10 @@ $qqq= $pr->getQuantiteStock() -1;
         $em = $this->getDoctrine()->getManager();
         
        
-        $prixtot = $em->getRepository('MainBundle:Panier')->findprixtot($id_user);
+        $prixTot = $em->getRepository('MainBundle:Panier')->findprixTot($id_user);
         $user=$em->getRepository("MainBundle:User")->find($id_user);
          $modele=$em->getRepository("MainBundle:Product")->findAll();
-            $commande->setcommandeTot($prixtot);
+            $commande->setcommandeTot($prixTot);
             $commande->setIdUser($user);
             $em->persist($commande);
             $em->flush($commande);
@@ -125,7 +125,7 @@ $qqq= $pr->getQuantiteStock() -1;
           $today =  new \DateTime("now");
            if ($form->isSubmitted() && $form->isValid()) {
          
-           $ttprix= $prixtot+ 8000 ;
+           $ttprix= $prixTot+ 8000 ;
             $em = $this->getDoctrine()->getManager();
             $livraison->setIdUser($user);
             $livraison->setIdCommande($idcommande);
@@ -133,7 +133,7 @@ $qqq= $pr->getQuantiteStock() -1;
             $livraison->setMethLivraison("poste");
             $livraison->setDateLivraison($today);
             $livraison->setEtatPaie(0);
-            $livraison->setPrixtotal($ttprix);
+            $livraison->setPrixTotal($ttprix);
            
             //$coupon->_setUtilisateurId($id_user);
             $em->persist($livraison);

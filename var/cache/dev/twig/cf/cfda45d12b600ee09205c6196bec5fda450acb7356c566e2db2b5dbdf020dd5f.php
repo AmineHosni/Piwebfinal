@@ -15,11 +15,11 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d->enter($__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
+        $__internal_b1fed2d9c80db1f04c042e98a6ec19029d9a25193babcecd6487261df30fa924 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b1fed2d9c80db1f04c042e98a6ec19029d9a25193babcecd6487261df30fa924->enter($__internal_b1fed2d9c80db1f04c042e98a6ec19029d9a25193babcecd6487261df30fa924_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
 
-        $__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773->enter($__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
+        $__internal_971aff1206b2780b1b8914c7d5f9f7512cf8304bb52979e7624c657e107f48f1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_971aff1206b2780b1b8914c7d5f9f7512cf8304bb52979e7624c657e107f48f1->enter($__internal_971aff1206b2780b1b8914c7d5f9f7512cf8304bb52979e7624c657e107f48f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MainBundle:eshop:header.html.twig"));
 
         // line 1
         echo "<div class=\"navbar navbar-tshop navbar-fixed-top megamenu\" role=\"navigation\">
@@ -42,34 +42,55 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                     <div class=\"col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding\">
                         <div class=\"pull-right\">
                             <ul class=\"userMenu\">
-                                <li><a href=\"account-1.html\"><span class=\"hidden-xs\"> My Account</span> <i class=\"glyphicon glyphicon-user hide visible-xs \"></i></a></li>
 
 
-                                <li class=\"dropdown hasUserMenu\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\"> <i class=\"glyphicon glyphicon-log-in hide visible-xs \"></i> ";
-            // line 21
+                              ";
+            // line 20
+            if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_ADMIN")) {
+                // line 21
+                echo "                                   <li><a href=\"";
+                echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("mainaddminn");
+                echo "\"><span class=\"hidden-xs\">espace Administrateur</span> <i class=\"glyphicon glyphicon-user hide visible-xs \"></i></a></li>
+                                   ";
+            }
+            // line 23
+            echo "                               
+                        <li class=\"dropdown hasUserMenu\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\"> <i class=\"glyphicon glyphicon-log-in hide visible-xs \"></i> ";
+            // line 24
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "username", array()), "html", null, true);
             echo " <b class=\"caret\"></b></a>
                                     <ul class=\"dropdown-menu\">
                                         <li><a href=\"";
-            // line 23
+            // line 26
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_profile_edit");
-            echo "\"></i> Account</a></li>
-                                        <li><a href=\"";
-            // line 24
-            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_profile_show");
-            echo "\"><i class=\"fa fa fa-cog\"></i> Profile</a></li>
-                                        <li><a href=\"my-address.html\"><i class=\"fa fa-map-marker\"></i> Addresses</a></li>
-
+            echo "\"></i> Modifier Profil</a></li>
                                         <li><a href=\"";
             // line 27
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_profile_show");
+            echo "\"><i class=\"fa fa fa-cog\"></i> Profile</a></li>
+                                        <li><a href=\"";
+            // line 28
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_wishlist");
             echo "\" title=\"My wishlists\">
                                                 <i class=\"fa fa-heart\"></i>
-                                                My wishlists
+                                                Ma wishlist
                                             </a></li>
-                                        <li class=\"divider\"></li>
-                                        <li><a href=\"";
+                                              ";
             // line 32
+            if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "statutcoupon", array()) == 1)) {
+                // line 33
+                echo "                                        <li><a href=\"";
+                echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("coupon_index");
+                echo "\" title=\"Mes Coupons\">
+                                                <i class=\"fa fa-fw fa-clock-o\"></i>
+                                                Mes Coupons
+                                            </a></li>
+                                            ";
+            }
+            // line 38
+            echo "                                        <li class=\"divider\"></li>
+                                        <li><a href=\"";
+            // line 39
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_logout");
             echo "\"><i class=\"fa  fa-sign-out\"></i> Déconnexion</a></li>
                                     </ul>
@@ -84,7 +105,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
         ";
         } else {
-            // line 44
+            // line 51
             echo "            <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-lg-6 col-sm-6 col-xs-6 col-md-6\">
@@ -104,11 +125,11 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"userMenu\">
 
                                 <li><a href=\"";
-            // line 62
+            // line 69
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_login");
             echo "\" > <span class=\"hidden-xs\">Se Connecter</span>
                                 <li><a href=\"";
-            // line 63
+            // line 70
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_registration_register");
             echo "\" > <span class=\"hidden-xs\">Inscription</span>
 
@@ -119,7 +140,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
             </div>
         ";
         }
-        // line 71
+        // line 78
         echo "    </div>
     <!--/.navbar-top-->
 
@@ -146,7 +167,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
     
    <div class=\"nav navbar-nav navbar-right hidden-xs\">
                 <div class=\"dropdown  cartMenu \"><a href=\"";
-        // line 96
+        // line 103
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("my_cart");
         echo "\" class=\"dropdown-toggle\" > <i
                         class=\"fa fa-shopping-cart\"> </i> <span class=\"cartRespons\"> Mon Panier </span> </a>
@@ -173,7 +194,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                         class=\"fa fa-shopping-cart colorWhite\"> </i> <span
                         class=\"cartRespons colorWhite\"> Cart (\$210.00) </span></button>
             <a class=\"navbar-brand \" href=\"";
-        // line 120
+        // line 127
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("main_homepage");
         echo "\"> <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/logo.png"), "html", null, true);
@@ -195,24 +216,24 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
         <div class=\"navbar-collapse collapse\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"\"><a href=\"";
-        // line 137
+        // line 144
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_index");
         echo "\"> Les membres
                     </a></li>
                 <li class=\"\"><a href=\"";
-        // line 139
+        // line 146
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("venteflash_list");
         echo "\"><i class=\"fa fa-fw fa-clock-o\"></i> les ventes flash </a></li>
                 <li class=\"\"><a href=\"";
-        // line 140
+        // line 147
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("product_index");
         echo "\"><i class=\"fa fa-fw fa-caret-square-o-down\"></i> les  produits </a></li>
                 <li class=\"\"><a href=\"";
-        // line 141
+        // line 148
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("coupon_list");
         echo "\"><i class=\"fa fa-fw fa-sticky-note\"></i> les coupons </a></li>
                 <li class=\"\"><a href=\"";
-        // line 142
+        // line 149
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Magasin_List");
         echo "\"><i class=\"fa fa-fw fa-home\"></i> les magazins </a></li>
 
@@ -235,7 +256,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3  col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 162
+        // line 169
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo1.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i class=\"fa fa-caret-right\"> </i> JEANS </span>
@@ -244,7 +265,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 168
+        // line 175
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo2.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i
@@ -253,7 +274,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                             <ul class=\"col-lg-3  col-sm-3 col-md-3 col-xs-4\">
                                 <li><a class=\"newProductMenuBlock\" href=\"product-details.html\"> <img
                                                 class=\"img-responsive\" src=\"";
-        // line 174
+        // line 181
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/eshop/images/site/promo3.jpg"), "html", null, true);
         echo "\" alt=\"product\"> <span
                                                 class=\"ProductMenuCaption\"> <i class=\"fa fa-caret-right\"> </i> SHOES </span>
@@ -288,10 +309,10 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
 </div> <br><br>";
         
-        $__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d->leave($__internal_053ce4993c0fac44056e29358da9fcab4a613c3b80dbee6a570e27b1ac5ed91d_prof);
+        $__internal_b1fed2d9c80db1f04c042e98a6ec19029d9a25193babcecd6487261df30fa924->leave($__internal_b1fed2d9c80db1f04c042e98a6ec19029d9a25193babcecd6487261df30fa924_prof);
 
         
-        $__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773->leave($__internal_88a79d22451511b41075ae9a9dc975ab892f16f672673586b73f486b1a0ee773_prof);
+        $__internal_971aff1206b2780b1b8914c7d5f9f7512cf8304bb52979e7624c657e107f48f1->leave($__internal_971aff1206b2780b1b8914c7d5f9f7512cf8304bb52979e7624c657e107f48f1_prof);
 
     }
 
@@ -307,7 +328,7 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     public function getDebugInfo()
     {
-        return array (  257 => 174,  248 => 168,  239 => 162,  216 => 142,  212 => 141,  208 => 140,  204 => 139,  199 => 137,  177 => 120,  150 => 96,  123 => 71,  112 => 63,  108 => 62,  88 => 44,  73 => 32,  65 => 27,  59 => 24,  55 => 23,  50 => 21,  31 => 4,  29 => 3,  25 => 1,);
+        return array (  278 => 181,  269 => 175,  260 => 169,  237 => 149,  233 => 148,  229 => 147,  225 => 146,  220 => 144,  198 => 127,  171 => 103,  144 => 78,  133 => 70,  129 => 69,  109 => 51,  94 => 39,  91 => 38,  82 => 33,  80 => 32,  73 => 28,  69 => 27,  65 => 26,  60 => 24,  57 => 23,  51 => 21,  49 => 20,  31 => 4,  29 => 3,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -337,19 +358,26 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
                     <div class=\"col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding\">
                         <div class=\"pull-right\">
                             <ul class=\"userMenu\">
-                                <li><a href=\"account-1.html\"><span class=\"hidden-xs\"> My Account</span> <i class=\"glyphicon glyphicon-user hide visible-xs \"></i></a></li>
 
 
-                                <li class=\"dropdown hasUserMenu\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\"> <i class=\"glyphicon glyphicon-log-in hide visible-xs \"></i> {{ app.user.username}} <b class=\"caret\"></b></a>
+                              {% if is_granted('ROLE_ADMIN') %}
+                                   <li><a href=\"{{ path('mainaddminn') }}\"><span class=\"hidden-xs\">espace Administrateur</span> <i class=\"glyphicon glyphicon-user hide visible-xs \"></i></a></li>
+                                   {% endif %}
+                               
+                        <li class=\"dropdown hasUserMenu\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\"> <i class=\"glyphicon glyphicon-log-in hide visible-xs \"></i> {{ app.user.username}} <b class=\"caret\"></b></a>
                                     <ul class=\"dropdown-menu\">
-                                        <li><a href=\"{{ path('fos_user_profile_edit') }}\"></i> Account</a></li>
+                                        <li><a href=\"{{ path('fos_user_profile_edit') }}\"></i> Modifier Profil</a></li>
                                         <li><a href=\"{{ path('fos_user_profile_show') }}\"><i class=\"fa fa fa-cog\"></i> Profile</a></li>
-                                        <li><a href=\"my-address.html\"><i class=\"fa fa-map-marker\"></i> Addresses</a></li>
-
                                         <li><a href=\"{{ path('user_wishlist') }}\" title=\"My wishlists\">
                                                 <i class=\"fa fa-heart\"></i>
-                                                My wishlists
+                                                Ma wishlist
                                             </a></li>
+                                              {% if app.user.statutcoupon == 1  %}
+                                        <li><a href=\"{{ path('coupon_index') }}\" title=\"Mes Coupons\">
+                                                <i class=\"fa fa-fw fa-clock-o\"></i>
+                                                Mes Coupons
+                                            </a></li>
+                                            {% endif %}
                                         <li class=\"divider\"></li>
                                         <li><a href=\"{{ path('fos_user_security_logout') }}\"><i class=\"fa  fa-sign-out\"></i> Déconnexion</a></li>
                                     </ul>
@@ -524,6 +552,6 @@ class __TwigTemplate_f78bc8970df001aae7318f6709bd1c16234a0759f21b1293f350dd76729
 
     <!--/.search-full-->
 
-</div> <br><br>", "MainBundle:eshop:header.html.twig", "C:\\wamp64\\www\\weeeb\\src\\MainBundle/Resources/views/eshop/header.html.twig");
+</div> <br><br>", "MainBundle:eshop:header.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\src\\MainBundle/Resources/views/eshop/header.html.twig");
     }
 }

@@ -21,29 +21,29 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_152b63f19531b519ae202e2a77da74384107873a6a3c905eea397de9207c81c4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_152b63f19531b519ae202e2a77da74384107873a6a3c905eea397de9207c81c4->enter($__internal_152b63f19531b519ae202e2a77da74384107873a6a3c905eea397de9207c81c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/show.html.twig"));
+        $__internal_e2ef787d0fc0fc73c699e9792036801857385bdf612290df81f4c650483237cb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e2ef787d0fc0fc73c699e9792036801857385bdf612290df81f4c650483237cb->enter($__internal_e2ef787d0fc0fc73c699e9792036801857385bdf612290df81f4c650483237cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/show.html.twig"));
 
-        $__internal_552276087b183b707404f16b3accdf5238332e396f7457420cd1ff713851c367 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_552276087b183b707404f16b3accdf5238332e396f7457420cd1ff713851c367->enter($__internal_552276087b183b707404f16b3accdf5238332e396f7457420cd1ff713851c367_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/show.html.twig"));
+        $__internal_2f480757fc635ca8fb2617b3e5da9e09d864d4a0f64b063408389ffa727fb3e1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2f480757fc635ca8fb2617b3e5da9e09d864d4a0f64b063408389ffa727fb3e1->enter($__internal_2f480757fc635ca8fb2617b3e5da9e09d864d4a0f64b063408389ffa727fb3e1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_152b63f19531b519ae202e2a77da74384107873a6a3c905eea397de9207c81c4->leave($__internal_152b63f19531b519ae202e2a77da74384107873a6a3c905eea397de9207c81c4_prof);
+        $__internal_e2ef787d0fc0fc73c699e9792036801857385bdf612290df81f4c650483237cb->leave($__internal_e2ef787d0fc0fc73c699e9792036801857385bdf612290df81f4c650483237cb_prof);
 
         
-        $__internal_552276087b183b707404f16b3accdf5238332e396f7457420cd1ff713851c367->leave($__internal_552276087b183b707404f16b3accdf5238332e396f7457420cd1ff713851c367_prof);
+        $__internal_2f480757fc635ca8fb2617b3e5da9e09d864d4a0f64b063408389ffa727fb3e1->leave($__internal_2f480757fc635ca8fb2617b3e5da9e09d864d4a0f64b063408389ffa727fb3e1_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_c70f6e5dbf4d236368c8ee0c6b26d19ad63c53625c9a68450006b6c975588372 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c70f6e5dbf4d236368c8ee0c6b26d19ad63c53625c9a68450006b6c975588372->enter($__internal_c70f6e5dbf4d236368c8ee0c6b26d19ad63c53625c9a68450006b6c975588372_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_1a1852835fb31503053d9a7b169243abcef45dab7291ad1cc114b67daaf64334 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1a1852835fb31503053d9a7b169243abcef45dab7291ad1cc114b67daaf64334->enter($__internal_1a1852835fb31503053d9a7b169243abcef45dab7291ad1cc114b67daaf64334_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_2cfba5e33d8cc5b89ffab0ff8b1d48c388a6bf40ae0ebcccb36158cd63195745 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2cfba5e33d8cc5b89ffab0ff8b1d48c388a6bf40ae0ebcccb36158cd63195745->enter($__internal_2cfba5e33d8cc5b89ffab0ff8b1d48c388a6bf40ae0ebcccb36158cd63195745_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_d61c3b90dec6b73388d2a351625c1b3293fc461e8c3cc2fee9d107d3010d4c62 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d61c3b90dec6b73388d2a351625c1b3293fc461e8c3cc2fee9d107d3010d4c62->enter($__internal_d61c3b90dec6b73388d2a351625c1b3293fc461e8c3cc2fee9d107d3010d4c62_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "
@@ -94,30 +94,45 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "id", array()), "html", null, true);
         echo "</h3>
 
-                <div class=\"rating\">
-                    <p><span><i class=\"fa fa-star\"></i></span> <span><i class=\"fa fa-star\"></i></span> <span><i
-                                    class=\"fa fa-star\"></i></span> <span><i class=\"fa fa-star\"></i></span> <span><i
-                                    class=\"fa fa-star-o \"></i></span> <span class=\"ratingInfo\"> <span> / </span> <a
-                                    data-target=\"#modal-review\" data-toggle=\"modal\"> Write a review</a> </span></p>
+
+                ";
+        // line 38
+        if (($this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "pourcentagePromotion", array()) == 0)) {
+            // line 39
+            echo "                    <div class=\"product-price\">
+                        <span class=\"price-sales\"> Price : ";
+            // line 40
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "prixProduit", array()), "html", null, true);
+            echo "dt</span>
+                    </div>
+
+                ";
+        } else {
+            // line 44
+            echo "
+
+
+                <div class=\"product-price\">
+                    Price :<span class=\"price-standard\">  ";
+            // line 48
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "prixProduit", array()), "html", null, true);
+            echo "dt</span>
+                    <span class=\"price-sales\">";
+            // line 49
+            echo twig_escape_filter($this->env, ($this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "prixProduit", array()) * ($this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "pourcentagePromotion", array()) / 100)), "html", null, true);
+            echo "dt</span>
                 </div>
 
-                <div class=\"product-price\"><span class=\"price-sales\"> Price : ";
-        // line 44
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "prixProduit", array()), "html", null, true);
-        echo "dt
-                       </span> <span class=\"price-standard\">";
-        // line 45
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "pourcentagePromotion", array()), "html", null, true);
-        echo "dt</span>
-                </div>
 
-                <h3>Categorie : ";
-        // line 48
+                ";
+        }
+        // line 54
+        echo "                <h3>Categorie : ";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "Categorie", array()), "nom", array()), "html", null, true);
         echo "</h3>
                 <div class=\"active\"><p>
                         Etat : ";
-        // line 50
+        // line 56
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "etat", array()), "html", null, true);
         echo "
                 </div>
@@ -125,50 +140,37 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
                 <div class=\"cart-actions\">
                     <div class=\"addto row\">
                         <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
-                            <button onclick=\"productAddToCartForm.submit(this);\"
-                                    class=\"button btn-block btn-cart cart first\" title=\"Add to Cart\" type=\"button\">Add
-                                to Cart
-                            </button>
+                           
                         </div>
-                        <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><a class=\"link-wishlist wishlist btn-block \">Add
-                                to Wishlist</a></div>
+                    
                     </div>
                     ";
-        // line 64
+        // line 66
         if (($this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "quantiteStock", array()) != 0)) {
-            // line 65
+            // line 67
             echo "
                         <div style=\"clear:both\"></div>
                         <h3 class=\"incaps\"><i class=\"fa fa fa-check-circle-o color-in\"></i> In stock</h3>
                     ";
         } else {
-            // line 69
+            // line 71
             echo "                        <h3 style=\"clear:both\" class=\"incaps\"><i class=\"fa fa-minus-circle color-out\"></i> Out of stock
                         </h3>
 
                     ";
         }
-        // line 73
+        // line 75
         echo "
                 </div>
                 <!--/.cart-actions-->
 
                 <div class=\"clear\"></div>
                 <div class=\"product-tab w100 clearfix\">
-                    <ul class=\"nav nav-tabs\">
-                        <li class=\"active\"><a href=\"#details\" data-toggle=\"tab\">Details</a></li>
-
-                    </ul>
+                   
 
                     <!-- Tab panes -->
                     <div class=\"tab-content\">
-                        <div class=\"tab-pane active\" id=\"details\">
-                            ";
-        // line 87
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["product"]) ? $context["product"] : $this->getContext($context, "product")), "description", array()), "html", null, true);
-        echo "
-                            <br>
-                        </div>
+                     
 
                     </div>
                     <!-- /.tab content -->
@@ -196,10 +198,10 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
     </div>
 ";
         
-        $__internal_2cfba5e33d8cc5b89ffab0ff8b1d48c388a6bf40ae0ebcccb36158cd63195745->leave($__internal_2cfba5e33d8cc5b89ffab0ff8b1d48c388a6bf40ae0ebcccb36158cd63195745_prof);
+        $__internal_d61c3b90dec6b73388d2a351625c1b3293fc461e8c3cc2fee9d107d3010d4c62->leave($__internal_d61c3b90dec6b73388d2a351625c1b3293fc461e8c3cc2fee9d107d3010d4c62_prof);
 
         
-        $__internal_c70f6e5dbf4d236368c8ee0c6b26d19ad63c53625c9a68450006b6c975588372->leave($__internal_c70f6e5dbf4d236368c8ee0c6b26d19ad63c53625c9a68450006b6c975588372_prof);
+        $__internal_1a1852835fb31503053d9a7b169243abcef45dab7291ad1cc114b67daaf64334->leave($__internal_1a1852835fb31503053d9a7b169243abcef45dab7291ad1cc114b67daaf64334_prof);
 
     }
 
@@ -215,7 +217,7 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
 
     public function getDebugInfo()
     {
-        return array (  168 => 87,  152 => 73,  146 => 69,  140 => 65,  138 => 64,  121 => 50,  116 => 48,  110 => 45,  106 => 44,  94 => 35,  89 => 33,  78 => 25,  62 => 12,  58 => 11,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  163 => 75,  157 => 71,  151 => 67,  149 => 66,  136 => 56,  130 => 54,  122 => 49,  118 => 48,  112 => 44,  105 => 40,  102 => 39,  100 => 38,  94 => 35,  89 => 33,  78 => 25,  62 => 12,  58 => 11,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -264,17 +266,23 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
 
                 <h3 class=\"product-code\">Product Id : {{ product.id }}</h3>
 
-                <div class=\"rating\">
-                    <p><span><i class=\"fa fa-star\"></i></span> <span><i class=\"fa fa-star\"></i></span> <span><i
-                                    class=\"fa fa-star\"></i></span> <span><i class=\"fa fa-star\"></i></span> <span><i
-                                    class=\"fa fa-star-o \"></i></span> <span class=\"ratingInfo\"> <span> / </span> <a
-                                    data-target=\"#modal-review\" data-toggle=\"modal\"> Write a review</a> </span></p>
+
+                {% if product.pourcentagePromotion==0 %}
+                    <div class=\"product-price\">
+                        <span class=\"price-sales\"> Price : {{ product.prixProduit }}dt</span>
+                    </div>
+
+                {%  else %}
+
+
+
+                <div class=\"product-price\">
+                    Price :<span class=\"price-standard\">  {{ product.prixProduit }}dt</span>
+                    <span class=\"price-sales\">{{  product.prixProduit * (  product.pourcentagePromotion/100 )}}dt</span>
                 </div>
 
-                <div class=\"product-price\"><span class=\"price-sales\"> Price : {{ product.prixProduit }}dt
-                       </span> <span class=\"price-standard\">{{ product.pourcentagePromotion }}dt</span>
-                </div>
 
+                {% endif %}
                 <h3>Categorie : {{ product.Categorie.nom }}</h3>
                 <div class=\"active\"><p>
                         Etat : {{ product.etat }}
@@ -283,13 +291,9 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
                 <div class=\"cart-actions\">
                     <div class=\"addto row\">
                         <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
-                            <button onclick=\"productAddToCartForm.submit(this);\"
-                                    class=\"button btn-block btn-cart cart first\" title=\"Add to Cart\" type=\"button\">Add
-                                to Cart
-                            </button>
+                           
                         </div>
-                        <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><a class=\"link-wishlist wishlist btn-block \">Add
-                                to Wishlist</a></div>
+                    
                     </div>
                     {% if  product.quantiteStock  != 0 %}
 
@@ -306,17 +310,11 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
 
                 <div class=\"clear\"></div>
                 <div class=\"product-tab w100 clearfix\">
-                    <ul class=\"nav nav-tabs\">
-                        <li class=\"active\"><a href=\"#details\" data-toggle=\"tab\">Details</a></li>
-
-                    </ul>
+                   
 
                     <!-- Tab panes -->
                     <div class=\"tab-content\">
-                        <div class=\"tab-pane active\" id=\"details\">
-                            {{ product.description }}
-                            <br>
-                        </div>
+                     
 
                     </div>
                     <!-- /.tab content -->
@@ -346,6 +344,6 @@ class __TwigTemplate_8b2343d18614ff0ca28b141607c0568d7abf258eed3b0fae63268196168
 
 
 
-", "product/show.html.twig", "C:\\wamp64\\www\\test\\app\\Resources\\views\\product\\show.html.twig");
+", "product/show.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\app\\Resources\\views\\product\\show.html.twig");
     }
 }

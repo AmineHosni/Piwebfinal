@@ -21,29 +21,29 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_74160ef3e7e5a305095d380e95011e60af7d19974f03e7eacbeec2417602634e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_74160ef3e7e5a305095d380e95011e60af7d19974f03e7eacbeec2417602634e->enter($__internal_74160ef3e7e5a305095d380e95011e60af7d19974f03e7eacbeec2417602634e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/index.html.twig"));
+        $__internal_54e9ab21edbe04bff1f40c881de5fa978402ef2c54afd873c345407ad1b1a6f4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_54e9ab21edbe04bff1f40c881de5fa978402ef2c54afd873c345407ad1b1a6f4->enter($__internal_54e9ab21edbe04bff1f40c881de5fa978402ef2c54afd873c345407ad1b1a6f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/index.html.twig"));
 
-        $__internal_9c7d76fbfe4347b5ef526f3133ff8eb6be4efe8ff5106af9d9499bf30155b14c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9c7d76fbfe4347b5ef526f3133ff8eb6be4efe8ff5106af9d9499bf30155b14c->enter($__internal_9c7d76fbfe4347b5ef526f3133ff8eb6be4efe8ff5106af9d9499bf30155b14c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/index.html.twig"));
+        $__internal_699c366d401c92deb6d81fc17c457b126b1af5c0eb1a0dc34546619e4cd237c0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_699c366d401c92deb6d81fc17c457b126b1af5c0eb1a0dc34546619e4cd237c0->enter($__internal_699c366d401c92deb6d81fc17c457b126b1af5c0eb1a0dc34546619e4cd237c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "product/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_74160ef3e7e5a305095d380e95011e60af7d19974f03e7eacbeec2417602634e->leave($__internal_74160ef3e7e5a305095d380e95011e60af7d19974f03e7eacbeec2417602634e_prof);
+        $__internal_54e9ab21edbe04bff1f40c881de5fa978402ef2c54afd873c345407ad1b1a6f4->leave($__internal_54e9ab21edbe04bff1f40c881de5fa978402ef2c54afd873c345407ad1b1a6f4_prof);
 
         
-        $__internal_9c7d76fbfe4347b5ef526f3133ff8eb6be4efe8ff5106af9d9499bf30155b14c->leave($__internal_9c7d76fbfe4347b5ef526f3133ff8eb6be4efe8ff5106af9d9499bf30155b14c_prof);
+        $__internal_699c366d401c92deb6d81fc17c457b126b1af5c0eb1a0dc34546619e4cd237c0->leave($__internal_699c366d401c92deb6d81fc17c457b126b1af5c0eb1a0dc34546619e4cd237c0_prof);
 
     }
 
     // line 4
     public function block_content($context, array $blocks = array())
     {
-        $__internal_f4661b5b5a9077beca66592e89313ea39fc6f106b175fa10c8c8ad185733b6e0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f4661b5b5a9077beca66592e89313ea39fc6f106b175fa10c8c8ad185733b6e0->enter($__internal_f4661b5b5a9077beca66592e89313ea39fc6f106b175fa10c8c8ad185733b6e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_820ef0e307a82b45a402840bd7fd9f750276b26326c18a3f7cf9bc21f75ad64d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_820ef0e307a82b45a402840bd7fd9f750276b26326c18a3f7cf9bc21f75ad64d->enter($__internal_820ef0e307a82b45a402840bd7fd9f750276b26326c18a3f7cf9bc21f75ad64d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_d7909bfc35f6d6b9f0e16ce87aef75cf18515695c7ba2587538efcbdb243df47 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d7909bfc35f6d6b9f0e16ce87aef75cf18515695c7ba2587538efcbdb243df47->enter($__internal_d7909bfc35f6d6b9f0e16ce87aef75cf18515695c7ba2587538efcbdb243df47_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_3fc13f8d02f2cbcbb9abf86c6c2d992f4a58fcb399d07d0bdb73b77933300ae6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3fc13f8d02f2cbcbb9abf86c6c2d992f4a58fcb399d07d0bdb73b77933300ae6->enter($__internal_3fc13f8d02f2cbcbb9abf86c6c2d992f4a58fcb399d07d0bdb73b77933300ae6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 5
         echo "<div class=\"container main-container\">
@@ -58,7 +58,7 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
     <a class=\"btn btn-danger btn-xs\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"modifier\" href= \"";
         // line 14
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("product_new");
-        echo "\"><span class=\"fa add-fav\"> </span>ajouter une produit </a>
+        echo "\"><span class=\"fa add-fav\"> </span>ajouter un produit </a>
 
     </br>
     </br>
@@ -101,12 +101,12 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
 
                         <td>";
             // line 41
-            echo twig_escape_filter($this->env, $this->getAttribute($context["product"], "etat", array()), "html", null, true);
+            echo twig_escape_filter($this->env, ($this->getAttribute($context["product"], "prixProduit", array()) * ($this->getAttribute($context["product"], "pourcentagePromotion", array()) / 100)), "html", null, true);
             echo "</td>
 
                         <td>";
             // line 43
-            echo twig_escape_filter($this->env, $this->getAttribute($context["product"], "pourcentagePromotion", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["product"], "etat", array()), "html", null, true);
             echo "</td>
 
                         </td>
@@ -122,11 +122,10 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
             // line 51
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("product_edit", array("id" => $this->getAttribute($context["product"], "id", array()))), "html", null, true);
             echo "\"><span class=\"glyphicon glyphicon-edit\"></span></a>
-
-                                <a class=\"btn btn-danger btn-sm\" data-toggle=\"tooltip\"  title=\"jouter\" href= \"";
-            // line 53
+                                <a class=\"btn btn-danger btn-sm\" data-toggle=\"tooltip\"  title=\"supprime\" href= \"";
+            // line 52
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("product_delete", array("id" => $this->getAttribute($context["product"], "id", array()))), "html", null, true);
-            echo "\"><span class=\"glyphicon glyphicon-plus\"></span></a>
+            echo "\"><span class=\"glyphicon glyphicon-minus\"></span></a>
 
 
 
@@ -139,7 +138,7 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 62
+        // line 61
         echo "                </tbody>
             </table>
     </div>
@@ -149,10 +148,10 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
 
 ";
         
-        $__internal_d7909bfc35f6d6b9f0e16ce87aef75cf18515695c7ba2587538efcbdb243df47->leave($__internal_d7909bfc35f6d6b9f0e16ce87aef75cf18515695c7ba2587538efcbdb243df47_prof);
+        $__internal_3fc13f8d02f2cbcbb9abf86c6c2d992f4a58fcb399d07d0bdb73b77933300ae6->leave($__internal_3fc13f8d02f2cbcbb9abf86c6c2d992f4a58fcb399d07d0bdb73b77933300ae6_prof);
 
         
-        $__internal_f4661b5b5a9077beca66592e89313ea39fc6f106b175fa10c8c8ad185733b6e0->leave($__internal_f4661b5b5a9077beca66592e89313ea39fc6f106b175fa10c8c8ad185733b6e0_prof);
+        $__internal_820ef0e307a82b45a402840bd7fd9f750276b26326c18a3f7cf9bc21f75ad64d->leave($__internal_820ef0e307a82b45a402840bd7fd9f750276b26326c18a3f7cf9bc21f75ad64d_prof);
 
     }
 
@@ -168,7 +167,7 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
 
     public function getDebugInfo()
     {
-        return array (  143 => 62,  128 => 53,  123 => 51,  119 => 50,  109 => 43,  104 => 41,  99 => 39,  95 => 38,  91 => 37,  88 => 36,  84 => 35,  60 => 14,  49 => 5,  40 => 4,  11 => 1,);
+        return array (  142 => 61,  127 => 52,  123 => 51,  119 => 50,  109 => 43,  104 => 41,  99 => 39,  95 => 38,  91 => 37,  88 => 36,  84 => 35,  60 => 14,  49 => 5,  40 => 4,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -194,7 +193,7 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
     <h3><span class=\"glyphicon glyphicon-list-alt\"></span>  mes produits  </h3> <br>
 
 
-    <a class=\"btn btn-danger btn-xs\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"modifier\" href= \"{{ path('product_new')}}\"><span class=\"fa add-fav\"> </span>ajouter une produit </a>
+    <a class=\"btn btn-danger btn-xs\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"modifier\" href= \"{{ path('product_new')}}\"><span class=\"fa add-fav\"> </span>ajouter un produit </a>
 
     </br>
     </br>
@@ -221,9 +220,9 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
                         <td>{{  product.description }}</td>
                         <td>{{  product.prixProduit }}</td>
 
-                        <td>{{  product.etat }}</td>
+                        <td>{{  product.prixProduit * (  product.pourcentagePromotion/100 )}}</td>
 
-                        <td>{{  product.pourcentagePromotion }}</td>
+                        <td>{{  product.etat }}</td>
 
                         </td>
                         <td >
@@ -232,8 +231,7 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
 
                                 <a class=\"btn btn-primary btn-sm\" data-toggle=\"tooltip\"  title=\"afficher\" href=\"{{ path('product_show', { 'id': product.id}) }}\"><span class=\"glyphicon glyphicon-search\"></span></a>
                                 <a class=\"btn btn-danger btn-sm\" data-toggle=\"tooltip\"  title=\"modifier\" href= \"{{ path('product_edit', { 'id': product.id}) }}\"><span class=\"glyphicon glyphicon-edit\"></span></a>
-
-                                <a class=\"btn btn-danger btn-sm\" data-toggle=\"tooltip\"  title=\"jouter\" href= \"{{ path('product_delete',{'id': product.id })}}\"><span class=\"glyphicon glyphicon-plus\"></span></a>
+                                <a class=\"btn btn-danger btn-sm\" data-toggle=\"tooltip\"  title=\"supprime\" href= \"{{ path('product_delete',{'id': product.id })}}\"><span class=\"glyphicon glyphicon-minus\"></span></a>
 
 
 
@@ -250,6 +248,6 @@ class __TwigTemplate_3fd8ad01177d7dc93657703c7adfbdae4326bf90c838e5315b19bc1d946
 
 
 {% endblock %}
-", "product/index.html.twig", "C:\\wamp64\\www\\test\\app\\Resources\\views\\product\\index.html.twig");
+", "product/index.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\app\\Resources\\views\\product\\index.html.twig");
     }
 }

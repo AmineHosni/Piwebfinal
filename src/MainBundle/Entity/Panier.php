@@ -15,11 +15,11 @@ class Panier
     /**
      * @ORM\Column(type="integer")
      */
-    private $qtepan;
+    private $qtePan;
     /**
      * @ORM\Column(type="float")
      */
-    private $prixtot;
+    private $prixTot;
     /**
      *@ORM\ManyToOne(targetEntity="MainBundle\Entity\User")
      * @ORM\JoinColumn(referencedColumnName="id",name="id_user")
@@ -43,51 +43,51 @@ class Panier
     }
 
     /**
-     * Set qtepan
+     * Set qtePan
      *
-     * @param integer $qtepan
+     * @param integer $qtePan
      *
      * @return Panier
      */
-    public function setQtepan($qtepan)
+    public function setQtePan($qtePan)
     {
-        $this->qtepan = $qtepan;
+        $this->qtePan = $qtePan;
 
         return $this;
     }
 
     /**
-     * Get qtepan
+     * Get qtePan
      *
      * @return integer
      */
-    public function getQtepan()
+    public function getQtePan()
     {
-        return $this->qtepan;
+        return $this->qtePan;
     }
 
     /**
-     * Set prixtot
+     * Set prixTot
      *
-     * @param float $prixtot
+     * @param float $prixTot
      *
      * @return Panier
      */
-    public function setPrixtot($prixtot)
+    public function setPrixTot($prixTot)
     {
-        $this->prixtot = $prixtot;
+        $this->prixTot = $prixTot;
 
         return $this;
     }
 
     /**
-     * Get prixtot
+     * Get prixTot
      *
      * @return float
      */
-    public function getPrixtot()
+    public function getPrixTot()
     {
-        return $this->prixtot;
+        return $this->prixTot;
     }
 
     /**

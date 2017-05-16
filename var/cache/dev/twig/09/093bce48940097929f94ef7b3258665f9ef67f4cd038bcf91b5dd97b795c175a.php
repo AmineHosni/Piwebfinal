@@ -21,32 +21,36 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_328fb3803004e1ab031039b9109ddc41300ebda828bb833ee04b9b035225d892 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_328fb3803004e1ab031039b9109ddc41300ebda828bb833ee04b9b035225d892->enter($__internal_328fb3803004e1ab031039b9109ddc41300ebda828bb833ee04b9b035225d892_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "venteflash/list.html.twig"));
+        $__internal_72dd20d7dc670d32bac31634b0b71d0e05c9ceb97ed389da95998d70437e64c3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_72dd20d7dc670d32bac31634b0b71d0e05c9ceb97ed389da95998d70437e64c3->enter($__internal_72dd20d7dc670d32bac31634b0b71d0e05c9ceb97ed389da95998d70437e64c3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "venteflash/list.html.twig"));
 
-        $__internal_4f120929a390ad92ac421d92a9cbf531b97c9c8d423fcd35b99586fee4fc3242 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4f120929a390ad92ac421d92a9cbf531b97c9c8d423fcd35b99586fee4fc3242->enter($__internal_4f120929a390ad92ac421d92a9cbf531b97c9c8d423fcd35b99586fee4fc3242_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "venteflash/list.html.twig"));
+        $__internal_aa924f8f0ea829913617f6ce912a55629ee959e57c27b79796ced57f09fcd68a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_aa924f8f0ea829913617f6ce912a55629ee959e57c27b79796ced57f09fcd68a->enter($__internal_aa924f8f0ea829913617f6ce912a55629ee959e57c27b79796ced57f09fcd68a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "venteflash/list.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_328fb3803004e1ab031039b9109ddc41300ebda828bb833ee04b9b035225d892->leave($__internal_328fb3803004e1ab031039b9109ddc41300ebda828bb833ee04b9b035225d892_prof);
+        $__internal_72dd20d7dc670d32bac31634b0b71d0e05c9ceb97ed389da95998d70437e64c3->leave($__internal_72dd20d7dc670d32bac31634b0b71d0e05c9ceb97ed389da95998d70437e64c3_prof);
 
         
-        $__internal_4f120929a390ad92ac421d92a9cbf531b97c9c8d423fcd35b99586fee4fc3242->leave($__internal_4f120929a390ad92ac421d92a9cbf531b97c9c8d423fcd35b99586fee4fc3242_prof);
+        $__internal_aa924f8f0ea829913617f6ce912a55629ee959e57c27b79796ced57f09fcd68a->leave($__internal_aa924f8f0ea829913617f6ce912a55629ee959e57c27b79796ced57f09fcd68a_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_d4b4c33a656cd03db2f4e63ccc82050a7e59b816f3e515bc953e6f01a6599fe1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d4b4c33a656cd03db2f4e63ccc82050a7e59b816f3e515bc953e6f01a6599fe1->enter($__internal_d4b4c33a656cd03db2f4e63ccc82050a7e59b816f3e515bc953e6f01a6599fe1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_e4a87e3bc5c55c6dbb0b3b437681bab1b7737b76bd240b6f91ec2dc2890ebf86 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e4a87e3bc5c55c6dbb0b3b437681bab1b7737b76bd240b6f91ec2dc2890ebf86->enter($__internal_e4a87e3bc5c55c6dbb0b3b437681bab1b7737b76bd240b6f91ec2dc2890ebf86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_221875e43694db7db80384e8a244cc772184547ca401582883aa6d3014dfcfff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_221875e43694db7db80384e8a244cc772184547ca401582883aa6d3014dfcfff->enter($__internal_221875e43694db7db80384e8a244cc772184547ca401582883aa6d3014dfcfff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_b3138f1282b2819d9873de6557c5581f30c80ed071e0b840b46757b0b75e0427 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b3138f1282b2819d9873de6557c5581f30c80ed071e0b840b46757b0b75e0427->enter($__internal_b3138f1282b2819d9873de6557c5581f30c80ed071e0b840b46757b0b75e0427_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
-        echo "    <h2 xmlns=\"http://www.w3.org/1999/html\"> <i class=\" glyphicon glyphicon-flash\"></i> les ventes flashes ouvertes</h2>
+        echo "
+
+<div class=\"container main-container\">
+
+    <h2 xmlns=\"http://www.w3.org/1999/html\"> <i class=\" glyphicon glyphicon-flash\"></i> les ventes flashes ouvertes</h2>
     <div class=\"container\">
         <div class=\"row\">
             <div id=\"myCarousel\" class=\"carousel  slide\">
@@ -55,11 +59,11 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
                 <!-- Items -->
                 <div class=\"carousel-inner\">
                     <div class=\"active item\">  <img src=\"";
-        // line 12
+        // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/images/banner.jpg"), "html", null, true);
         echo "\" class=\"img-responsive\"></div>
                     <div class=\"item\">  <img src=\"";
-        // line 13
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/images/banner.jpg"), "html", null, true);
         echo "\" class=\"img-responsive\"></div>
                 </div>
@@ -70,15 +74,20 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
     </div>
  <br>
     <br>
-
+    <div class=\"container main-container\">
+        <a class=\"btn btn-danger btn-xs\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"modifier\" href= \"";
+        // line 27
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("venteflash_index");
+        echo "\"><span class=\"glyphicon glyphicon-calendar\"> </span>gerer mes ventes flash </a>
+ <br><br>
     <div class=\"row featuredPostContainer \">
         <div class=\"featuredImageLook3\">
             ";
-        // line 25
+        // line 31
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["venteFlashes"]) ? $context["venteFlashes"] : $this->getContext($context, "venteFlashes")));
         foreach ($context['_seq'] as $context["_key"] => $context["venteFlash"]) {
-            // line 26
+            // line 32
             echo "                <div class=\"col-md-4 col-sm-6 col-xs-6 col-xs-min-12\">
                     <div class=\"inner\">
                         <div class=\"box-content-overly box-content-overly-white\">
@@ -86,13 +95,13 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
                                 <div class=\"box-text-cell \">
                                     <div class=\"box-text-cell-inner dark\">
                                         <h1 class=\"uppercase\"><h2>";
-            // line 32
+            // line 38
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans($this->getAttribute($context["venteFlash"], "nom", array())), "html", null, true);
             echo "</h2></h1>
                                         <hr class=\"submini\">
 
                                         <a href=\"";
-            // line 35
+            // line 41
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("venteflash_show", array("id" => $this->getAttribute($context["venteFlash"], "id", array()))), "html", null, true);
             echo "\" class=\"btn btn-inverse\">Acceder Maintenant</a></div>
 
@@ -102,17 +111,17 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
 
                     <!--/.box-content-overly -->
                     <div class=\"img-title\"><h1>";
-            // line 42
+            // line 48
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans($this->getAttribute($context["venteFlash"], "nom", array())), "html", null, true);
             echo "</h1> </div>
                     <a class=\"img-block\" href=\"";
-            // line 43
+            // line 49
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("venteflash_show", array("id" => $this->getAttribute($context["venteFlash"], "id", array()))), "html", null, true);
             echo "\" > <img class=\"img-responsive\" src=\"";
             echo twig_escape_filter($this->env, ($this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/images/") . $this->getAttribute($context["venteFlash"], "imageName", array())), "html", null, true);
-            echo "\" }}  alt=\"img\"  height=\"400\" width=\"600\"></a>
+            echo "\" }}  alt=\"img\"  height=\"300\" width=\"600\"  ></a>
                         <div class=container\"><h1> <div id=";
-            // line 44
+            // line 50
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans($this->getAttribute($context["venteFlash"], "id", array())), "html", null, true);
             echo " >  </div></h1></div>
                     </div>
@@ -128,7 +137,7 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
                     function countDown() {
                         var now = new Date();
                         var future = new Date(\"";
-            // line 57
+            // line 63
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["venteFlash"], "finish", array())), "html", null, true);
             echo "\").getTime();
                         var timeLeft = future - now;
@@ -161,7 +170,7 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
 
                         timeLeft = spareDays + \":\" + spareHours + \":\" + spareMinutes + \":\" + spareSeconds;
                         var mySpan = document.getElementById(\"";
-            // line 87
+            // line 93
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans($this->getAttribute($context["venteFlash"], "id", array())), "html", null, true);
             echo "\");
                         mySpan.innerHTML = timeLeft;
@@ -185,16 +194,21 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['venteFlash'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 105
+        // line 111
         echo "        </div></div></div>
-    </div>
+    </div>    </div>
+
+
+
+
+
 
 ";
         
-        $__internal_221875e43694db7db80384e8a244cc772184547ca401582883aa6d3014dfcfff->leave($__internal_221875e43694db7db80384e8a244cc772184547ca401582883aa6d3014dfcfff_prof);
+        $__internal_b3138f1282b2819d9873de6557c5581f30c80ed071e0b840b46757b0b75e0427->leave($__internal_b3138f1282b2819d9873de6557c5581f30c80ed071e0b840b46757b0b75e0427_prof);
 
         
-        $__internal_d4b4c33a656cd03db2f4e63ccc82050a7e59b816f3e515bc953e6f01a6599fe1->leave($__internal_d4b4c33a656cd03db2f4e63ccc82050a7e59b816f3e515bc953e6f01a6599fe1_prof);
+        $__internal_e4a87e3bc5c55c6dbb0b3b437681bab1b7737b76bd240b6f91ec2dc2890ebf86->leave($__internal_e4a87e3bc5c55c6dbb0b3b437681bab1b7737b76bd240b6f91ec2dc2890ebf86_prof);
 
     }
 
@@ -210,7 +224,7 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
 
     public function getDebugInfo()
     {
-        return array (  189 => 105,  165 => 87,  132 => 57,  116 => 44,  110 => 43,  106 => 42,  96 => 35,  90 => 32,  82 => 26,  78 => 25,  63 => 13,  59 => 12,  49 => 4,  40 => 3,  11 => 2,);
+        return array (  198 => 111,  174 => 93,  141 => 63,  125 => 50,  119 => 49,  115 => 48,  105 => 41,  99 => 38,  91 => 32,  87 => 31,  80 => 27,  67 => 17,  63 => 16,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -226,6 +240,10 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
         return new Twig_Source("
 {% extends 'MainBundle:eshop:main.html.twig' %}
 {% block content %}
+
+
+<div class=\"container main-container\">
+
     <h2 xmlns=\"http://www.w3.org/1999/html\"> <i class=\" glyphicon glyphicon-flash\"></i> les ventes flashes ouvertes</h2>
     <div class=\"container\">
         <div class=\"row\">
@@ -244,7 +262,9 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
     </div>
  <br>
     <br>
-
+    <div class=\"container main-container\">
+        <a class=\"btn btn-danger btn-xs\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"modifier\" href= \"{{ path('venteflash_index')}}\"><span class=\"glyphicon glyphicon-calendar\"> </span>gerer mes ventes flash </a>
+ <br><br>
     <div class=\"row featuredPostContainer \">
         <div class=\"featuredImageLook3\">
             {% for venteFlash in venteFlashes %}
@@ -265,7 +285,7 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
 
                     <!--/.box-content-overly -->
                     <div class=\"img-title\"><h1>{{ venteFlash.nom  |trans }}</h1> </div>
-                    <a class=\"img-block\" href=\"{{ path(\"venteflash_show\",{\"id\":venteFlash.id}) }}\" > <img class=\"img-responsive\" src=\"{{ asset('bundles/images/')~ venteFlash.imageName }}\" }}  alt=\"img\"  height=\"400\" width=\"600\"></a>
+                    <a class=\"img-block\" href=\"{{ path(\"venteflash_show\",{\"id\":venteFlash.id}) }}\" > <img class=\"img-responsive\" src=\"{{ asset('bundles/images/')~ venteFlash.imageName }}\" }}  alt=\"img\"  height=\"300\" width=\"600\"  ></a>
                         <div class=container\"><h1> <div id={{ venteFlash.id  |trans }} >  </div></h1></div>
                     </div>
                     </div>
@@ -328,11 +348,16 @@ class __TwigTemplate_578ae80a625a84ebe5f1b53cff246bc6f42810b520e48ee0780c131f9f8
 
             {% endfor %}
         </div></div></div>
-    </div>
+    </div>    </div>
+
+
+
+
+
 
 {% endblock %}
 
 
-", "venteflash/list.html.twig", "C:\\wamp64\\www\\test\\app\\Resources\\views\\venteflash\\list.html.twig");
+", "venteflash/list.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\app\\Resources\\views\\venteflash\\list.html.twig");
     }
 }

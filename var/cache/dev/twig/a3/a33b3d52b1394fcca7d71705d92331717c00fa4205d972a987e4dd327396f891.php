@@ -21,29 +21,29 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_296cc53935e24cf169fde110c0624ba12c1d18f73b6f1d4d109368054e56fc53 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_296cc53935e24cf169fde110c0624ba12c1d18f73b6f1d4d109368054e56fc53->enter($__internal_296cc53935e24cf169fde110c0624ba12c1d18f73b6f1d4d109368054e56fc53_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/wishlist.html.twig"));
+        $__internal_3c420562c98a212871b59cb22f7a1422188aea6c25223e6e6f884f1676bed338 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3c420562c98a212871b59cb22f7a1422188aea6c25223e6e6f884f1676bed338->enter($__internal_3c420562c98a212871b59cb22f7a1422188aea6c25223e6e6f884f1676bed338_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/wishlist.html.twig"));
 
-        $__internal_305ad83a3e35f81ea7abe2bef223c63f917e4ff6a0b63d1202114d4878a3d5be = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_305ad83a3e35f81ea7abe2bef223c63f917e4ff6a0b63d1202114d4878a3d5be->enter($__internal_305ad83a3e35f81ea7abe2bef223c63f917e4ff6a0b63d1202114d4878a3d5be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/wishlist.html.twig"));
+        $__internal_6cb17eb47d53d3687fa18361531f2520f1ca6fd5950b4ec712eedf176645025e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6cb17eb47d53d3687fa18361531f2520f1ca6fd5950b4ec712eedf176645025e->enter($__internal_6cb17eb47d53d3687fa18361531f2520f1ca6fd5950b4ec712eedf176645025e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/wishlist.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_296cc53935e24cf169fde110c0624ba12c1d18f73b6f1d4d109368054e56fc53->leave($__internal_296cc53935e24cf169fde110c0624ba12c1d18f73b6f1d4d109368054e56fc53_prof);
+        $__internal_3c420562c98a212871b59cb22f7a1422188aea6c25223e6e6f884f1676bed338->leave($__internal_3c420562c98a212871b59cb22f7a1422188aea6c25223e6e6f884f1676bed338_prof);
 
         
-        $__internal_305ad83a3e35f81ea7abe2bef223c63f917e4ff6a0b63d1202114d4878a3d5be->leave($__internal_305ad83a3e35f81ea7abe2bef223c63f917e4ff6a0b63d1202114d4878a3d5be_prof);
+        $__internal_6cb17eb47d53d3687fa18361531f2520f1ca6fd5950b4ec712eedf176645025e->leave($__internal_6cb17eb47d53d3687fa18361531f2520f1ca6fd5950b4ec712eedf176645025e_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_1fb329c74485dc35941c62e213d627e0fb0b0efdf9ba7b4d835bd4515c8f978f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1fb329c74485dc35941c62e213d627e0fb0b0efdf9ba7b4d835bd4515c8f978f->enter($__internal_1fb329c74485dc35941c62e213d627e0fb0b0efdf9ba7b4d835bd4515c8f978f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_d726ff55f4f9e768f3f142104d6bb045748dd5f25a1ef19f11d143af7e5c554b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d726ff55f4f9e768f3f142104d6bb045748dd5f25a1ef19f11d143af7e5c554b->enter($__internal_d726ff55f4f9e768f3f142104d6bb045748dd5f25a1ef19f11d143af7e5c554b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_3bd343cd14d57a2be637aa86c968e29c4e94d89ece806f8423a3441b2923663b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3bd343cd14d57a2be637aa86c968e29c4e94d89ece806f8423a3441b2923663b->enter($__internal_3bd343cd14d57a2be637aa86c968e29c4e94d89ece806f8423a3441b2923663b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_8c2e5819aeea06414c6411c9434accc70ee7867f84fd174006bfcbc44524d6a5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8c2e5819aeea06414c6411c9434accc70ee7867f84fd174006bfcbc44524d6a5->enter($__internal_8c2e5819aeea06414c6411c9434accc70ee7867f84fd174006bfcbc44524d6a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "<div class=\"container main-container headerOffset\">
@@ -84,15 +84,16 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
                                 <td style=\"width:15%\"> Product</td>
                                 <td style=\"width:40%\">Details</td>
                                 <td style=\"width:10%\" class=\"delete\">&nbsp;</td>
+                                <td style=\"width:10%\" class=\"delete\">&nbsp;</td>
                                 <td style=\"width:10%\">Discount</td>
                                 <td style=\"width:15%\">Total</td>
                             </tr>
                             ";
-        // line 42
+        // line 43
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["paniers"]) ? $context["paniers"] : $this->getContext($context, "paniers")));
         foreach ($context['_seq'] as $context["_key"] => $context["panier"]) {
-            // line 43
+            // line 44
             echo "                                
                             
                             <tr class=\"CartProduct\">
@@ -103,29 +104,34 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
                                 <td>
                                     <div class=\"CartDescription\">
                                         <h4><a href=\"product-details.html\">";
-            // line 52
+            // line 53
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["panier"], "idProd", array()), "libelle", array()), "html", null, true);
             echo "</a></h4>
                                         <span class=\"size\"></span>
 
                                         <div class=\"price\"><span>";
-            // line 55
+            // line 56
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["panier"], "idProd", array()), "prixProduit", array()), "html", null, true);
             echo " TND</span></div>
                                     </div>
                                 </td>
                                 <td class=\"delete\"><a title=\"Delete\" href=\"";
-            // line 58
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("my_cart_del", array("id" => $this->getAttribute($context["panier"], "id", array()))), "html", null, true);
+            // line 59
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("deletewish", array("id" => $this->getAttribute($context["panier"], "id", array()))), "html", null, true);
             echo "\"> <i
                                         class=\"glyphicon glyphicon-trash fa-2x\"></i></a></td>
+                                    <td class=\"delete\"><a title=\"\" href=\"";
+            // line 61
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("panwish", array("id" => $this->getAttribute($context["panier"], "id", array()), "idpd" => $this->getAttribute($this->getAttribute($context["panier"], "idProd", array()), "id", array()))), "html", null, true);
+            echo "\"> <i
+                                        class=\"glyphicon glyphicon-shopping-cart  fa-2x\"></i></a></td>
                                 
                                 <td>";
-            // line 61
+            // line 64
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["panier"], "idProd", array()), "pourcentagePromotion", array()), "html", null, true);
             echo " %</td>
                                 <td class=\"price\">";
-            // line 62
+            // line 65
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["panier"], "idProd", array()), "prixProduit", array()), "html", null, true);
             echo " TND</td>
                             </tr>
@@ -134,7 +140,7 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['panier'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 65
+        // line 68
         echo "                      
                             </tbody>
                         </table>
@@ -144,7 +150,7 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
                     <div class=\"cartFooter w100\">
                         <div class=\"box-footer\">
                             <div class=\"pull-left\"><a href=\"";
-        // line 73
+        // line 76
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("main_homepage");
         echo "\" class=\"btn btn-default\"> <i
                                     class=\"fa fa-arrow-left\"></i> &nbsp; Continue shopping </a></div>
@@ -170,10 +176,10 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
 </div>
 ";
         
-        $__internal_3bd343cd14d57a2be637aa86c968e29c4e94d89ece806f8423a3441b2923663b->leave($__internal_3bd343cd14d57a2be637aa86c968e29c4e94d89ece806f8423a3441b2923663b_prof);
+        $__internal_8c2e5819aeea06414c6411c9434accc70ee7867f84fd174006bfcbc44524d6a5->leave($__internal_8c2e5819aeea06414c6411c9434accc70ee7867f84fd174006bfcbc44524d6a5_prof);
 
         
-        $__internal_1fb329c74485dc35941c62e213d627e0fb0b0efdf9ba7b4d835bd4515c8f978f->leave($__internal_1fb329c74485dc35941c62e213d627e0fb0b0efdf9ba7b4d835bd4515c8f978f_prof);
+        $__internal_d726ff55f4f9e768f3f142104d6bb045748dd5f25a1ef19f11d143af7e5c554b->leave($__internal_d726ff55f4f9e768f3f142104d6bb045748dd5f25a1ef19f11d143af7e5c554b_prof);
 
     }
 
@@ -189,7 +195,7 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
 
     public function getDebugInfo()
     {
-        return array (  148 => 73,  138 => 65,  129 => 62,  125 => 61,  119 => 58,  113 => 55,  107 => 52,  96 => 43,  92 => 42,  69 => 22,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  154 => 76,  144 => 68,  135 => 65,  131 => 64,  125 => 61,  120 => 59,  114 => 56,  108 => 53,  97 => 44,  93 => 43,  69 => 22,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -240,6 +246,7 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
                                 <td style=\"width:15%\"> Product</td>
                                 <td style=\"width:40%\">Details</td>
                                 <td style=\"width:10%\" class=\"delete\">&nbsp;</td>
+                                <td style=\"width:10%\" class=\"delete\">&nbsp;</td>
                                 <td style=\"width:10%\">Discount</td>
                                 <td style=\"width:15%\">Total</td>
                             </tr>
@@ -259,8 +266,10 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
                                         <div class=\"price\"><span>{{ panier.idProd.prixProduit }} TND</span></div>
                                     </div>
                                 </td>
-                                <td class=\"delete\"><a title=\"Delete\" href=\"{{path('my_cart_del', {'id':panier.id})}}\"> <i
+                                <td class=\"delete\"><a title=\"Delete\" href=\"{{path('deletewish', {'id':panier.id})}}\"> <i
                                         class=\"glyphicon glyphicon-trash fa-2x\"></i></a></td>
+                                    <td class=\"delete\"><a title=\"\" href=\"{{path('panwish', {'id':panier.id,'idpd': panier.idProd.id})}}\"> <i
+                                        class=\"glyphicon glyphicon-shopping-cart  fa-2x\"></i></a></td>
                                 
                                 <td>{{panier.idProd.pourcentagePromotion}} %</td>
                                 <td class=\"price\">{{ panier.idProd.prixProduit }} TND</td>
@@ -297,6 +306,6 @@ class __TwigTemplate_7ba9e3b43f5fbe25b31351b3d63c357a6f608df6ba3dc2217dd92110a0b
     <div style=\"clear:both\"></div>
 </div>
 {% endblock %}
-", "default/wishlist.html.twig", "C:\\wamp64\\www\\test\\app\\Resources\\views\\default\\wishlist.html.twig");
+", "default/wishlist.html.twig", "C:\\wamp64\\www\\Nouveau dossier (4)\\app\\Resources\\views\\default\\wishlist.html.twig");
     }
 }
