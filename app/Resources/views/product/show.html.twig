@@ -34,23 +34,17 @@
 
                 <h3 class="product-code">Product Id : {{ product.id }}</h3>
 
-
-                {% if product.pourcentagePromotion==0 %}
-                    <div class="product-price">
-                        <span class="price-sales"> Price : {{ product.prixProduit }}dt</span>
-                    </div>
-
-                {%  else %}
-
-
-
-                <div class="product-price">
-                    Price :<span class="price-standard">  {{ product.prixProduit }}dt</span>
-                    <span class="price-sales">{{  product.prixProduit * (  product.pourcentagePromotion/100 )}}dt</span>
+                <div class="rating">
+                    <p><span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span> <span><i
+                                    class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span> <span><i
+                                    class="fa fa-star-o "></i></span> <span class="ratingInfo"> <span> / </span> <a
+                                    data-target="#modal-review" data-toggle="modal"> Write a review</a> </span></p>
                 </div>
 
+                <div class="product-price"><span class="price-sales"> Price : {{ product.prixProduit }}dt
+                       </span> <span class="price-standard">{{ product.pourcentagePromotion }}dt</span>
+                </div>
 
-                {% endif %}
                 <h3>Categorie : {{ product.Categorie.nom }}</h3>
                 <div class="active"><p>
                         Etat : {{ product.etat }}
@@ -59,9 +53,13 @@
                 <div class="cart-actions">
                     <div class="addto row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                           
+                            <button onclick="productAddToCartForm.submit(this);"
+                                    class="button btn-block btn-cart cart first" title="Add to Cart" type="button">Add
+                                to Cart
+                            </button>
                         </div>
-                    
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><a class="link-wishlist wishlist btn-block ">Add
+                                to Wishlist</a></div>
                     </div>
                     {% if  product.quantiteStock  != 0 %}
 
@@ -78,11 +76,17 @@
 
                 <div class="clear"></div>
                 <div class="product-tab w100 clearfix">
-                   
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+
+                    </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                     
+                        <div class="tab-pane active" id="details">
+                            {{ product.description }}
+                            <br>
+                        </div>
 
                     </div>
                     <!-- /.tab content -->

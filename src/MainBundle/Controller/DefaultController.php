@@ -25,10 +25,4 @@ class DefaultController extends Controller
         return $this->render('MainBundle:Default:index.html.twig',
          array('modeles' => $modele,'products' => $product));
     }}
-
-      public function adminindexAction()
-    {
-       
-        return $this->render('MainBundle:Categorie:index.html.twig');
-    }
 }

@@ -3,7 +3,6 @@
 namespace MainBundle\Controller;
 
 
-
 use MainBundle\Entity\Product;
 use MainBundle\Entity\Wishlist;
 use MainBundle\Entity\Panier;
@@ -11,7 +10,6 @@ use MainBundle\Entity\User;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 
 
 use MainBundle\Pagination\Paginator;

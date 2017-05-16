@@ -65,9 +65,9 @@ else
             $em = $this->getDoctrine()->getManager();
 
 
-$user=$this->getUser();
 
-            $products = $em->getRepository('MainBundle:Product')->findBy(array('venteflash' => Null,'Seller'=>$user));
+
+            $products = $em->getRepository('MainBundle:Product')->findBy(array('venteflash' => Null));
 
             return $this->render('venteflash/adding.html.twig', array(
                 'products' => $products,
@@ -77,9 +77,8 @@ $user=$this->getUser();
         {
             $em = $this->getDoctrine()->getManager();
 
-            $user=$this->getUser();
 
-            $products = $em->getRepository('MainBundle:Product')->findBy(array('venteflash' => Null,'Seller'=>$user));
+            $products = $em->getRepository('MainBundle:Product')->findBy(array('venteflash' => $id));
             return $this->render('venteflash/deleting.html.twig', array(
                 'products' => $products,
                 'id' => $id

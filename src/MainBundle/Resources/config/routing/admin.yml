@@ -2,11 +2,6 @@ admin_index:
     path:     /index
     defaults: { _controller: "MainBundle:Coupon:test" }
 
-mainaddminn:
-    path:     /
-    defaults: { _controller: "MainBundle:Default:adminindex" }
-
-
 admin_users:
     path:     /members
     defaults: { _controller: "MainBundle:User:index" }

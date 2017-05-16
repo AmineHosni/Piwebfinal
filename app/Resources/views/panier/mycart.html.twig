@@ -53,14 +53,14 @@
                                         <h4><a href="product-details.html">{{panier.idProd.libelle }}</a></h4>
                                         <span class="size"></span>
 
-                                        <div class="price"><span>{{ panier.prixtot }} TND</span></div>
+                                        <div class="price"><span>{{ panier.prixTot }} TND</span></div>
                                     </div>
                                 </td>
                                 <td class="delete"><a title="Delete" href="{{path('my_cart_del', {'id':panier.id})}}"> <i
                                         class="glyphicon glyphicon-trash fa-2x"></i></a></td>
                                 <td><input class="quanitySniper" type="text" value="{{ panier.qtepan }}" name="quanitySniper"></td>
                                 <td>{{panier.idProd.pourcentagePromotion}} %</td>
-                                <td class="price">{{ panier.prixtot }} TND</td>
+                                <td class="price">{{ panier.prixTot }} TND</td>
                             </tr>
 {% endfor %}
                       

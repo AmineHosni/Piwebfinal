@@ -17,7 +17,7 @@ class PanierRepository extends EntityRepository
     }
  public function findprodpan($id_user){
      $query = $this->getEntityManager()->createQuery("SELECT p FROM MainBundle:Panier p JOIN MainBundle:Product a WITH p.idProd = a.id and  p.idUser = :userid")->setParameter('userid',$id_user);
-    return $query->getResult();
+	return $query->getResult();
     }
 
  public function findliv($id_user){
